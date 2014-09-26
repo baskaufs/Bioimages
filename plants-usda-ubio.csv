@@ -1,4 +1,4 @@
-ubioID,tsnID,class,order,family,primula,specificEpithet,infraspecificEpithet,taxonRank,scientificNameAuthorship,vernacularName,changed
+ubioID,tsnID,class,order,family,genus,specificEpithet,infraspecificEpithet,taxonRank,scientificNameAuthorship,vernacularName,changed
 426486,1147,Cyanophyceae,Nostocales,Nostocaceae,Nostoc,commune,,species,Vaucher Ex Bornet and Flahault,star jelly,0
 235943,14002,Ascomycetes,Lecanorales,Bacidiaceae,Bacidia,,,genus,,dotted lichen,0
 236233,14005,Ascomycetes,Lecanorales,Physciaceae,Buellia,,,genus,,disc lichen,0
@@ -35566,6 +35566,7 @@ ubioID,tsnID,class,order,family,primula,specificEpithet,infraspecificEpithet,tax
 484227,530689,Magnoliopsida,Rosales,Saxifragaceae,Tiarella,trifoliata,unifoliata,variety,L.,oneleaf foamflower,0
 484228,530690,Magnoliopsida,Malvales,Tiliaceae,Tilia,americana,americana,variety,L.,American basswood,0
 484229,530691,Magnoliopsida,Malvales,Tiliaceae,Tilia,americana,caroliniana,variety,L.,Carolina basswood,0
+602241,21539,Magnoliopsida,Malvales,Tiliaceae,Tilia,heterophylla,,species,Vent.,white basswood,0
 484230,530692,Magnoliopsida,Malvales,Tiliaceae,Tilia,americana,heterophylla,variety,L.,white basswood,0
 484231,530693,Liliopsida,Bromeliales,Bromeliaceae,Tillandsia,fasciculata,clavispica,variety,Sw.,giant airplant,0
 484232,530694,Liliopsida,Bromeliales,Bromeliaceae,Tillandsia,fasciculata,densispica,variety,Sw.,giant airplant,0
@@ -38370,7 +38371,7 @@ ubioID,tsnID,class,order,family,primula,specificEpithet,infraspecificEpithet,tax
 5140,178775,Aves,Passeriformes,Sittidae,Sitta,carolinensis,,species,Latham 1790,White-breasted Nuthatch,1
 8379,176890,Aves,Charadriiformes,Laridae,Sterna,paradisaea,,species,Pontoppidan 1763,Arctic Tern ,1
 5217,178541,Aves,Passeriformes,Troglodytidae,Troglodytes,aedon,,species,Vieillot 1809,House Wren,1
-351142,x00007,Insecta,Lepidoptera,Saturniidae,Hyalophora,cecropia,,species,(Linnaeus 1758),Cecropia Moth,1
+351142,936196,Insecta,Lepidoptera,Saturniidae,Hyalophora,cecropia,,species,(Linnaeus 1758),Cecropia Moth,1
 7660503,777975,Insecta,Lepidoptera,Nymphalidae,Agraulis,vanillae,,species,Linnaeus 1758,Gulf Fritillary,1
 7661173,777981,Insecta,Lepidoptera,Nymphalidae,Euptoieta,claudia,,species,Cramer 1775,Variegated Fritillary,1
 106069,180703,Mammalia,Artiodactyla,Cervidae,Alces,alces,,species,"(Linnaeus, 1758) ",moose,1
@@ -38391,3 +38392,4 @@ ubioID,tsnID,class,order,family,primula,specificEpithet,infraspecificEpithet,tax
 105410,180543,Mammalia,Carnivora,Ursidae,Ursus,arctos,,species,"Linnaeus, 1758",grizzly bear,1
 105460,180604,Mammalia,Carnivora,Canidae,Vulpes,vulpes,,species,"(Linnaeus, 1758)",red fox,1
 25916,173660,Amphibia,Caudata,Plethodontidae,Plethodon,jordani,,species,"Blatchley, 1901 ",Appalachian woodland salamander,1
+477061,506288,Magnoliopsida,Fabales,Fabaceae,Sophora,japonica,,species,L.,Chinese scholar tree,1
