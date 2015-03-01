@@ -1,4 +1,4 @@
 subjectIRI,property,objectIRI,objectType,objectDescription
-http://bioimages.vanderbilt.edu/vanderbilt/7-313 ,dsw:hasOccurrence,http://bioimages.vanderbilt.edu/vu-arboretum/7-340.htm,http://rs.tdwg.org/dwc/terms/Occurrence,Occurrence documented by arboretum database record
-http://bioimages.vanderbilt.edu/vanderbilt/7-313 ,rdfs:seeAlso,http://vanderbilt.edu/trees,http://xmlns.com/foaf/0.1/Document,Vanderbilt University Arboretum homepage
-http://bioimages.vanderbilt.edu/uncg/39 ,dsw:hasOccurrence,http://bioimages.vanderbilt.edu/specimen/ncu592804#occ,http://rs.tdwg.org/dwc/terms/Occurrence,Occurrence documented by a specimen in University of North Carolina herbarium accession 592804
+http://bioimages.vanderbilt.edu/vanderbilt/7-313,dsw:hasOccurrence,http://bioimages.vanderbilt.edu/vu-arboretum/7-340.htm,http://rs.tdwg.org/dwc/terms/Occurrence,Occurrence documented by arboretum database record
+http://bioimages.vanderbilt.edu/vanderbilt/7-313,rdfs:seeAlso,http://vanderbilt.edu/trees,http://xmlns.com/foaf/0.1/Document,Vanderbilt University Arboretum homepage
+http://bioimages.vanderbilt.edu/uncg/39,dsw:hasOccurrence,http://bioimages.vanderbilt.edu/specimen/ncu592804#occ,http://rs.tdwg.org/dwc/terms/Occurrence,Occurrence documented by a specimen in University of North Carolina herbarium accession 592804
