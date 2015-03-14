@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- based on the SLPIG Standardized View Hierarchy v. 0.9, 2010-04-28," http://bioimages.vanderbilt.edu/rdf/stdview -->
+<view>
+	<viewGroup id="00" name="unspecified">
+		<viewCategory id="0000" name="unspecified">
+			<stdview id="000000" name="unspecified">579800</stdview>
+		</viewCategory>
+		<viewCategory id="0001" name="whole organism">
+			<stdview id="000100" name="unspecified">579801</stdview>
+		</viewCategory>
+	</viewGroup>
+	<viewGroup id="01" name="woody angiosperms">
+		<viewCategory id="0100" name="unspecified">
+			<stdview id="010000" name="unspecified">579800</stdview>
+		</viewCategory>
+		<viewCategory id="0101" name="whole tree (or vine)">
+			<stdview id="010100" name="unspecified">579801</stdview>
+			<stdview id="010101" name="general">463267</stdview>
+			<stdview id="010102" name="winter">463268</stdview>
+			<stdview id="010103" name="view up trunk">463269</stdview>
+		</viewCategory>
+		<viewCategory id="0102" name="bark">
+			<stdview id="010200" name="unspecified">579802</stdview>
+			<stdview id="010201" name="of a large tree">463909</stdview>
+			<stdview id="010202" name="of a medium tree or large branch">463910</stdview>
+			<stdview id="010203" name="of a small tree or small branch">463911</stdview>
+		</viewCategory>
+		<viewCategory id="0103" name="twig">
+			<stdview id="010300" name="unspecified">579803</stdview>
+			<stdview id="010301" name="orientation of petioles">463912</stdview>
+			<stdview id="010302" name="winter overall">463913</stdview>
+			<stdview id="010303" name="close-up winter leaf scar/bud">463914</stdview>
+			<stdview id="010304" name="close-up winter terminal bud">463915</stdview>
+		</viewCategory>
+		<viewCategory id="0104" name="leaf">
+			<stdview id="010400" name="unspecified">579804</stdview>
+			<stdview id="010401" name="whole upper surface">463916</stdview>
+			<stdview id="010402" name="margin of upper + lower surface">463917</stdview>
+			<stdview id="010403" name="showing orientation on twig">463918</stdview>
+		</viewCategory>
+		<viewCategory id="0105" name="inflorescence">
+			<stdview id="010500" name="unspecified">579806</stdview>
+			<stdview id="010501" name="whole - unspecified">463919</stdview>
+			<stdview id="010502" name="whole - female">463920</stdview>
+			<stdview id="010503" name="whole - male">463921</stdview>
+			<stdview id="010504" name="lateral view of flower">463922</stdview>
+			<stdview id="010505" name="frontal view of flower">463923</stdview>
+			<stdview id="010506" name="ventral view of flower + perianth">463926</stdview>
+			<stdview id="010507" name="close-up of flower interior">463927</stdview>
+		</viewCategory>
+		<viewCategory id="0106" name="fruit">
+			<stdview id="010600" name="unspecified">579807</stdview>
+			<stdview id="010601" name="as borne on the plant">463930</stdview>
+			<stdview id="010602" name="lateral or general close-up">463931</stdview>
+			<stdview id="010603" name="section or open">463932</stdview>
+			<stdview id="010604" name="immature">463933</stdview>
+		</viewCategory>
+		<viewCategory id="0107" name="seed">
+			<stdview id="010700" name="unspecified">579809</stdview>
+			<stdview id="010701" name="general view">463934</stdview>
+		</viewCategory>
+	</viewGroup>
+	<viewGroup id="02" name="herbaceous angiosperms">
+		<viewCategory id="0200" name="unspecified">
+			<stdview id="020000" name="unspecified">579800</stdview>
+		</viewCategory>
+		<viewCategory id="0201" name="whole plant">
+			<stdview id="020100" name="unspecified">579801</stdview>
+			<stdview id="020101" name="juvenile">463935</stdview>
+			<stdview id="020102" name="in flower - general view">463267</stdview>
+			<stdview id="020103" name="in fruit">463936</stdview>
+		</viewCategory>
+		<viewCategory id="0202" name="stem">
+			<stdview id="020200" name="unspecified">579808</stdview>
+			<stdview id="020201" name="showing leaf bases">463937</stdview>
+		</viewCategory>
+		<viewCategory id="0203" name="leaf">
+			<stdview id="020300" name="unspecified">579804</stdview>
+			<stdview id="020301" name="basal or on lower stem">463916</stdview>
+			<stdview id="020302" name="on upper stem">463938</stdview>
+			<stdview id="020303" name="margin of upper + lower surface">463917</stdview>
+		</viewCategory>
+		<viewCategory id="0204" name="inflorescence">
+			<stdview id="020400" name="unspecified">579806</stdview>
+			<stdview id="020401" name="whole - unspecified">463919</stdview>
+			<stdview id="020402" name="whole - female">463920</stdview>
+			<stdview id="020403" name="whole - male">463921</stdview>
+			<stdview id="020404" name="lateral view of flower">463922</stdview>
+			<stdview id="020405" name="frontal view of flower">463923</stdview>
+			<stdview id="020406" name="ventral view of flower + perianth">463926</stdview>
+			<stdview id="020407" name="close-up of flower interior">463927</stdview>
+		</viewCategory>
+		<viewCategory id="0205" name="fruit">
+			<stdview id="020500" name="unspecified">579807</stdview>
+			<stdview id="020501" name="as borne on the plant">463930</stdview>
+			<stdview id="020502" name="lateral or general close-up">463931</stdview>
+			<stdview id="020503" name="section or open">463932</stdview>
+			<stdview id="020504" name="immature">463933</stdview>
+		</viewCategory>
+		<viewCategory id="0206" name="seed">
+			<stdview id="020600" name="unspecified">579809</stdview>
+			<stdview id="020601" name="general view">463934</stdview>
+		</viewCategory>
+	</viewGroup>
+	<viewGroup id="03" name="gymnosperms">
+		<viewCategory id="0300" name="unspecified">
+			<stdview id="030000" name="unspecified">579800</stdview>
+		</viewCategory>
+		<viewCategory id="0301" name="whole tree">
+			<stdview id="030100" name="unspecified">579801</stdview>
+			<stdview id="030101" name="general">463267</stdview>
+			<stdview id="030102" name="view up trunk">463269</stdview>
+		</viewCategory>
+		<viewCategory id="0302" name="bark">
+			<stdview id="030200" name="unspecified">579802</stdview>
+			<stdview id="030201" name="of a large tree">463909</stdview>
+			<stdview id="030202" name="of a medium tree or large branch">463910</stdview>
+			<stdview id="030203" name="of a small tree or small branch">463911</stdview>
+		</viewCategory>
+		<viewCategory id="0303" name="twig">
+			<stdview id="030300" name="unspecified">579803</stdview>
+			<stdview id="030301" name="after fallen needles">463913</stdview>
+			<stdview id="030302" name="showing attachment of needles">463912</stdview>
+		</viewCategory>
+		<viewCategory id="0304" name="leaf">
+			<stdview id="030400" name="unspecified">579804</stdview>
+			<stdview id="030401" name="entire needle">463916</stdview>
+			<stdview id="030402" name="showing orientation on twig">463918</stdview>
+		</viewCategory>
+		<viewCategory id="0305" name="cone">
+			<stdview id="030500" name="unspecified">579810</stdview>
+			<stdview id="030501" name="male">463939</stdview>
+			<stdview id="030502" name="female - mature open">463940</stdview>
+			<stdview id="030503" name="female - closed">463941</stdview>
+			<stdview id="030504" name="female - receptive">463942</stdview>
+			<stdview id="030505" name="one year-old female">463943</stdview>
+		</viewCategory>
+		<viewCategory id="0306" name="seed">
+			<stdview id="030600" name="unspecified">579809</stdview>
+			<stdview id="030601" name="general view">463934</stdview>
+		</viewCategory>
+	</viewGroup>
+	<viewGroup id="04" name="ferns">
+		<viewCategory id="0400" name="unspecified">
+			<stdview id="040000" name="unspecified">579800</stdview>
+		</viewCategory>
+		<viewCategory id="0401" name="whole plant">
+			<stdview id="040100" name="unspecified">579801</stdview>
+		</viewCategory>
+	</viewGroup>
+	<viewGroup id="05" name="cacti">
+		<viewCategory id="0500" name="unspecified">
+			<stdview id="050000" name="unspecified">579800</stdview>
+		</viewCategory>
+		<viewCategory id="0501" name="whole plant">
+			<stdview id="050100" name="unspecified">579801</stdview>
+		</viewCategory>
+	</viewGroup>
+	<viewGroup id="06" name="mosses">
+		<viewCategory id="0600" name="unspecified">
+			<stdview id="060000" name="unspecified">579800</stdview>
+		</viewCategory>
+		<viewCategory id="0601" name="whole gametophyte">
+			<stdview id="060100" name="unspecified">579801</stdview>
+		</viewCategory>
+	</viewGroup>
+</view>
