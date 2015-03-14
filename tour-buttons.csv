@@ -1,4 +1,4 @@
-previous uri,organism uri,next uri,previous button image,home uri,home button image,tour uri,tour button image,next button image
+previous_iri,organism_iri,next_iri,previous_button_image,home_iri,home_button_image,tour_iri,tour_button_image,next_button_image
 ,http://bioimages.vanderbilt.edu/ind-baskauf/52485,../vanderbilt/13-427,../buttons/peabody-previous.png,http://vanderbilt.edu/trees/,../contact/vanderbilt-logo.png,http://vanderbilt.edu/trees/tours/peabody,../buttons/peabody-tour.png,../buttons/peabody-next.png
 ../ind-baskauf/52485,http://bioimages.vanderbilt.edu/vanderbilt/13-427,../vanderbilt/13-17,../buttons/peabody-previous.png,http://vanderbilt.edu/trees/,../contact/vanderbilt-logo.png,http://vanderbilt.edu/trees/tours/peabody,../buttons/peabody-tour.png,../buttons/peabody-next.png
 ../vanderbilt/13-427,http://bioimages.vanderbilt.edu/vanderbilt/13-17,../vanderbilt/13-12,../buttons/peabody-previous.png,http://vanderbilt.edu/trees/,../contact/vanderbilt-logo.png,http://vanderbilt.edu/trees/tours/peabody,../buttons/peabody-tour.png,../buttons/peabody-next.png
