@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<license>
+	<category id="0">
+		<string>License not required (in the public domain).</string>
+		<IRI>http://creativecommons.org/publicdomain/zero/1.0/</IRI>
+		<thumb>https://licensebuttons.net/l/zero/1.0/88x31.png</thumb>
+	</category>
+	<category id="1">
+		<string>Available under Creative Commons Attribution 4.0 International License.</string>
+		<IRI>http://creativecommons.org/licenses/by/4.0/</IRI>
+		<thumb>https://licensebuttons.net/l/by/4.0/88x31.png</thumb>
+	</category>
+	<category id="2">
+		<string>Available under Creative Commons Attribution-Share Alike 4.0 International License.</string>
+		<IRI>http://creativecommons.org/licenses/by-sa/4.0/</IRI>
+		<thumb>https://licensebuttons.net/l/by-sa/4.0/88x31.png</thumb>
+	</category>
+	<category id="3">
+		<string>Available under Creative Commons Attribution-Noncommercial 4.0 International License.</string>
+		<IRI>http://creativecommons.org/licenses/by-nc/4.0/</IRI>
+		<thumb>https://licensebuttons.net/l/by-nc/4.0/88x31.png</thumb>
+	</category>
+	<category id="4">
+		<string>Available under Creative Commons Attribution-Noncommercial-Share Alike 4.0 International License.</string>
+		<IRI>http://creativecommons.org/licenses/by-nc-sa/4.0/</IRI>
+		<thumb>https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png</thumb>
+	</category>
+</license>
