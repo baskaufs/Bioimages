@@ -63,7 +63,7 @@ ubioID|dcterms_identifier|dwc_kingdom|dwc_class|dwc_order|dwc_family|dwc_genus|d
 464550|39211|Plantae|Liliopsida|Eriocaulales|Eriocaulaceae|Syngonanthus|flavidulus||species|(Michx.) Ruhl.|yellow hatpins|2015-02-28T07:30:10-06:00
 450661|22009|Plantae|Magnoliopsida|Nepenthales|Droseraceae|Drosera|||genus||sundew|2015-02-28T07:30:10-06:00
 464457|39101|Plantae|Liliopsida|Commelinales|Xyridaceae|Xyris|caroliniana||species|Walter|Carolina yelloweyed grass|2015-02-28T07:30:10-06:00
-7397|178878|Animalia|Aves|Passeriformes|Parulidae|Dendroica|petechia||species|(Linnaeus) 1766 |Yellow Warbler |2015-02-28T07:30:10-06:00
+7397|178878|Animalia|Aves|Passeriformes|Parulidae|Dendroica|petechia||species|(Linnaeus) 1766|Yellow Warbler|2015-02-28T07:30:10-06:00
 471465|500460||Magnoliopsida|Caryophyllales|Cactaceae|Pachycereus|||genus||pachycereus|2015-02-28T07:30:10-06:00
 464123|38692||Magnoliopsida|Asterales|Asteraceae|Xanthium|strumarium||species|L.|rough cocklebur|2015-02-28T07:30:10-06:00
 459460|32634||Magnoliopsida|Lamiales|Lamiaceae|Perilla|frutescens||species|(L.) Britton|beefsteakplant|2015-02-28T07:30:10-06:00
@@ -86,18 +86,18 @@ ubioID|dcterms_identifier|dwc_kingdom|dwc_class|dwc_order|dwc_family|dwc_genus|d
 446586|17182||Filicopsida|Ophioglossales|Ophioglossaceae|Botrychium|lunarioides||species|(Michx.) Sw.|winter grapefern|2015-02-28T07:30:10-06:00
 2331224|525635||Equisetopsida|Equisetales|Equisetaceae|Equisetum|hyemale|affine|subspecies|(Engelm.) Calder & Taylor|scouringrush horsetail|2015-02-28T07:30:10-06:00
 446465|17008||Psilopsida|Psilotales|Psilotaceae|Psilotum|nudum||species|(L.) P. Beauv.|whisk fern|2015-02-28T07:30:10-06:00
-25916|173660||Amphibia|Caudata|Plethodontidae|Plethodon|jordani||species|Blatchley, 1901 |Appalachian woodland salamander|2015-02-28T07:30:10-06:00
-7925|179124||Aves|Passeriformes|Cardinalidae|Cardinalis|cardinalis||species|(Linnaeus) 1758 |Northern Cardinal|2015-02-28T07:30:10-06:00
-12116|178699||Aves|Passeriformes|Paridae|Parus|atricapillus||species|Linnaeus, 1766|Black-capped Chickadee |2015-02-28T07:30:10-06:00
-2328580|179410||Aves|Passeriformes|Emberizidae|Junco|hyemalis||species|(Linnaeus, 1758) |Dark-eyed Junco|2015-02-28T07:30:10-06:00
-2326824|175397||Aves|Accipitriformes|Accipitridae|Parabuteo|unicinctus||species|(Temminck, 1824) |Harris' Hawk |2015-02-28T07:30:10-06:00
-11517|178154||Aves|Piciformes|Picidae|Colaptes|auratus||species|(Linnaeus) 1758 |Northern Flicker |2015-02-28T07:30:10-06:00
+25916|173660||Amphibia|Caudata|Plethodontidae|Plethodon|jordani||species|Blatchley, 1901|Appalachian woodland salamander|2015-02-28T07:30:10-06:00
+7925|179124||Aves|Passeriformes|Cardinalidae|Cardinalis|cardinalis||species|(Linnaeus) 1758|Northern Cardinal|2015-02-28T07:30:10-06:00
+12116|178699||Aves|Passeriformes|Paridae|Parus|atricapillus||species|Linnaeus, 1766|Black-capped Chickadee|2015-02-28T07:30:10-06:00
+2328580|179410||Aves|Passeriformes|Emberizidae|Junco|hyemalis||species|(Linnaeus, 1758)|Dark-eyed Junco|2015-02-28T07:30:10-06:00
+2326824|175397||Aves|Accipitriformes|Accipitridae|Parabuteo|unicinctus||species|(Temminck, 1824)|Harris' Hawk|2015-02-28T07:30:10-06:00
+11517|178154||Aves|Piciformes|Picidae|Colaptes|auratus||species|(Linnaeus) 1758|Northern Flicker|2015-02-28T07:30:10-06:00
 11644|174999||Aves|Anseriformes|Anatidae|Branta|canadensis||species|(Linnaeus, 1758)|Canada Goose|2015-02-28T07:30:10-06:00
 5217|178541||Aves|Passeriformes|Troglodytidae|Troglodytes|aedon||species|Vieillot 1809|House Wren|2015-02-28T07:30:10-06:00
-7116|179236||Aves|Passeriformes|Fringillidae|Carduelis|tristis||species|(Linnaeus) 1758 |American Goldfinch |2015-02-28T07:30:10-06:00
-2328269|178259||Aves|Piciformes|Picidae|Picoides|pubescens||species|(Linnaeus, 1766) |Downy Woodpecker|2015-02-28T07:30:10-06:00
-2328702|179801||Aves|Passeriformes|Turdidae|Sialia|sialis||species|(Linnaeus, 1758) |Eastern Bluebird |2015-02-28T07:30:10-06:00
-2328464|178944||Aves|Passeriformes|Parulidae|Geothlypis|trichas||species|(Linnaeus, 1766) |Common Yellowthroat|2015-02-28T07:30:10-06:00
+7116|179236||Aves|Passeriformes|Fringillidae|Carduelis|tristis||species|(Linnaeus) 1758|American Goldfinch|2015-02-28T07:30:10-06:00
+2328269|178259||Aves|Piciformes|Picidae|Picoides|pubescens||species|(Linnaeus, 1766)|Downy Woodpecker|2015-02-28T07:30:10-06:00
+2328702|179801||Aves|Passeriformes|Turdidae|Sialia|sialis||species|(Linnaeus, 1758)|Eastern Bluebird|2015-02-28T07:30:10-06:00
+2328464|178944||Aves|Passeriformes|Parulidae|Geothlypis|trichas||species|(Linnaeus, 1766)|Common Yellowthroat|2015-02-28T07:30:10-06:00
 463103|37395||Magnoliopsida|Asterales|Asteraceae|Gaillardia|||genus||blanketflower|2015-02-28T07:30:10-06:00
 477707|506952||Liliopsida|Arales|Araceae|Dracunculus|vulgaris||species|Schott|common dracunculus|2015-02-28T07:30:10-06:00
 462399|36525||Magnoliopsida|Asterales|Asteraceae|Amphiachyris|dracunculoides||species|(DC.) Nutt.|prairie broomweed|2015-02-28T07:30:10-06:00
@@ -436,7 +436,7 @@ ubioID|dcterms_identifier|dwc_kingdom|dwc_class|dwc_order|dwc_family|dwc_genus|d
 448668|19688||Magnoliopsida|Caryophyllales|Cactaceae|Opuntia|acanthocarpa||species|Engelm. & Bigelow|buckhorn cholla|2015-02-28T07:30:10-06:00
 454684|26808||Magnoliopsida|Fabales|Fabaceae|Olneya|tesota||species|A. Gray|desert ironwood|2015-02-28T07:30:10-06:00
 462381|36505||Magnoliopsida|Asterales|Asteraceae|Ambrosia|deltoidea||species|(Torr.) Payne|triangle bur ragweed|2015-02-28T07:30:10-06:00
-602008|19808||Magnoliopsida|Caryophyllales|Cactaceae|Echinocereus|fasciculatus||species|(Engelm. ex B. D. Jackson) L. Benson |Organo-pequeno de manojos|2015-02-28T07:30:10-06:00
+602008|19808||Magnoliopsida|Caryophyllales|Cactaceae|Echinocereus|fasciculatus||species|(Engelm. ex B. D. Jackson) L. Benson|Organo-pequeno de manojos|2015-02-28T07:30:10-06:00
 448684|19708||Magnoliopsida|Caryophyllales|Cactaceae|Opuntia|fulgida||species|Engelm.|jumping cholla|2015-02-28T07:30:10-06:00
 456421|29044||Magnoliopsida|Sapindales|Zygophyllaceae|Kallstroemia|grandiflora||species|Torr. ex A. Gray|Arizona poppy|2015-02-28T07:30:10-06:00
 461788|35699||Magnoliopsida|Asterales|Asteraceae|Baccharis|sarothroides||species|A. Gray|desertbroom|2015-02-28T07:30:10-06:00
@@ -453,7 +453,7 @@ ubioID|dcterms_identifier|dwc_kingdom|dwc_class|dwc_order|dwc_family|dwc_genus|d
 470162|194853||Pinopsida|Pinales|Cupressaceae|Juniperus|monosperma||species|(Engelm.) Sarg.|oneseed juniper|2015-02-28T07:30:10-06:00
 448019|18922||Magnoliopsida|Papaverales|Papaveraceae|Argemone|pleiacantha||species|Greene|southwestern pricklypoppy|2015-02-28T07:30:10-06:00
 485304|26826||Magnoliopsida|Fabales|Fabaceae|Parkinsonia|aculeata||species|L.|Jerusalem thorn|2015-02-28T07:30:10-06:00
-474879|504042||Magnoliopsida|Caryophyllales|Cactaceae|Opuntia|spinosior||species|(Engelm.) Toumey| cane cholla|2015-02-28T07:30:10-06:00
+474879|504042||Magnoliopsida|Caryophyllales|Cactaceae|Opuntia|spinosior||species|(Engelm.) Toumey|cane cholla|2015-02-28T07:30:10-06:00
 460779|34318||Magnoliopsida|Scrophulariales|Bignoniaceae|Chilopsis|linearis||species|(Cav.) Sweet|desert willow|2015-02-28T07:30:10-06:00
 448129|19044||Magnoliopsida|Urticales|Ulmaceae|Celtis|pallida||species|Torr.|Desert hackberry|2015-02-28T07:30:10-06:00
 470409|195322||Magnoliopsida|Caryophyllales|Cactaceae|Opuntia|engelmannii|linguiformis|variety|Salm-Dyck ex Engelm.|cow's tongue pricklypear|2015-02-28T07:30:10-06:00
@@ -468,9 +468,9 @@ ubioID|dcterms_identifier|dwc_kingdom|dwc_class|dwc_order|dwc_family|dwc_genus|d
 5767639|x00002||Magnoliopsida|Caryophyllales|Cactaceae|Ferocactus|herrerae||species|J.G.Ortega|twisted barrel cactus|2015-02-28T07:30:10-06:00
 485989|565605||Liliopsida|Liliales|Agavaceae|Yucca|brevifolia||species|Engelm.|Joshua tree|2015-02-28T07:30:10-06:00
 473133|502203||Magnoliopsida|Caryophyllales|Cactaceae|Echinocereus|nicholii||species|(L.D. Benson) Parfitt|Nichol's hedgehog cactus|2015-02-28T07:30:10-06:00
-448673|19694||Magnoliopsida|Caryophyllales|Cactaceae|Opuntia|bigelovii||species|Engelm. |teddybear cholla|2015-02-28T07:30:10-06:00
-5821026|x00003||Liliopsida|Liliales|Agavaceae|Agave|vilmoriniana ||species|A. Berger|Octopus agave|2015-02-28T07:30:10-06:00
-9280506|x00004||Liliopsida|Liliales|Agavaceae|Agave|ocahui ||species|Gentry|century plant|2015-02-28T07:30:10-06:00
+448673|19694||Magnoliopsida|Caryophyllales|Cactaceae|Opuntia|bigelovii||species|Engelm.|teddybear cholla|2015-02-28T07:30:10-06:00
+5821026|x00003||Liliopsida|Liliales|Agavaceae|Agave|vilmoriniana||species|A. Berger|Octopus agave|2015-02-28T07:30:10-06:00
+9280506|x00004||Liliopsida|Liliales|Agavaceae|Agave|ocahui||species|Gentry|century plant|2015-02-28T07:30:10-06:00
 5780205|x00005||Magnoliopsida|Solanales|Fouquieriace|Fouquieria|columnaris||species|Kellogg ex Curran|boojum|2015-02-28T07:30:10-06:00
 5783831|x00006||Magnoliopsida|Caryophyllales|Cactaceae|Pilosocereus|alensis||species|(Weber ex Gosselin) Byles & Rowley|Sonoran old man cactus|2015-02-28T07:30:10-06:00
 453418|25319||Magnoliopsida|Rosales|Rosaceae|Sorbus|americana||species|Marsh.|American mountain ash|2015-02-28T07:30:10-06:00
@@ -821,7 +821,7 @@ ubioID|dcterms_identifier|dwc_kingdom|dwc_class|dwc_order|dwc_family|dwc_genus|d
 460967|34531||Magnoliopsida|Campanulales|Campanulaceae|Lobelia|siphilitica||species|L.|great blue lobelia|2015-02-28T07:30:10-06:00
 466783|42076||Liliopsida|Cyperales|Poaceae|Schizachyrium|scoparium||species|(Michx.) Nash|little bluestem|2015-02-28T07:30:10-06:00
 448295|19244||Magnoliopsida|Juglandales|Juglandaceae|Carya|pallida||species|(Ashe) Engl. & Graebn.|sand hickory|2015-02-28T07:30:10-06:00
-183427|174296||Reptilia|Squamata|Viperidae|Agkistrodon|contortrix||species|(Linnaeus, 1766) |Copperhead|2015-02-28T07:30:10-06:00
+183427|174296||Reptilia|Squamata|Viperidae|Agkistrodon|contortrix||species|(Linnaeus, 1766)|Copperhead|2015-02-28T07:30:10-06:00
 459124|32196||Magnoliopsida|Lamiales|Verbenaceae|Phyla|lanceolata||species|(Michx.) Greene|lanceleaf fogfruit|2015-02-28T07:30:10-06:00
 453221|25099||Magnoliopsida|Rosales|Rosaceae|Agrimonia|pubescens||species|Wallr.|soft agrimony|2015-02-28T07:30:10-06:00
 475958|505160||Magnoliopsida|Fabales|Fabaceae|Senna|marilandica||species|(L.) Link|Maryland senna|2015-02-28T07:30:10-06:00
@@ -1004,8 +1004,8 @@ ubioID|dcterms_identifier|dwc_kingdom|dwc_class|dwc_order|dwc_family|dwc_genus|d
 455756|28189||Magnoliopsida|Euphorbiales|Euphorbiaceae|Acalypha|ostryifolia||species|Riddell|pineland threeseed mercury|2015-02-28T07:30:10-06:00
 451040|22496||Magnoliopsida|Salicales|Salicaceae|Salix|sericea||species|Marsh.|silky willow|2015-02-28T07:30:10-06:00
 209688|173776||Reptilia|Testudines|Emydidae|Terrapene|carolina||species|(Linnaeus, 1758)|Eastern Box Turtle|2015-02-28T07:30:10-06:00
-106040|180695||Mammalia|Artiodactyla|Cervidae|Cervus|elaphus||species|Linnaeus, 1758 |elk|2015-02-28T07:30:10-06:00
-106114|180717||Mammalia|Artiodactyla|Antilocapridae|Antilocapra|americana||species|(Ord, 1815)|pronghorn |2015-02-28T07:30:10-06:00
+106040|180695||Mammalia|Artiodactyla|Cervidae|Cervus|elaphus||species|Linnaeus, 1758|elk|2015-02-28T07:30:10-06:00
+106114|180717||Mammalia|Artiodactyla|Antilocapridae|Antilocapra|americana||species|(Ord, 1815)|pronghorn|2015-02-28T07:30:10-06:00
 125645|163699||Actinopterygii|Cypriniformes|Cyprinidae|Danio|rerio||species|(Hamilton, 1822)|zebrafish|2015-02-28T07:30:10-06:00
 106084|180699||Mammalia|Artiodactyla|Cervidae|Odocoileus|virginianus||species|(Zimmermann, 1780)|white-tailed deer|2015-02-28T07:30:10-06:00
 191491|174177||Reptilia|Squamata|Colubridae|Elaphe|obsoleta||species|(Say in James, 1823)|Rat Snake|2015-02-28T07:30:10-06:00
@@ -1015,29 +1015,29 @@ ubioID|dcterms_identifier|dwc_kingdom|dwc_class|dwc_order|dwc_family|dwc_genus|d
 106379|584677||Mammalia|Rodentia|Bathyergidae|Heterocephalus|glaber||species|Ruppell, 1842|naked mole-rat|2015-02-28T07:30:10-06:00
 189126|74306||Reptilia|Squamata|Viperidae|Crotalus|horridus||species|Linnaeus, 1758|Timber Rattlesnake|2015-02-28T07:30:10-06:00
 214987|209397||Reptilia|Squamata|Colubridae|Pituophis|melanoleucus|melanoleucus|subspecies|(Daudin, 1803)|Northern Pine Snake|2015-02-28T07:30:10-06:00
-196021|174185||Reptilia|Squamata|Colubridae|Lampropeltis|calligaster||species|(Harlan, 1827) |Prairie Kingsnake|2015-02-28T07:30:10-06:00
+196021|174185||Reptilia|Squamata|Colubridae|Lampropeltis|calligaster||species|(Harlan, 1827)|Prairie Kingsnake|2015-02-28T07:30:10-06:00
 11946|176136||Aves|Galliformes|Phasianidae|Meleagris|gallopavo||species|Linnaeus 1758|Wild Turkey|2015-02-28T07:30:10-06:00
-8379|176890||Aves|Charadriiformes|Laridae|Sterna|paradisaea||species|Pontoppidan 1763|Arctic Tern |2015-02-28T07:30:10-06:00
-2326350|174469||Aves|Gaviiformes|Gaviidae|Gavia|immer||species|(Brunnich, 1764) |Common Loon |2015-02-28T07:30:10-06:00
-106069|180703||Mammalia|Artiodactyla|Cervidae|Alces|alces||species|(Linnaeus, 1758) |moose|2015-02-28T07:30:10-06:00
-105415|180602||Mammalia|Carnivora|Canidae|Alopex|lagopus||species|(Linnaeus, 1758) |Arctic fox |2015-02-28T07:30:10-06:00
+8379|176890||Aves|Charadriiformes|Laridae|Sterna|paradisaea||species|Pontoppidan 1763|Arctic Tern|2015-02-28T07:30:10-06:00
+2326350|174469||Aves|Gaviiformes|Gaviidae|Gavia|immer||species|(Brunnich, 1764)|Common Loon|2015-02-28T07:30:10-06:00
+106069|180703||Mammalia|Artiodactyla|Cervidae|Alces|alces||species|(Linnaeus, 1758)|moose|2015-02-28T07:30:10-06:00
+105415|180602||Mammalia|Carnivora|Canidae|Alopex|lagopus||species|(Linnaeus, 1758)|Arctic fox|2015-02-28T07:30:10-06:00
 106222|180710||Mammalia|Artiodactyla|Bovidae|Ovis|dalli||species|Nelson, 1884|Dall's sheep|2015-02-28T07:30:10-06:00
 106091|180701||Mammalia|Artiodactyla|Cervidae|Rangifer|tarandus||species|(Linnaeus, 1758)|caribou|2015-02-28T07:30:10-06:00
 105410|180543||Mammalia|Carnivora|Ursidae|Ursus|arctos||species|Linnaeus, 1758|grizzly bear|2015-02-28T07:30:10-06:00
-2327062|175804||Aves|Galliformes|Phasianidae|Lagopus|lagopus||species|(Linnaeus, 1758) |Willow Ptarmigan |2015-02-28T07:30:10-06:00
+2327062|175804||Aves|Galliformes|Phasianidae|Lagopus|lagopus||species|(Linnaeus, 1758)|Willow Ptarmigan|2015-02-28T07:30:10-06:00
 105409|180544||Mammalia|Carnivora|Ursidae|Ursus|americanus||species|Pallas, 1780|American black bear|2015-02-28T07:30:10-06:00
-106215|180713||Mammalia|Artiodactyla|Bovidae|Oreamnos|americanus||species|(de Blainville, 1816) |mountain goat|2015-02-28T07:30:10-06:00
+106215|180713||Mammalia|Artiodactyla|Bovidae|Oreamnos|americanus||species|(de Blainville, 1816)|mountain goat|2015-02-28T07:30:10-06:00
 109294|180139||Mammalia|Rodentia|Sciuridae|Marmota|caligata||species|(Eschscholtz, 1829)|hoary marmot|2015-02-28T07:30:10-06:00
 106221|180711||Mammalia|Artiodactyla|Bovidae|Ovis|canadensis||species|Shaw, 1804|bighorn sheep|2015-02-28T07:30:10-06:00
 351142|936196||Insecta|Lepidoptera|Saturniidae|Hyalophora|cecropia||species|(Linnaeus 1758)|Cecropia Moth|2015-02-28T07:30:10-06:00
 3925|179693||Aves|Passeriformes|Corvidae|Aphelocoma|coerulescens||species|(Bosc) 1795|Scrub Jay|2015-02-28T07:30:10-06:00
 193851|173858||Reptilia|Testudines|Testudinidae|Gopherus|polyphemus||species|(Daudin, 1802)|Gopher Tortoise|2015-02-28T07:30:10-06:00
-106166|180706||Mammalia|Artiodactyla|Bovidae|Bison|bison||species|(Linnaeus, 1758) |American bison|2015-02-28T07:30:10-06:00
-109369|180172||Mammalia|Rodentia|Sciuridae|Sciurus|niger||species|Linnaeus, 1758|eastern fox squirrel |2015-02-28T07:30:10-06:00
+106166|180706||Mammalia|Artiodactyla|Bovidae|Bison|bison||species|(Linnaeus, 1758)|American bison|2015-02-28T07:30:10-06:00
+109369|180172||Mammalia|Rodentia|Sciuridae|Sciurus|niger||species|Linnaeus, 1758|eastern fox squirrel|2015-02-28T07:30:10-06:00
 105460|180604||Mammalia|Carnivora|Canidae|Vulpes|vulpes||species|(Linnaeus, 1758)|red fox|2015-02-28T07:30:10-06:00
-105671|180553||Mammalia|Carnivora|Mustelidae|Mustela|vison||species|Schreber, 1777 |mink|2015-02-28T07:30:10-06:00
-11269110|179554||Aves|Passeriformes|Emberizidae|Paroaria|coronata||species|(J. F. Miller, 1776) |Red-crested Cardinal |2015-02-28T07:30:10-06:00
-8619|175394||Aves|Accipitriformes|Accipitridae|Buteo|solitarius||species|Peale 1848|Hawaiian Hawk |2015-02-28T07:30:10-06:00
+105671|180553||Mammalia|Carnivora|Mustelidae|Mustela|vison||species|Schreber, 1777|mink|2015-02-28T07:30:10-06:00
+11269110|179554||Aves|Passeriformes|Emberizidae|Paroaria|coronata||species|(J. F. Miller, 1776)|Red-crested Cardinal|2015-02-28T07:30:10-06:00
+8619|175394||Aves|Accipitriformes|Accipitridae|Buteo|solitarius||species|Peale 1848|Hawaiian Hawk|2015-02-28T07:30:10-06:00
 468881|183334||Pinopsida|Pinales|Pinaceae|Pinus|discolor||species|D.K. Bailey & Hawksw.|border pinyon|2015-02-28T07:30:10-06:00
 461581|35292||Magnoliopsida|Dipsacales|Caprifoliaceae|Lonicera|flava||species|Sims|yellow honeysuckle|2015-02-28T07:30:10-06:00
 467688|43199||Liliopsida|Liliales|Iridaceae|Iris|fulva||species|Ker Gawl.|copper iris|2015-02-28T07:30:10-06:00
@@ -1082,14 +1082,14 @@ ubioID|dcterms_identifier|dwc_kingdom|dwc_class|dwc_order|dwc_family|dwc_genus|d
 454476|26542||Magnoliopsida|Fabales|Fabaceae|Clitoria|mariana||species|L.|Atlantic pigeonwings|2015-02-28T07:30:10-06:00
 479638|524170||Magnoliopsida|Theales|Clusiaceae|Hypericum|hypericoides|multicaule|subspecies|(L.) Crantz|St. Andrew's cross|2015-02-28T07:30:10-06:00
 459083|32144||Magnoliopsida|Lamiales|Verbenaceae|Callicarpa|americana||species|L.|American beautyberry|2015-02-28T07:30:10-06:00
-8403113|780479||Magnoliopsida|Asterales|Asteraceae|Plectocephalus|americanus||species|(Nutt.) D. Don |American star-thistle |2015-02-28T07:30:10-06:00
+8403113|780479||Magnoliopsida|Asterales|Asteraceae|Plectocephalus|americanus||species|(Nutt.) D. Don|American star-thistle|2015-02-28T07:30:10-06:00
 475120|504291||Magnoliopsida|Fabales|Fabaceae|Phaseolus|polystachios||species|(L.) Britton, Sterns & Poggenb.|thicket bean|2015-02-28T07:30:10-06:00
 459937|33234||Magnoliopsida|Scrophulariales|Scrophulariaceae|Mimulus|alatus||species|Aiton|sharpwing monkeyflower|2015-02-28T07:30:10-06:00
 486186|566216||Magnoliopsida|Fabales|Fabaceae|Chamaecrista|fasciculata|fasciculata|variety|(Michx.) Greene|partridge pea|2015-02-28T07:30:10-06:00
 480723|526976||Magnoliopsida|Asterales|Asteraceae|Brickellia|eupatorioides|eupatorioides|variety|(L.) Shinners|false boneset|2015-02-28T07:30:10-06:00
 455937|28393||Magnoliopsida|Euphorbiales|Euphorbiaceae|Ricinus|communis||species|L.|castorbean|2015-02-28T07:30:10-06:00
 467923|43489||Liliopsida|Orchidales|Orchidaceae|Aplectrum|hyemale||species|(Muhl. ex Willd.) Torr.|Adam and Eve|2015-02-28T07:30:10-06:00
-5888449|565910||Magnoliopsida|Ranunculales|Ranunculaceae|Anemone|americana||species|H. Hara |roundlobe hepatica |2015-02-28T07:30:10-06:00
+5888449|565910||Magnoliopsida|Ranunculales|Ranunculaceae|Anemone|americana||species|H. Hara|roundlobe hepatica|2015-02-28T07:30:10-06:00
 483620|530043||Magnoliopsida|Rosales|Grossulariaceae|Ribes|aureum|villosum|variety|Pursh|golden currant|2015-02-28T07:30:10-06:00
 458926|31946||Magnoliopsida|Lamiales|Boraginaceae|Lithospermum|caroliniense||species|(Walter ex J.F. Gmel.) MacMill.|Carolina puccoon|2015-02-28T07:30:10-06:00
 460762|34300||Magnoliopsida|Scrophulariales|Orobanchaceae|Orobanche|uniflora||species|L.|oneflowered broomrape|2015-02-28T07:30:10-06:00
@@ -1107,8 +1107,8 @@ ubioID|dcterms_identifier|dwc_kingdom|dwc_class|dwc_order|dwc_family|dwc_genus|d
 656541|523837||Magnoliopsida|Fabales|Fabaceae|Chamaecrista|nictitans|nictitans|subspecies|(L.) Moench|sensitive partridge pea|2015-02-28T07:30:10-06:00
 460580|34037||Magnoliopsida|Scrophulariales|Scrophulariaceae|Scrophularia|marilandica||species|L.|carpenter's square|2015-02-28T07:30:10-06:00
 460077|33411||Magnoliopsida|Scrophulariales|Scrophulariaceae|Veronica|arvensis||species|L.|corn speedwell|2015-02-28T07:30:10-06:00
-1735379|524924||Magnoliopsida|Dipsacales|Dipsacaceae|Dipsacus|fullonum|sylvestris|subspecies|(Huds.) Clapham |Fuller's teasel|2015-02-28T07:30:10-06:00
-472306|501347||Magnoliopsida|Asterales|Asteraceae|Centaurea|biebersteinii||species|DC.|spotted knapweed |2015-02-28T07:30:10-06:00
+1735379|524924||Magnoliopsida|Dipsacales|Dipsacaceae|Dipsacus|fullonum|sylvestris|subspecies|(Huds.) Clapham|Fuller's teasel|2015-02-28T07:30:10-06:00
+472306|501347||Magnoliopsida|Asterales|Asteraceae|Centaurea|biebersteinii||species|DC.|spotted knapweed|2015-02-28T07:30:10-06:00
 463463|37931||Magnoliopsida|Asterales|Asteraceae|Liatris|mucronata||species|DC.|cusp blazing star|2015-02-28T07:30:10-06:00
 460611|34073||Magnoliopsida|Scrophulariales|Scrophulariaceae|Veronicastrum|virginicum||species|(L.) Farw.|Culver's root|2015-02-28T07:30:10-06:00
 483526|529935||Magnoliopsida|Lamiales|Lamiaceae|Pycnanthemum|verticillatum|pilosum|variety|(Michx.) Pers.|whorled mountainmint|2015-02-28T07:30:10-06:00
@@ -1117,7 +1117,7 @@ ubioID|dcterms_identifier|dwc_kingdom|dwc_class|dwc_order|dwc_family|dwc_genus|d
 449558|20770||Magnoliopsida|Caryophyllales|Amaranthaceae|Alternanthera|philoxeroides||species|(Mart.) Griseb.|alligatorweed|2015-02-28T07:30:10-06:00
 464290|38900||Liliopsida|Alismatales|Alismataceae|Echinodorus|cordifolius||species|(L.) Griseb.|creeping burhead|2015-02-28T07:30:10-06:00
 459039|32086||Magnoliopsida|Lamiales|Verbenaceae|Verbena|brasiliensis||species|Vell.|Brazilian vervain|2015-02-28T07:30:10-06:00
-1734603|524146||Magnoliopsida|Malvales|Malvaceae|Hibiscus|moscheutos|lasiocarpos|subspecies|(Cav.) O.J. Blanch.|crimsoneyed rosemallow |2015-02-28T07:30:10-06:00
+1734603|524146||Magnoliopsida|Malvales|Malvaceae|Hibiscus|moscheutos|lasiocarpos|subspecies|(Cav.) O.J. Blanch.|crimsoneyed rosemallow|2015-02-28T07:30:10-06:00
 1738111|527661||Magnoliopsida|Solanales|Solanaceae|Datura|stramonium|stramonium|variety|L.|jimsonweed|2015-02-28T07:30:10-06:00
 481396|527679||Magnoliopsida|Fabales|Fabaceae|Desmodium|paniculatum|paniculatum|variety|(L.) DC.|panicledleaf ticktrefoil|2015-02-28T07:30:10-06:00
 479113|522232||Magnoliopsida|Asterales|Asteraceae|Symphyotrichum|patens||species|(Aiton) G.L. Nesom|late purple aster|2015-02-28T07:30:10-06:00
@@ -1132,7 +1132,7 @@ ubioID|dcterms_identifier|dwc_kingdom|dwc_class|dwc_order|dwc_family|dwc_genus|d
 461621|35345||Magnoliopsida|Dipsacales|Caprifoliaceae|Triosteum|perfoliatum||species|L.|feverwort|2015-02-28T07:30:10-06:00
 447703|18547||Magnoliopsida|Ranunculales|Ranunculaceae|Delphinium|carolinianum||species|Walter|Carolina larkspur|2015-02-28T07:30:10-06:00
 449298|20446||Magnoliopsida|Caryophyllales|Portulacaceae|Talinum|calycinum||species|Engelm.|largeflower fameflower|2015-02-28T07:30:10-06:00
-612319|511164||Magnoliopsida|Lamiales|Lamiaceae|Clinopodium|glabrum||species|(Nutt.) Kuntze |limestone calamint|2015-02-28T07:30:10-06:00
+612319|511164||Magnoliopsida|Lamiales|Lamiaceae|Clinopodium|glabrum||species|(Nutt.) Kuntze|limestone calamint|2015-02-28T07:30:10-06:00
 462896|37154||Magnoliopsida|Asterales|Asteraceae|Coreopsis|tripteris||species|L.|tall tickseed|2015-02-28T07:30:10-06:00
 462528|36667||Magnoliopsida|Asterales|Asteraceae|Helianthus|occidentalis|occidentalis|subspecies|Riddell|fewleaf sunflower|2015-02-28T07:30:10-06:00
 451177|22652||Magnoliopsida|Capparales|Capparaceae|Polanisia|dodecandra||species|(L.) DC.|redwhisker clammyweed|2015-02-28T07:30:10-06:00
@@ -1142,13 +1142,13 @@ ubioID|dcterms_identifier|dwc_kingdom|dwc_class|dwc_order|dwc_family|dwc_genus|d
 462376|36500||Magnoliopsida|Asterales|Asteraceae|Ambrosia|bidentata||species|Michx.|lanceleaf ragweed|2015-02-28T07:30:10-06:00
 464063|38621||Magnoliopsida|Asterales|Asteraceae|Vernonia|arkansana||species|DC.|Arkansas ironweed|2015-02-28T07:30:10-06:00
 486309|566339||Magnoliopsida|Asterales|Asteraceae|Symphyotrichum|patens|patens|variety|(Aiton) G.L. Nesom|late purple aster|2015-02-28T07:30:10-06:00
-614551|513512||Magnoliopsida|Polygonales|Polygonaceae|Fallopia |scandens ||species|(L.) Holub|climbing false buckwheat |2015-02-28T07:30:10-06:00
+614551|513512||Magnoliopsida|Polygonales|Polygonaceae|Fallopia|scandens||species|(L.) Holub|climbing false buckwheat|2015-02-28T07:30:10-06:00
 479084|522199||Magnoliopsida|Asterales|Asteraceae|Symphyotrichum|drummondii||species|(Lindl.) G.L. Nesom|Drummond's aster|2015-02-28T07:30:10-06:00
 449247|20383||Magnoliopsida|Caryophyllales|Portulacaceae|Claytonia|arctica||species|M.F. Adams|arctic springbeauty|2015-02-28T07:30:10-06:00
 457196|29905||Magnoliopsida|Apiales|Apiaceae|Zizia|aptera||species|(A. Gray) Fernald|meadow zizia|2015-02-28T07:30:10-06:00
-8981169|823180||Magnoliopsida|Capparales|Brassicaceae|Boechera|laevigata||species|(Muhl. ex Willd.) Al-Shehbaz |smooth rockcress |2015-02-28T07:30:10-06:00
+8981169|823180||Magnoliopsida|Capparales|Brassicaceae|Boechera|laevigata||species|(Muhl. ex Willd.) Al-Shehbaz|smooth rockcress|2015-02-28T07:30:10-06:00
 447988|18889||Magnoliopsida|Papaverales|Papaveraceae|Papaver|dubium||species|L.|blindeyes|2015-02-28T07:30:10-06:00
-462642|36830||Magnoliopsida|Asterales|Asteraceae|Berlandiera|x betonicifolia ||species|(Hook.) Small (pro sp.) |Texas greeneyes|2015-02-28T07:30:10-06:00
+462642|36830||Magnoliopsida|Asterales|Asteraceae|Berlandiera|x betonicifolia||species|(Hook.) Small (pro sp.)|Texas greeneyes|2015-02-28T07:30:10-06:00
 455815|28257||Magnoliopsida|Euphorbiales|Euphorbiaceae|Cnidoscolus|texanus||species|(Mull. Arg.) Small|Texas bullnettle|2015-02-28T07:30:10-06:00
 454194|26191||Magnoliopsida|Fabales|Fabaceae|Robinia|hispida||species|L.|bristly locust|2015-02-28T07:30:10-06:00
 454433|26481||Magnoliopsida|Fabales|Fabaceae|Baptisia|nuttalliana||species|Small|Nuttall's wild indigo|2015-02-28T07:30:10-06:00
@@ -1161,14 +1161,14 @@ ubioID|dcterms_identifier|dwc_kingdom|dwc_class|dwc_order|dwc_family|dwc_genus|d
 450457|21785||Magnoliopsida|Malvales|Malvaceae|Callirhoe|involucrata||species|(Torr. & A. Gray) A. Gray|purple poppymallow|2015-02-28T07:30:10-06:00
 462890|37148||Magnoliopsida|Asterales|Asteraceae|Coreopsis|palmata||species|Nutt.|stiff tickseed|2015-02-28T07:30:10-06:00
 455112|27369||Magnoliopsida|Myrtales|Onagraceae|Oenothera|fruticosa||species|L.|narrowleaf evening primrose|2015-02-28T07:30:10-06:00
-8750259|820892||Magnoliopsida|Fabales|Fabaceae|Baptisia|lactea |lactea |variety|(Raf.) Thieret |largeleaf wild indigo |2015-02-28T07:30:10-06:00
+8750259|820892||Magnoliopsida|Fabales|Fabaceae|Baptisia|lactea|lactea|variety|(Raf.) Thieret|largeleaf wild indigo|2015-02-28T07:30:10-06:00
 482489|528821||Magnoliopsida|Linales|Linaceae|Linum|medium|texanum|variety|(Planch.) Britton|stiff yellow flax|2015-02-28T07:30:10-06:00
 462249|36352||Magnoliopsida|Asterales|Asteraceae|Cirsium|carolinianum||species|(Walter) Fernald & B.G. Schub.|soft thistle|2015-02-28T07:30:10-06:00
 453831|25800||Magnoliopsida|Fabales|Fabaceae|Desmodium|glutinosum||species|(Muhl. ex Willd.) Alph. Wood|pointedleaf ticktrefoil|2015-02-28T07:30:10-06:00
 475580|504764||Magnoliopsida|Fabales|Fabaceae|Rhynchosia|latifolia||species|Nutt. ex Torr. & A. Gray|prairie snoutbean|2015-02-28T07:30:10-06:00
-|894243||Magnoliopsida|Gentianales|Asclepiadaceae|Gonolobus|suberosus |suberosus |variety|(L.) Br. |anglepod|2015-02-28T07:30:10-06:00
+|894243||Magnoliopsida|Gentianales|Asclepiadaceae|Gonolobus|suberosus|suberosus|variety|(L.) Br.|anglepod|2015-02-28T07:30:10-06:00
 456462|29096||Magnoliopsida|Geraniales|Oxalidaceae|Oxalis|suksdorfii||species|Trel.|Suksdorf woodsorrel|2015-02-28T07:30:10-06:00
-635462|565664||Magnoliopsida|Asterales|Asteraceae|Bradburia |pilosa ||species|(Nutt.) Semple |soft goldenaster |2015-02-28T07:30:10-06:00
+635462|565664||Magnoliopsida|Asterales|Asteraceae|Bradburia|pilosa||species|(Nutt.) Semple|soft goldenaster|2015-02-28T07:30:10-06:00
 455700|28060||Magnoliopsida|Euphorbiales|Euphorbiaceae|Euphorbia|cyathophora||species|Murray|fire on the mountain|2015-02-28T07:30:10-06:00
 462079|36061||Magnoliopsida|Asterales|Asteraceae|Pluchea|camphorata||species|(L.) DC.|camphor pluchea|2015-02-28T07:30:10-06:00
 8834190|36588||Magnoliopsida|Asterales|Asteraceae|Arnoglossum|reniforme||species|(Hook.) H. Rob.|great Indian plantain|2015-02-28T07:30:10-06:00
