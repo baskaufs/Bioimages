@@ -56,6 +56,8 @@ Saves the current dateTime in the file last-published.xml to record the time whe
 
 Need to hack the modified-organism-file.xq query to determine which image files need to be re-written based on the lastModified dates.
 
+Check on identificationRemarks.  They aren't displayed on static pages and for individuals on javascript-generated page. Missing <br/> on javascript image page.
+
 ----------
 **generate.bat**
 
