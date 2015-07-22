@@ -1,0 +1,24 @@
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX ac: <http://rs.tdwg.org/ac/terms/>
+PREFIX dwc: <http://rs.tdwg.org/dwc/terms/>
+PREFIX dwciri: <http://rs.tdwg.org/dwc/iri/>
+PREFIX dsw: <http://purl.org/dsw/>
+PREFIX Iptc4xmpExt: <http://iptc.org/std/Iptc4xmpExt/2008-02-29/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+SELECT (COUNT(?subject) AS ?count)
+FROM <http://rdf.library.vanderbilt.edu/bioimages/images.rdf>
+FROM <http://rdf.library.vanderbilt.edu/bioimages/organisms.rdf>
+FROM <http://rdf.library.vanderbilt.edu/bioimages/baskauf.rdf>
+FROM <http://rdf.library.vanderbilt.edu/bioimages/thomas.rdf>
+FROM <http://rdf.library.vanderbilt.edu/bioimages/uri.rdf>
+FROM <http://rdf.library.vanderbilt.edu/bioimages/kirchoff.rdf>
+FROM <http://rdf.library.vanderbilt.edu/bioimages/ncu-all.rdf>
+FROM <http://rdf.library.vanderbilt.edu/bioimages/dsw.owl>
+FROM <http://rdf.library.vanderbilt.edu/bioimages/dwcterms.rdf>
+FROM <http://rdf.library.vanderbilt.edu/bioimages/local.rdf>
+FROM <http://rdf.library.vanderbilt.edu/bioimages/stdview.rdf>
+WHERE {
+ ?subject ?predicate ?object.
+}

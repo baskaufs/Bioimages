@@ -1,0 +1,11 @@
+query=PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+CONSTRUCT {?resource a ?class}
+WHERE {
+ ?property rdfs:domain ?class.
+ ?resource ?property ?object.
+ ?property dc:creator "Steve Baskauf".
+ MINUS {?resource a ?class.}
+}
+
+LIMIT 5

@@ -1,0 +1,9 @@
+query=PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dsw: <http://purl.org/dsw/>
+CONSTRUCT {?object dsw:locates ?subject}
+WHERE {
+ ?subject dsw:locatedAt ?object.
+ MINUS {?object dsw:locates ?subject.}
+}
+
+LIMIT 5

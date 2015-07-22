@@ -1,0 +1,28 @@
+query=
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX ac: <http://rs.tdwg.org/ac/terms/>
+PREFIX dwc: <http://rs.tdwg.org/dwc/terms/>
+PREFIX dsw: <http://purl.org/dsw/>
+PREFIX Iptc4xmpExt: <http://iptc.org/std/Iptc4xmpExt/2008-02-29/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+SELECT DISTINCT ?uri ?image ?title WHERE {
+?identification dwc:genus "Quercus".
+?identification dwc:specificEpithet "alba".
+?organism dsw:hasIdentification ?identification.
+?organism foaf:depiction ?image.
+?organism dsw:hasOccurrence ?occurrence.
+?occurrence dsw:atEvent ?event.
+?event dsw:locatedAt ?location.
+?location dwc:stateProvince "Tennessee".
+?image Iptc4xmpExt:CVterm ?view.
+?view rdfs:subClassOf ?featureCategory.
+?featureCategory rdfs:label "leaf".
+?image ac:hasServiceAccessPoint ?sap.
+?sap ac:accessURI ?uri.
+?sap ac:variant ac:Thumbnail.
+?image dcterms:title ?title.
+}
+LIMIT 10
+
+

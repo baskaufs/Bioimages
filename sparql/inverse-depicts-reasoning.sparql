@@ -1,0 +1,9 @@
+query=PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+CONSTRUCT {?object foaf:depiction ?subject}
+WHERE {
+ ?subject foaf:depicts ?object.
+ MINUS {?object foaf:depiction ?subject.}
+}
+
+LIMIT 5
