@@ -48,6 +48,7 @@ declare function local:get-taxon-name-markup
     $nameRecord in $name,
     $sensuRecord in $sensu
   where $detRecord/dsw_identified=$orgID and $nameRecord/dcterms_identifier=$detRecord/tsnID and $sensuRecord/dcterms_identifier=$detRecord/nameAccordingToID
+  order by $detRecord/dwc_dateIdentified/text() descending
   let $organismScreen := $detRecord/dsw_identified/text()
   group by $organismScreen
   return if ($nameRecord[1]/dwc_taxonRank/text() = "species")
@@ -71,6 +72,7 @@ declare function local:get-taxon-name-clean
     $nameRecord in $name,
     $sensuRecord in $sensu
   where $detRecord/dsw_identified=$orgID and $nameRecord/dcterms_identifier=$detRecord/tsnID and $sensuRecord/dcterms_identifier=$detRecord/nameAccordingToID
+  order by $detRecord/dwc_dateIdentified/text() descending
   let $organismScreen := $detRecord/dsw_identified/text()
   group by $organismScreen
   return if ($nameRecord[1]/dwc_taxonRank/text() = "species")
