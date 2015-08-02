@@ -355,6 +355,9 @@ return (file:create-dir(concat($rootPath,"\",$namespace)), file:write($filePath,
           where $agentRecord/dcterms_identifier=$detRecord/identifiedBy
           return <a href="{$agentRecord/contactURL/text()}">{$agentRecord/dc_contributor/text()}</a>
         }</h6>,
+        if ($detRecord/dwc_identificationRemarks/text())
+        then (<br/>,<span>Identification remarks: {$detRecord/dwc_identificationRemarks/text()}</span>)
+        else (),
         <br/>,
         <br/>
       ),

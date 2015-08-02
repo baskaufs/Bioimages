@@ -62,7 +62,7 @@ let $lastPublished := $lastPublishedDoc/body/dcterms:modified/text()
 (: use this if last published doc doesn't exist:  
 let $lastPublished := '2000-01-01T00:00:00-00:00'
 :)
-return (file:write(concat($localFilesFolderPC,"\organisms-to-write.txt"),
+return (file:write(concat($localFilesFolderPC,"\images-to-write.txt"),
         for $orgRecord in $xmlOrganisms/csv/record, 
             $detRecord in $xmlDeterminations/csv/record, 
             $imgRecord in $xmlImages/csv/record
@@ -73,6 +73,6 @@ return (file:write(concat($localFilesFolderPC,"\organisms-to-write.txt"),
         where ($chkOrg or $chkDet or $chkImg) 
            and $detRecord/dsw_identified/text()=$orgRecord/dcterms_identifier/text() 
            and $orgRecord/dcterms_identifier/text()=$imgRecord/foaf_depicts/text()
-        return ($orgRecord/dcterms_identifier/text(),"&#10;")
+        return ($imgRecord/dcterms_identifier/text(),"&#10;")
 ))
 
