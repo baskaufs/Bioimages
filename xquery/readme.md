@@ -14,6 +14,11 @@ Determines which organism records need to be rewritten based on whether lastModi
 
 ----------
 
+**modified-image-file.xq** 
+
+Determines which image records need to be rewritten based on whether lastModified dates are more recent than the last time the website was published.  The IRIs of the organisms are written into the file images-to-write.txt .  NOTE: this is a hack of the file above and as of 2015-08-02 hasn't been thoroughly tested yet.
+
+----------
 **organism-html.xq**
 
 Generates the static XHTML web pages for organisms whose IRIs are present in organisms-to-write.txt .
@@ -27,7 +32,7 @@ Generates the static RDF/XML files for organisms whose IRIs are present in organ
 ----------
 **images.xq**
 
-Generates the static XHTML web pages and RDF/XML files for organisms whose IRIs are present in images-to-write.txt . **Note: because of the large size of the image source file, this query may cause an out of memory error for computers with less than 8 GB of memory.  It cannot be run from the BaseX GUI without generating an out of memory error.**
+Generates the static XHTML web pages and RDF/XML files for organisms whose IRIs are present in images-to-write.txt . **Note: because of the large size of the image source file, this query may cause an out of memory error for computers with less than 8 GB of memory.  It cannot be run from the BaseX GUI without generating an out of memory error.**  Note on 2015-08-02: it is now running at the command line from a 4 GB machine.  Don't know if that is caused by a BaseX upgrade?  Need to monitor this.
 
 ----------
 **index-rss.xq**
@@ -54,9 +59,9 @@ Saves the current dateTime in the file last-published.xml to record the time whe
 ----------
 **ToDo**
 
-Need to hack the modified-organism-file.xq query to determine which image files need to be re-written based on the lastModified dates.
+Check on identificationRemarks.  They aren't displayed on on javascript-generated page. 
 
-Check on identificationRemarks.  They aren't displayed on static pages and for individuals on javascript-generated page. Missing <br/> on javascript image page.
+Missing break tag on javascript image page.
 
 ----------
 **generate.bat**
