@@ -143,7 +143,11 @@ return (
 <br/>
 common name: {$name/dwc_vernacularName/text()}<br/>
 family: {$name/dwc_family/text()}<br/>
-<h6><em>Identified </em>{$det/dwc_dateIdentified/text()}<em> by </em> <a href="{$agent/contactURL/text()}">{$agent/dc_contributor/text()}</a></h6><br/><br/>
+<h6><em>Identified </em>{$det/dwc_dateIdentified/text()}<em> by </em> <a href="{$agent/contactURL/text()}">{$agent/dc_contributor/text()}</a></h6>
+        if ($det/dwc_identificationRemarks/text())
+        then (<br/><span>Identification remarks: {$det/dwc_identificationRemarks/text()}</span>)
+        else (),
+<br/><br/>
         </div>
         )
 };
