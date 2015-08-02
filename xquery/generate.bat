@@ -4,5 +4,5 @@ START /WAIT basex image.xq
 START /WAIT basex index-files.xq
 START /WAIT basex index-rss.xq
 START /WAIT basex index-sitemap.xq
-START /WAIT basex save-published-date.cdxq
+START /WAIT basex save-published-date.xq
 
