@@ -295,7 +295,7 @@ return (file:create-dir(concat($rootPath,"\",$namespace)), file:write($filePath,
            )
       else (),
 
-      <h5><em>This particular individual is believed to have </em><strong>{$orgRecord/dwc_establishmentMeans/text()}</strong> means of establishment.</h5>,
+      <h5><em>This particular individual is believed to have </em><strong>{$orgRecord/dwc_establishmentMeans/text()}</strong> <em>means of establishment</em>.</h5>,
       <br/>,
 
       if ($orgRecord/dwc_organismName/text() != "")
