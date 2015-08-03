@@ -69,3 +69,11 @@ Missing break tag on javascript image page.
 NOTE: at the moment, this doesn't work well.
  
 Batch file to run sequentially the queries that generate site files using BaseX from the command line.  It does not currently run the queries that determine which files have been modified and need to be published.  Make sure that the folder containing basex.bat is in the PATH. 
+
+----------
+**image-rdf-all-hack.xq**
+A hack of images.xq that writes all of the image RDF into a single file images.rdf in the c:\test directory.  Must be run from the command line for the same reason as images.xq .
+
+----------
+**organism-rdf-all-hack.xq**
+A hack of organism-rdf.xq that writes all of the organism RDF into a single file organisms.rdf in the c:\test directory.  
