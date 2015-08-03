@@ -124,16 +124,16 @@ return (
         <div>
 <h2>{
       if ($name/dwc_taxonRank/text() = "species")
-             then (<em>{$name/dwc_genus/text()||" "||$name/dwc_specificEpithet/text()}</em>," ("||$name/dwc_vernacularName/text()||")")
+             then (<em>{$name/dwc_genus/text()||" "||$name/dwc_specificEpithet/text()}</em>)
              else 
                if ($name/dwc_taxonRank/text() = "genus")
-               then (<em>{$name/dwc_genus/text()}</em>," sp. ("||$name/dwc_vernacularName/text(),")")
+               then (<em>{$name/dwc_genus/text()}</em>," sp.")
                else 
                  if ($name/dwc_taxonRank/text() = "subspecies")
-                 then (<em>{$name/dwc_genus/text()||" "||$name/dwc_specificEpithet/text()}</em>," ssp. ",<em>{$name/dwc_infraspecificEpithet/text()}</em>, " (", $name/dwc_vernacularName/text(),")")
+                 then (<em>{$name/dwc_genus/text()||" "||$name/dwc_specificEpithet/text()}</em>," ssp. ",<em>{$name/dwc_infraspecificEpithet/text()}</em>)
                  else
                    if ($name/dwc_taxonRank/text() = "variety")
-                   then (<em>{$name/dwc_genus/text()||" "||$name/dwc_specificEpithet/text()}</em>," var. ",<em>{$name/dwc_infraspecificEpithet/text()}</em>, " (", $name/dwc_vernacularName/text(),")")
+                   then (<em>{$name/dwc_genus/text()||" "||$name/dwc_specificEpithet/text()}</em>," var. ",<em>{$name/dwc_infraspecificEpithet/text()}</em>)
                    else ()
           }</h2>&#32;<h3>{$name/dwc_scientificNameAuthorship/text()}</h3>&#32;<h6>{
            if ($sensu/dcterms_identifier/text() != "nominal")

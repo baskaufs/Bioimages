@@ -327,16 +327,16 @@ return (file:create-dir(concat($rootPath,"\",$namespace)), file:write($filePath,
       return (
       <h2>{
       if ($nameRecord/dwc_taxonRank/text() = "species")
-             then (<em>{$nameRecord/dwc_genus/text()||" "||$nameRecord/dwc_specificEpithet/text()}</em>," ("||$nameRecord/dwc_vernacularName/text()||")")
+             then (<em>{$nameRecord/dwc_genus/text()||" "||$nameRecord/dwc_specificEpithet/text()}</em>)
              else 
                if ($nameRecord/dwc_taxonRank/text() = "genus")
-               then (<em>{$nameRecord/dwc_genus/text()}</em>," sp. ("||$nameRecord/dwc_vernacularName/text(),")")
+               then (<em>{$nameRecord/dwc_genus/text()}</em>," sp.")
                else 
                  if ($nameRecord/dwc_taxonRank/text() = "subspecies")
-                 then (<em>{$nameRecord/dwc_genus/text()||" "||$nameRecord/dwc_specificEpithet/text()}</em>," ssp. ",<em>{$nameRecord/dwc_infraspecificEpithet/text()}</em>, " (", $nameRecord/dwc_vernacularName/text(),")")
+                 then (<em>{$nameRecord/dwc_genus/text()||" "||$nameRecord/dwc_specificEpithet/text()}</em>," ssp. ",<em>{$nameRecord/dwc_infraspecificEpithet/text()}</em>)
                  else
                    if ($nameRecord/dwc_taxonRank/text() = "variety")
-                   then (<em>{$nameRecord/dwc_genus/text()||" "||$nameRecord/dwc_specificEpithet/text()}</em>," var. ",<em>{$nameRecord/dwc_infraspecificEpithet/text()}</em>, " (", $nameRecord/dwc_vernacularName/text(),")")
+                   then (<em>{$nameRecord/dwc_genus/text()||" "||$nameRecord/dwc_specificEpithet/text()}</em>," var. ",<em>{$nameRecord/dwc_infraspecificEpithet/text()}</em>)
                    else ()
         }</h2>,
         <span> </span>,
