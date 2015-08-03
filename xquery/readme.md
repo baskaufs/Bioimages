@@ -8,13 +8,13 @@ The following lists the query files and their use:
 
 ----------
 
-**modified-organism-file.xq** 
+**modified-organisms-file.xq** 
 
 Determines which organism records need to be rewritten based on whether lastModified dates are more recent than the last time the website was published.  The IRIs of the organisms are written into the file organisms-to-write.txt .
 
 ----------
 
-**modified-image-file.xq** 
+**modified-images-file.xq** 
 
 Determines which image records need to be rewritten based on whether lastModified dates are more recent than the last time the website was published.  The IRIs of the organisms are written into the file images-to-write.txt .  NOTE: this is a hack of the file above and as of 2015-08-02 hasn't been thoroughly tested yet.
 
