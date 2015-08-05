@@ -202,6 +202,8 @@ xmlns:blocal="http://bioimages.vanderbilt.edu/rdf/local#"
             $nameRecord in $xmlNames/csv/record,
             $sensuRecord in $xmlSensu/csv/record
         where $detRecord/dsw_identified=$orgRecord/dcterms_identifier and $nameRecord/dcterms_identifier=$detRecord/tsnID and $sensuRecord/dcterms_identifier=$detRecord/nameAccordingToID
+        (: Note: the determinations must be saved in order of descending dateIdentified in order for them to be displayed correctly on the pages that display dynamically by Javascript :)
+        order by $detRecord/dwc_dateIdentified/text() descending
         return <dsw:hasIdentification><rdf:Description rdf:about="{$orgRecord/dcterms_identifier/text()||"#"||$detRecord/dwc_dateIdentified/text()||$detRecord/identifiedBy/text()}">{
                   if ($nameRecord/dwc_taxonRank/text() = "species")
                   then <dcterms:description xml:lang="en">Determination of {$nameRecord/dwc_genus/text()||" "||$nameRecord/dwc_specificEpithet/text()||" sec. "||$sensuRecord/tcsSignature/text()}</dcterms:description>

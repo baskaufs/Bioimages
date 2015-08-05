@@ -98,6 +98,7 @@ return (
                                             <em>{$org/dwc_establishmentMeans/text()}</em>,
                                             for $det in $xmlDeterminations//record
                                             where $det/dsw_identified/text()=$org/dcterms_identifier/text()
+                                            order by $det/dwc_dateIdentified/text() descending
                                             return (<taxonID>{$det/tsnID/text()}</taxonID>),
                                             for $img in $xmlImages//record
                                             where $img/foaf_depicts/text()=$org/dcterms_identifier/text()
