@@ -80,7 +80,7 @@ xmlns:blocal="http://bioimages.vanderbilt.edu/rdf/local#"
       <rdf:type rdf:resource="http://rs.tdwg.org/dwc/terms/Organism"/>,
       <rdf:type rdf:resource="http://purl.org/dc/terms/PhysicalResource"/>,
       if ($orgRecord/dwc_collectionCode/text() != "")
-      then <dcterms:type rdf:resource="http://rs.tdwg.org/dwc/terms/LivingSpecimen"/>
+      then <rdf:type rdf:resource="http://rs.tdwg.org/dwc/terms/LivingSpecimen"/>
       else (),
       <!--Basic information about the organism-->,
       <dcterms:identifier>{$orgRecord/dcterms_identifier/text()}</dcterms:identifier>,
@@ -187,7 +187,6 @@ xmlns:blocal="http://bioimages.vanderbilt.edu/rdf/local#"
       if ($orgRecord/dwc_collectionCode/text() != "")
       then (
            <!-- The LivingSpecimen serves as evidence for the Occurrence documenting itself as an Organism -->,
-           <dcterms:type rdf:resource="http://rs.tdwg.org/dwc/terms/LivingSpecimen"/>,
            <dsw:hasOccurrence>
                <rdf:Description rdf:about='{$orgRecord/dcterms_identifier/text()||"#occ"}'>{
                <rdf:type rdf:resource="http://rs.tdwg.org/dwc/terms/Occurrence"/>,
