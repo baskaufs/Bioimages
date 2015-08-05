@@ -16,7 +16,7 @@ Determines which organism records need to be rewritten based on whether lastModi
 
 **modified-images-file.xq** 
 
-Determines which image records need to be rewritten based on whether lastModified dates are more recent than the last time the website was published.  The IRIs of the organisms are written into the file images-to-write.txt .  NOTE: this is a hack of the file above and as of 2015-08-02 hasn't been thoroughly tested yet.
+Determines which image records need to be rewritten based on whether lastModified dates are more recent than the last time the website was published.  The IRIs of the organisms are written into the file images-to-write.txt .  
 
 ----------
 **organism-html.xq**
@@ -54,14 +54,6 @@ Generates the local XML index files needed for the Javascript to generate the si
 **save-published-date.xq**
 
 Saves the current dateTime in the file last-published.xml to record the time when the site was published.
-
-
-----------
-**ToDo**
-
-Check on identificationRemarks.  They aren't displayed on on javascript-generated page. 
-
-Missing break tag on javascript image page.
 
 ----------
 **generate.bat**
