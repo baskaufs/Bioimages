@@ -17,6 +17,7 @@ declare namespace blocal="http://bioimages.vanderbilt.edu/rdf/local#";
 
 (:
 TODO: subtract one from the local variable so that it starts incrementing from zero
+EarliestDateCollected and LatestDateCollected doesn't really work.
 :)
 
 (:
@@ -128,14 +129,15 @@ return (
         for $depiction in $xmlImages/csv/record
         where $depiction/foaf_depicts=$orgRecord/dcterms_identifier
         let $occurrenceDate := substring($depiction/dcterms_created/text(),1,10)
-        group by $occurrenceDate
-        order by $occurrenceDate
+        let $orgGroup := $depiction/foaf_depicts
+        group by $orgGroup
+        (:order by $occurrenceDate:)
         return (
                for $agent in $xmlAgents/csv/record
                where $agent/dcterms_identifier/text()=$depiction[1]/photographerCode/text()
                return (<dwc:Collector>{$agent/dc_contributor/text()}</dwc:Collector>),
-               <dwc:EarliestDateCollected>{$occurrenceDate}</dwc:EarliestDateCollected>,
-               <dwc:LatestDateCollected>{$occurrenceDate}</dwc:LatestDateCollected>,
+               <dwc:EarliestDateCollected>{$occurrenceDate[1]}</dwc:EarliestDateCollected>,
+               <dwc:LatestDateCollected>{$occurrenceDate[last()]}</dwc:LatestDateCollected>,
 
                if ($orgRecord/dwc_decimalLatitude/text() != "")
                then (
@@ -160,56 +162,3 @@ return (
   }</insert>
 </mb:request>
                )
-(:               ),
-
-      file:write(concat($rootPath,"\list\metadata-ind.xml"),
-                <DarwinRecordSet>{
-                        for $org in $xmlOrganisms//record
-                        order by $org/dcterms_identifier
-                        let $orgID := $org/dcterms_identifier/text()
-                        group by $orgID
-                        return (
-                                <Individual>{
-                                    let $localID := local:substring-after-last($orgID,"/")
-                                    let $temp1 := substring-before($orgID,concat("/",$localID))
-                                    let $namespace := local:substring-after-last($temp1,"/")
-                                    return (
-                                            <cc>{$namespace}</cc>,
-                                            <cn>{$localID}</cn>,
-                                            <em>{$org/dwc_establishmentMeans/text()}</em>,
-                                            for $det in $xmlDeterminations//record
-                                            where $det/dsw_identified/text()=$org/dcterms_identifier/text()
-                                            order by $det/dwc_dateIdentified/text() descending
-                                            return (<taxonID>{$det/tsnID/text()}</taxonID>),
-                                            for $img in $xmlImages//record
-                                            where $img/foaf_depicts/text()=$org/dcterms_identifier/text()
-                                            return (
-                                                <dO>{
-                                                    let $imgID := $img/dcterms_identifier/text()
-                                                    let $imgLocalID := local:substring-after-last($imgID,"/")
-                                                    let $temp2 := substring-before($imgID,concat("/",$imgLocalID))
-                                                    let $imgNamespace := local:substring-after-last($temp2,"/")
-                                                    return (
-                                                      <n>{$imgNamespace}</n>,
-                                                      <i>{$imgLocalID}</i>,
-                                                      <f>{$img/fileName/text()}</f>,
-                                                      <v>{substring($img/view/text(),2)}</v>
-                                                          )
-                                                }</dO>
-                                                   )
-                                           )
-                               }</Individual>
-                               )       
-                }</DarwinRecordSet>
-            ),
-
-      file:write(concat($rootPath,"\status.xml"),
-                <root>{
-                   <individuals>{count($xmlOrganisms//record)}</individuals>,
-                   <images>{count($xmlImages//record)}</images>,
-                   <taxonNames>{count($xmlNames//record)}</taxonNames>,
-                   <lastModified>{fn:current-dateTime()}</lastModified>
-                }</root>
-            ) 
-
-) :)
