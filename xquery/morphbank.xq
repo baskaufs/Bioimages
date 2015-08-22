@@ -16,8 +16,8 @@ declare namespace geo="http://www.w3.org/2003/01/geo/wgs84_pos#";
 declare namespace blocal="http://bioimages.vanderbilt.edu/rdf/local#";
 
 (:
-TODO: subtract one from the local variable so that it starts incrementing from zero
-EarliestDateCollected and LatestDateCollected doesn't really work.
+This has no contingency for organisms with no cameo (i.e. standardImage).  It creates an empty element for the external ID.  This should not be a problem for new images since they will all have a default cameo assigned.
+TODO: EarliestDateCollected and LatestDateCollected doesn't really work.
 :)
 
 (:
@@ -74,6 +74,12 @@ let $lastPublished := $lastPublishedDoc/body/dcterms:modified/text()
 let $organismsToWriteDoc := file:read-text(concat('file:///',$localFilesFolderUnix,'/organisms-to-write.txt'))
 let $xmlOrganismsToWrite := csv:parse($organismsToWriteDoc, map { 'header' : false() })
 
+let $imagesToWriteDoc := file:read-text(concat('file:///',$localFilesFolderUnix,'/images-to-write.txt'))
+let $xmlImagesToWrite := csv:parse($imagesToWriteDoc, map { 'header' : false() })
+
+let $licenseDoc := fn:doc('https://raw.githubusercontent.com/baskaufs/Bioimages/master/license.xml')
+let $licenseCategory := $licenseDoc/license/category
+
 let $stdViewDoc := fn:doc('https://raw.githubusercontent.com/baskaufs/Bioimages/master/stdview.xml')
 let $viewCategory := $stdViewDoc/view/viewGroup/viewCategory
 
@@ -101,12 +107,12 @@ where $orgRecord/dcterms_identifier/text() = $organismsToWrite
 return (
       <object type="specimen">{
         <sourceId>
-        <local>{"local:"||$position}</local>
-        <external>{$orgRecord/dcterms_identifier/text()}</external>
+          <local>{"local:"||xs:string(xs:integer($position)-1)}</local>
+          <external>{$orgRecord/dcterms_identifier/text()}</external>
         </sourceId>,
         <owner>
-        <userId>{$userId}</userId>
-        <groupId>{$groupId}</groupId>
+          <userId>{$userId}</userId>
+          <groupId>{$groupId}</groupId>
         </owner>,
         <dateToPublish>{fn:adjust-date-to-timezone(current-date(), ())}</dateToPublish>,
         <objectTypeId>Specimen</objectTypeId>,
@@ -141,8 +147,8 @@ return (
 
                if ($orgRecord/dwc_decimalLatitude/text() != "")
                then (
-                   <dwc:DecimalLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">{$orgRecord/dwc_decimalLatitude/text()}</dwc:DecimalLatitude>,
-                   <dwc:DecimalLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">{$orgRecord/dwc_decimalLongitude/text()}</dwc:DecimalLongitude>
+                   <dwc:DecimalLatitude>{$orgRecord/dwc_decimalLatitude/text()}</dwc:DecimalLatitude>,
+                   <dwc:DecimalLongitude>{$orgRecord/dwc_decimalLongitude/text()}</dwc:DecimalLongitude>
                     )
                else (),
                
@@ -158,7 +164,50 @@ return (
                <dwc:Locality>{$depiction[1]/dwc_locality/text()}</dwc:Locality>
                )      
       }</object>
-    )
+    ),
+    
+for $imgRecord at $position in $xmlImages//record, $imagesToWrite in distinct-values($xmlImagesToWrite//record/entry)
+where $imgRecord/dcterms_identifier/text() = $imagesToWrite
+let $nOrganisms := count(distinct-values($xmlOrganismsToWrite/csv/record))-1
+return (
+      <object type="image">{
+        <sourceId>
+          <local>{"local:"||xs:string(xs:integer($position)+$nOrganisms)}</local>
+          <external>{$imgRecord/dcterms_identifier/text()}</external>
+        </sourceId>,
+        <owner>
+          <userId>{$userId}</userId>
+          <groupId>{$groupId}</groupId>
+        </owner>,
+        <dateToPublish>{fn:adjust-date-to-timezone(current-date(), ())}</dateToPublish>,
+        <objectTypeId>Image</objectTypeId>,
+        <externalRef type="5">{
+          <label>{"Image metadata for GUID "||$imgRecord/dcterms_identifier/text()}</label>,
+          <urlData>{$imgRecord/dcterms_identifier/text()}</urlData>
+        }</externalRef>,
+       <imageType>jpg</imageType>,
+       
+       <copyrightText>{$imgRecord/dc_rights/text()}</copyrightText>,
+       <originalFileName>{$imgRecord/fileName/text()}</originalFileName>,       
+       <creativeCommons>&lt;a href="{$licenseCategory[@id=$imgRecord/usageTermsIndex/text()]/IRI/text()}" rel="license"&gt; &lt;img src="{$licenseCategory[@id=$imgRecord/usageTermsIndex/text()]/thumb/text()}" style="border-width: 0pt;" alt="Creative Commons License"/&gt; &lt;/a&gt;</creativeCommons>,
+       
+        for $agent in $xmlAgents//record
+        where $agent/dcterms_identifier=$imgRecord/photographerCode
+        return (
+              <photographer>{$agent/dc_contributor/text()}</photographer>
+              ),
+
+      <specimen>
+      <external>{$imgRecord/foaf_depicts/text()}</external>
+      </specimen>,
+      <view>
+      <morphbank>{$viewCategory/stdview[@id=substring($imgRecord/view/text(),2)]/text()}</morphbank>
+      </view>
+      
+      }</object>    
+      )
+
+
   }</insert>
 </mb:request>
                )
