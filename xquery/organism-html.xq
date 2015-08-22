@@ -378,9 +378,9 @@ return (file:create-dir(concat($rootPath,"\",$namespace)), file:write($filePath,
         <a target="top" href="http://maps.google.com/maps?output=classic&amp;q=loc:{$orgRecord/dwc_decimalLatitude/text()},{$orgRecord/dwc_decimalLongitude/text()}&amp;t=h&amp;z=16">{$orgRecord/dwc_decimalLatitude/text()}&#176;, {$orgRecord/dwc_decimalLongitude/text()}&#176;</a>,
         <br/>,
         <h6>Coordinate uncertainty about:  {$depiction[1]/dwc_coordinateUncertaintyInMeters/text()}  m.  </h6>,
-        if ($orgRecord/geo_alt/text() != "-9999")
+        if ($orgRecord/geo_alt/text() != "")
         then (
-              <h6>Altitude: {$orgRecord/geo_alt/text()}.  </h6>
+              <h6>Altitude: {$orgRecord/geo_alt/text()} m.  </h6>
              )
         else (),
         <br/>,

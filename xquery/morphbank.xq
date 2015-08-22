@@ -17,6 +17,8 @@ declare namespace blocal="http://bioimages.vanderbilt.edu/rdf/local#";
 
 (:
 This has no contingency for organisms with no cameo (i.e. standardImage).  It creates an empty element for the external ID.  This should not be a problem for new images since they will all have a default cameo assigned.
+This has no contingency for contributors that don't have Morphbank User IDs. It will generate an empty element
+if an agent doesn't have one.
 TODO: EarliestDateCollected and LatestDateCollected doesn't really work.
 :)
 
@@ -35,10 +37,13 @@ declare function local:substring-after-last
 
 let $localFilesFolderUnix := "c:/test"
 
+let $localFilesFolderPC := "c:\test"
+
 (: Create root folder if it doesn't already exist. :)
 let $rootPath := "c:\bioimages"
 (: "file:create-dir($dir as xs:string) as empty-sequence()" will create a directory or do nothing if it already exists :)
 let $nothing := file:create-dir($rootPath)
+let $nothing := file:create-dir($localFilesFolderPC)
 
 (:let $textOrganisms := http:send-request(<http:request method='get' href='https://raw.githubusercontent.com/baskaufs/Bioimages/master/organisms.csv'/>)[2]:)
 let $textOrganisms := http:send-request(<http:request method='get' href='https://raw.githubusercontent.com/baskaufs/Bioimages/master/organisms-small.csv'/>)[2]
@@ -90,7 +95,7 @@ let $groupId := "224688"
 *********** Main query *********
 :)
 return (
-(:     file:write(concat($rootPath,"\list\metadata-tax.xml"),:)
+     file:write(concat($localFilesFolderPC,"\morphbank.xml"),
 <mb:request xsi:schemaLocation="http://www.morphbank.net/mbsvc3/ http://www.morphbank.net/schema/mbsvc3.xsd" xmlns:dwc="http://rs.tdwg.org/dwc/dwcore/" xmlns:mb="http://www.morphbank.net/mbsvc3/" xmlns:dwcg="http://rs.tdwg.org/dwc/geospatial/" xmlns:dwce="http://rs.tdwg.org/dwc/dwelement" xmlns:dwcc="http://rs.tdwg.org/dwc/curatorial/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <submitter>
     <userId>{$userId}</userId>
@@ -110,15 +115,27 @@ return (
           <local>{"local:"||xs:string(xs:integer($position)-1)}</local>
           <external>{$orgRecord/dcterms_identifier/text()}</external>
         </sourceId>,
-        <owner>
-          <userId>{$userId}</userId>
+        <owner>{
+
+        for $depiction in $xmlImages/csv/record
+        where $depiction/foaf_depicts=$orgRecord/dcterms_identifier
+        let $orgGroup := $depiction/foaf_depicts
+        group by $orgGroup
+        return (
+               for $agent in $xmlAgents/csv/record
+               where $agent/dcterms_identifier/text()=$depiction[1]/owner/text()
+               return (<userId>{$agent/morphbankUserID/text()}</userId>)
+               ),
+               
           <groupId>{$groupId}</groupId>
-        </owner>,
+        }</owner>,
         <dateToPublish>{fn:adjust-date-to-timezone(current-date(), ())}</dateToPublish>,
         <objectTypeId>Specimen</objectTypeId>,
         <externalRef type="5">{
           <label>{"Organism metadata for GUID "||$orgRecord/dcterms_identifier/text()}</label>,
           <urlData>{$orgRecord/dcterms_identifier/text()}</urlData>
+(: The schema has <externalId> as an element that can go here, but I don't know how it is used.
+Perhaps it can replace the three elements above.  :)
         }</externalRef>,
         <determination>{         
           for $detRecord in $xmlDeterminations/csv/record
@@ -147,8 +164,8 @@ return (
 
                if ($orgRecord/dwc_decimalLatitude/text() != "")
                then (
-                   <dwc:DecimalLatitude>{$orgRecord/dwc_decimalLatitude/text()}</dwc:DecimalLatitude>,
-                   <dwc:DecimalLongitude>{$orgRecord/dwc_decimalLongitude/text()}</dwc:DecimalLongitude>
+                   <dwcg:DecimalLatitude>{$orgRecord/dwc_decimalLatitude/text()}</dwcg:DecimalLatitude>,
+                   <dwcg:DecimalLongitude>{$orgRecord/dwc_decimalLongitude/text()}</dwcg:DecimalLongitude>
                     )
                else (),
                
@@ -159,7 +176,7 @@ return (
                     )
                else (),
                
-               <dwc:stateProvince>{$depiction[1]/dwc_stateProvince/text()}</dwc:stateProvince>,
+               <dwc:StateProvince>{$depiction[1]/dwc_stateProvince/text()}</dwc:StateProvince>,
                <dwc:County>{$depiction[1]/dwc_county/text()}</dwc:County>,
                <dwc:Locality>{$depiction[1]/dwc_locality/text()}</dwc:Locality>
                )      
@@ -175,10 +192,14 @@ return (
           <local>{"local:"||xs:string(xs:integer($position)+$nOrganisms)}</local>
           <external>{$imgRecord/dcterms_identifier/text()}</external>
         </sourceId>,
-        <owner>
-          <userId>{$userId}</userId>
+
+        <owner>{
+           for $agent in $xmlAgents/csv/record
+           where $agent/dcterms_identifier/text()=$imgRecord/owner/text()
+           return (<userId>{$agent/morphbankUserID/text()}</userId>),
           <groupId>{$groupId}</groupId>
-        </owner>,
+        }</owner>,
+
         <dateToPublish>{fn:adjust-date-to-timezone(current-date(), ())}</dateToPublish>,
         <objectTypeId>Image</objectTypeId>,
         <externalRef type="5">{
@@ -186,7 +207,6 @@ return (
           <urlData>{$imgRecord/dcterms_identifier/text()}</urlData>
         }</externalRef>,
        <imageType>jpg</imageType>,
-       
        <copyrightText>{$imgRecord/dc_rights/text()}</copyrightText>,
        <originalFileName>{$imgRecord/fileName/text()}</originalFileName>,       
        <creativeCommons>&lt;a href="{$licenseCategory[@id=$imgRecord/usageTermsIndex/text()]/IRI/text()}" rel="license"&gt; &lt;img src="{$licenseCategory[@id=$imgRecord/usageTermsIndex/text()]/thumb/text()}" style="border-width: 0pt;" alt="Creative Commons License"/&gt; &lt;/a&gt;</creativeCommons>,
@@ -211,3 +231,4 @@ return (
   }</insert>
 </mb:request>
                )
+)

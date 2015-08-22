@@ -154,7 +154,7 @@ xmlns:blocal="http://bioimages.vanderbilt.edu/rdf/local#"
                                  <dwc:geodeticDatum>{$depiction[1]/dwc_geodeticDatum/text()}</dwc:geodeticDatum>
                                   )
                              else (),
-                             if ($orgRecord/geo_alt/text() != "-9999")
+                             if ($orgRecord/geo_alt/text() != "")
                              then (
                                <geo:alt>{$orgRecord/geo_alt/text()}</geo:alt>,
                                <dwc:minimumElevationInMeters rdf:datatype="http://www.w3.org/2001/XMLSchema#int">{$orgRecord/geo_alt/text()}</dwc:minimumElevationInMeters>,
