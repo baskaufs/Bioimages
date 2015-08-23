@@ -45,16 +45,16 @@ let $rootPath := "c:\bioimages"
 let $nothing := file:create-dir($rootPath)
 let $nothing := file:create-dir($localFilesFolderPC)
 
-(:let $textOrganisms := http:send-request(<http:request method='get' href='https://raw.githubusercontent.com/baskaufs/Bioimages/master/organisms.csv'/>)[2]:)
-let $textOrganisms := http:send-request(<http:request method='get' href='https://raw.githubusercontent.com/baskaufs/Bioimages/master/organisms-small.csv'/>)[2]
+let $textOrganisms := http:send-request(<http:request method='get' href='https://raw.githubusercontent.com/baskaufs/Bioimages/master/organisms.csv'/>)[2]
+(:let $textOrganisms := http:send-request(<http:request method='get' href='https://raw.githubusercontent.com/baskaufs/Bioimages/master/organisms-small.csv'/>)[2]:)
 let $xmlOrganisms := csv:parse($textOrganisms, map { 'header' : true(),'separator' : "|" })
 
-(:let $textDeterminations := http:send-request(<http:request method='get' href='https://raw.githubusercontent.com/baskaufs/Bioimages/master/determinations.csv'/>)[2]:)
-let $textDeterminations := http:send-request(<http:request method='get' href='https://raw.githubusercontent.com/baskaufs/Bioimages/master/determinations-small.csv'/>)[2]
+let $textDeterminations := http:send-request(<http:request method='get' href='https://raw.githubusercontent.com/baskaufs/Bioimages/master/determinations.csv'/>)[2]
+(:let $textDeterminations := http:send-request(<http:request method='get' href='https://raw.githubusercontent.com/baskaufs/Bioimages/master/determinations-small.csv'/>)[2]:)
 let $xmlDeterminations := csv:parse($textDeterminations, map { 'header' : true(),'separator' : "|" })
 
-(:let $textNames := http:send-request(<http:request method='get' href='https://raw.githubusercontent.com/baskaufs/Bioimages/master/names.csv'/>)[2]:)
-let $textNames := http:send-request(<http:request method='get' href='https://raw.githubusercontent.com/baskaufs/Bioimages/master/names-small.csv'/>)[2]
+let $textNames := http:send-request(<http:request method='get' href='https://raw.githubusercontent.com/baskaufs/Bioimages/master/names.csv'/>)[2]
+(:let $textNames := http:send-request(<http:request method='get' href='https://raw.githubusercontent.com/baskaufs/Bioimages/master/names-small.csv'/>)[2]:)
 let $xmlNames := csv:parse($textNames, map { 'header' : true(),'separator' : "|" })
 
 let $textSensu := http:send-request(<http:request method='get' href='https://raw.githubusercontent.com/baskaufs/Bioimages/master/sensu.csv'/>)[2]
@@ -160,7 +160,7 @@ Perhaps it can replace the three elements above.  :)
                where $agent/dcterms_identifier/text()=$depiction[1]/photographerCode/text()
                return (<dwc:Collector>{$agent/dc_contributor/text()}</dwc:Collector>),
                <dwc:EarliestDateCollected>{$occurrenceDate[1]}</dwc:EarliestDateCollected>,
-               <dwc:LatestDateCollected>{$occurrenceDate[last()]}</dwc:LatestDateCollected>,
+               <dwc:LatestDateCollected>{$occurrenceDate[1]}</dwc:LatestDateCollected>,
 
                if ($orgRecord/dwc_decimalLatitude/text() != "")
                then (
@@ -185,7 +185,9 @@ Perhaps it can replace the three elements above.  :)
     
 for $imgRecord at $position in $xmlImages//record, $imagesToWrite in distinct-values($xmlImagesToWrite//record/entry)
 where $imgRecord/dcterms_identifier/text() = $imagesToWrite
-let $nOrganisms := count(distinct-values($xmlOrganismsToWrite/csv/record))-1
+(: counting doesn't work right here
+let $nOrganisms := count(distinct-values($xmlOrganismsToWrite/csv/record))-1:)
+let $nOrganisms := count(distinct-values($xmlOrganisms/csv/record))-1
 return (
       <object type="image">{
         <sourceId>
