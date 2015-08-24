@@ -107,12 +107,13 @@ return (
       <groupId>{$groupId}</groupId>
     </submitter>,
     
-for $orgRecord at $position in $xmlOrganisms/csv/record, $organismsToWrite in distinct-values($xmlOrganismsToWrite/csv/record/entry)
+for $orgRecord in $xmlOrganisms/csv/record, $organismsToWrite in distinct-values($xmlOrganismsToWrite/csv/record/entry)
 where $orgRecord/dcterms_identifier/text() = $organismsToWrite
+count $counter
 return (
       <object type="specimen">{
         <sourceId>
-          <local>{"local:"||xs:string(xs:integer($position)-1)}</local>
+          <local>{"local:"||xs:string(xs:integer($counter)-1)}</local>
           <external>{$orgRecord/dcterms_identifier/text()}</external>
         </sourceId>,
         <owner>{
@@ -183,15 +184,14 @@ Perhaps it can replace the three elements above.  :)
       }</object>
     ),
     
+let $nOrganisms := count(distinct-values($xmlOrganismsToWrite/csv/record))-1    
 for $imgRecord at $position in $xmlImages//record, $imagesToWrite in distinct-values($xmlImagesToWrite//record/entry)
 where $imgRecord/dcterms_identifier/text() = $imagesToWrite
-(: counting doesn't work right here
-let $nOrganisms := count(distinct-values($xmlOrganismsToWrite/csv/record))-1:)
-let $nOrganisms := count(distinct-values($xmlOrganisms/csv/record))-1
+count $counter
 return (
       <object type="image">{
         <sourceId>
-          <local>{"local:"||xs:string(xs:integer($position)+$nOrganisms)}</local>
+          <local>{"local:"||xs:string(xs:integer($counter)+$nOrganisms)}</local>
           <external>{$imgRecord/dcterms_identifier/text()}</external>
         </sourceId>,
 
