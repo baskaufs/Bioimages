@@ -58,7 +58,7 @@ declare function local:get-taxon-name-markup
            then (<em>{$nameRecord[1]/dwc_genus/text()}</em>," sp. ("||$nameRecord[1]/dwc_vernacularName/text(),")")
            else 
              if ($nameRecord[1]/dwc_taxonRank/text() = "subspecies")
-             then (<em>{$nameRecord[1]/dwc_genus/text()||" "||$nameRecord[1]/dwc_specificEpithet/text()}</em>," ssp. ",<em>{$nameRecord/dwc_infraspecificEpithet/text()}</em>, " (", $nameRecord[1]/dwc_vernacularName/text(),")")
+             then (<em>{$nameRecord[1]/dwc_genus/text()||" "||$nameRecord[1]/dwc_specificEpithet/text()}</em>," ssp. ",<em>{$nameRecord[1]/dwc_infraspecificEpithet/text()}</em>, " (", $nameRecord[1]/dwc_vernacularName/text(),")")
              else
                if ($nameRecord[1]/dwc_taxonRank/text() = "variety")
                then (<em>{$nameRecord[1]/dwc_genus/text()||" "||$nameRecord[1]/dwc_specificEpithet/text()}</em>," var. ",<em>{$nameRecord[1]/dwc_infraspecificEpithet/text()}</em>, " (", $nameRecord[1]/dwc_vernacularName/text(),")")
