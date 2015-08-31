@@ -85,7 +85,8 @@ return (
         let $namespace := local:substring-after-last($temp1,"/")
         
         (: images are screened for submission by having a quality rating of greater or equal to 4 :)
-        where $detRecord/dsw_identified=$orgRecord/dcterms_identifier and $name/dcterms_identifier=$detRecord/tsnID and $imgRecord/foaf_depicts=$orgRecord/dcterms_identifier and fn:number($imgRecord/xmp_Rating/text())>=4
+        (: incorrect determinations that have suppressed=1 do not have their associated images included under the taxon :)
+        where $detRecord/dsw_identified=$orgRecord/dcterms_identifier and $name/dcterms_identifier=$detRecord/tsnID and $imgRecord/foaf_depicts=$orgRecord/dcterms_identifier and fn:number($imgRecord/xmp_Rating/text())>=4 and fn:number($detRecord/suppress/text())!=1
         return (
 <dataObject>{
   
