@@ -172,8 +172,10 @@ let $viewCategory := $stdViewDoc/view/viewGroup/viewCategory
 return (
      file:write(concat($rootPath,"\eol-harvest.xml"),
 
-(: xmlns="http://www.eol.org/transfer/content/0.3"  Inluding this namespace declaration breaks the query :)
+(: xmlns="http://www.eol.org/transfer/content/0.3"  Inluding this namespace declaration breaks the query when the
+taxon elements are generated directly below, but not when they are generated in a function :)
 <response
+xmlns="http://www.eol.org/transfer/content/0.3"
 xmlns:xsd="http://www.w3.org/2001/XMLSchema"
 xmlns:dc="http://purl.org/dc/elements/1.1/"
 xmlns:dcterms="http://purl.org/dc/terms/"
