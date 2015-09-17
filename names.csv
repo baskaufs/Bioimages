@@ -1,4 +1,9 @@
 ubioID|dcterms_identifier|dwc_kingdom|dwc_class|dwc_order|dwc_family|dwc_genus|dwc_specificEpithet|dwc_infraspecificEpithet|dwc_taxonRank|dwc_scientificNameAuthorship|dwc_vernacularName|dcterms_modified
+447869|18738|Plantae|Magnoliopsida|Ranunculales|Ranunculaceae|Aquilegia|formosa||species|Fisch. ex DC.|western columbine|0
+448918|20015|Plantae|Magnoliopsida|Caryophyllales|Caryophyllaceae|Minuartia|yukonensis||species|Hulten|Yukon stitchwort|0
+459913|33202|Plantae|Magnoliopsida|Scrophulariales|Scrophulariaceae|Lagotis|glauca||species|Gaertn.|weaselsnout|0
+473636|502757|Plantae|Magnoliopsida|Geraniales|Geraniaceae|Geranium|erianthum||species|DC.|woolly geranium|0
+474573|503721|Plantae|Magnoliopsida|Fabales|Fabaceae|Medicago|lupulina||species|L.|black medick|0
 476925|506151|Plantae|Magnoliopsida|Caryophyllales|Cactaceae|Carnegiea|gigantea||species|(Engelm.) Britton & Rose|saguaro|2015-02-28T07:30:10-06:00
 467641|43139|Plantae|Liliopsida|Liliales|Agavaceae|Yucca|elata||species|(Engelm.) Engelm.|soaptree yucca|2015-02-28T07:30:10-06:00
 467450|42914|Plantae|Liliopsida|Liliales|Agavaceae|Dasylirion|wheeleri||species|S. Watson|common sotol|2015-02-28T07:30:10-06:00
@@ -59,7 +64,6 @@ ubioID|dcterms_identifier|dwc_kingdom|dwc_class|dwc_order|dwc_family|dwc_genus|d
 475017|504187|Plantae|Magnoliopsida|Fabales|Fabaceae|Pediomelum|subacaule||species|(Torr. & A. Gray) Rydb.|whiterim scurfpea|2015-02-28T07:30:10-06:00
 448401|19367|Plantae|Magnoliopsida|Fagales|Fagaceae|Quercus|laevis||species|Walter|turkey oak|2015-02-28T07:30:10-06:00
 450660|22008|Plantae|Magnoliopsida|Nepenthales|Droseraceae|Dionaea|muscipula||species|Ellis|Venus flytrap|2015-02-28T07:30:10-06:00
-277125|17224|Plantae|Filicopsida|Polypodiales|Dennstaedtiaceae|Pteridium|aquilinum||species|(L.) Kuhn|western brackenfern|2015-02-28T07:30:10-06:00
 464550|39211|Plantae|Liliopsida|Eriocaulales|Eriocaulaceae|Syngonanthus|flavidulus||species|(Michx.) Ruhl.|yellow hatpins|2015-02-28T07:30:10-06:00
 450661|22009|Plantae|Magnoliopsida|Nepenthales|Droseraceae|Drosera|||genus||sundew|2015-02-28T07:30:10-06:00
 464457|39101|Plantae|Liliopsida|Commelinales|Xyridaceae|Xyris|caroliniana||species|Walter|Carolina yelloweyed grass|2015-02-28T07:30:10-06:00
@@ -83,7 +87,6 @@ ubioID|dcterms_identifier|dwc_kingdom|dwc_class|dwc_order|dwc_family|dwc_genus|d
 447273|18036|Plantae|Pinopsida|Pinales|Pinaceae|Pinus|elliottii||species|Engelm.|slash pine|2015-02-28T07:30:10-06:00
 448418|19385|Plantae|Magnoliopsida|Fagales|Fagaceae|Quercus|myrtifolia||species|Willd.|myrtle oak|2015-02-28T07:30:10-06:00
 467105|42508|Plantae|Liliopsida|Arecales|Arecaceae|Serenoa|repens||species|(Bartram) Small|saw palmetto|2015-02-28T07:30:10-06:00
-446586|17182|Plantae|Filicopsida|Ophioglossales|Ophioglossaceae|Botrychium|lunarioides||species|(Michx.) Sw.|winter grapefern|2015-02-28T07:30:10-06:00
 2331224|525635|Plantae|Equisetopsida|Equisetales|Equisetaceae|Equisetum|hyemale|affine|subspecies|(Engelm.) Calder & Taylor|scouringrush horsetail|2015-02-28T07:30:10-06:00
 446465|17008|Plantae|Psilopsida|Psilotales|Psilotaceae|Psilotum|nudum||species|(L.) P. Beauv.|whisk fern|2015-02-28T07:30:10-06:00
 25916|173660|Animalia|Amphibia|Caudata|Plethodontidae|Plethodon|jordani||species|Blatchley, 1901|Appalachian woodland salamander|2015-02-28T07:30:10-06:00
@@ -122,7 +125,6 @@ ubioID|dcterms_identifier|dwc_kingdom|dwc_class|dwc_order|dwc_family|dwc_genus|d
 473783|502909|Plantae|Magnoliopsida|Rubiales|Rubiaceae|Hedyotis|nigricans||species|(Lam.) Fosberg|diamondflowers|2015-02-28T07:30:10-06:00
 458925|31945|Plantae|Magnoliopsida|Lamiales|Boraginaceae|Lithospermum|canescens||species|(Michx.) Lehm.|hoary puccoon|2015-02-28T07:30:10-06:00
 474846|504004|Plantae|Magnoliopsida|Myrtales|Onagraceae|Oenothera|macrocarpa||species|Nutt.|bigfruit evening primrose|2015-02-28T07:30:10-06:00
-474870|504032|Plantae|Filicopsida|Ophioglossales|Ophioglossaceae|Ophioglossum|engelmannii||species|Prantl|limestone adderstongue|2015-02-28T07:30:10-06:00
 448685|19710|Plantae|Magnoliopsida|Caryophyllales|Cactaceae|Opuntia|humifusa||species|(Raf.) Raf.|devil's-tongue|2015-02-28T07:30:10-06:00
 474917|504080|Plantae|Magnoliopsida|Geraniales|Oxalidaceae|Oxalis|priceae||species|Small|tufted yellow woodsorrel|2015-02-28T07:30:10-06:00
 457276|30005|Plantae|Magnoliopsida|Gentianales|Gentianaceae|Sabatia|angularis||species|(L.) Pursh|rosepink|2015-02-28T07:30:10-06:00
@@ -198,7 +200,6 @@ ubioID|dcterms_identifier|dwc_kingdom|dwc_class|dwc_order|dwc_family|dwc_genus|d
 463020|37297|Plantae|Magnoliopsida|Asterales|Asteraceae|Elephantopus|carolinianus||species|Raeusch.|Carolina elephantsfoot|2015-02-28T07:30:10-06:00
 462054|36031|Plantae|Magnoliopsida|Asterales|Asteraceae|Iva|annua||species|L.|annual marsh elder|2015-02-28T07:30:10-06:00
 451529|23063|Plantae|Magnoliopsida|Capparales|Brassicaceae|Brassica|rapa||species|L.|field mustard|2015-02-28T07:30:10-06:00
-447206|17957|Plantae|Filicopsida|Polypodiales|Parkeriaceae|Ceratopteris|richardii||species|Brongn.|triangle waterfern|2015-02-28T07:30:10-06:00
 447309|18074|Plantae|Magnoliopsida|Magnoliales|Magnoliaceae|Magnolia|grandiflora||species|L.|southern magnolia|2015-02-28T07:30:10-06:00
 453817|25782|Plantae|Magnoliopsida|Fabales|Fabaceae|Cercis|canadensis||species|L.|eastern redbud|2015-02-28T07:30:10-06:00
 468913|183385|Plantae|Pinopsida|Pinales|Pinaceae|Pinus|strobus||species|L.|eastern white pine|2015-02-28T07:30:10-06:00
@@ -305,7 +306,6 @@ ubioID|dcterms_identifier|dwc_kingdom|dwc_class|dwc_order|dwc_family|dwc_genus|d
 452074|23677|Plantae|Magnoliopsida|Ericales|Ericaceae|Kalmia|latifolia||species|L.|mountain laurel|2015-02-28T07:30:10-06:00
 447312|18077|Plantae|Magnoliopsida|Magnoliales|Magnoliaceae|Magnolia|tripetala||species|(L.) L.|umbrella-tree|2015-02-28T07:30:10-06:00
 452462|24167|Plantae|Magnoliopsida|Rosales|Crassulaceae|Sedum|sarmentosum||species|Bunge|stringy stonecrop|2015-02-28T07:30:10-06:00
-446973|17675|Plantae|Filicopsida|Polypodiales|Dryopteridaceae|Polystichum|acrostichoides||species|(Michx.) Schott|Christmas fern|2015-02-28T07:30:10-06:00
 452676|24429|Plantae|Magnoliopsida|Rosales|Hydrangeaceae|Philadelphus|inodorus||species|L.|scentless mock orange|2015-02-28T07:30:10-06:00
 479759|524297|Plantae|Liliopsida|Liliales|Liliaceae|Maianthemum|racemosum|racemosum|subspecies|(L.) Link|feathery false lily of the valley|2015-02-28T07:30:10-06:00
 468221|181829|Plantae|Pinopsida|Pinales|Pinaceae|Abies|fraseri||species|(Pursh) Poir.|Fraser fir|2015-02-28T07:30:10-06:00
@@ -333,7 +333,6 @@ ubioID|dcterms_identifier|dwc_kingdom|dwc_class|dwc_order|dwc_family|dwc_genus|d
 460770|34309|Plantae|Magnoliopsida|Scrophulariales|Bignoniaceae|Campsis|radicans||species|(L.) Seem. ex Bureau|trumpet creeper|2015-02-28T07:30:10-06:00
 448300|19250|Plantae|Magnoliopsida|Juglandales|Juglandaceae|Juglans|cinerea||species|L.|butternut|2015-02-28T07:30:10-06:00
 464521|39178|Plantae|Liliopsida|Commelinales|Commelinaceae|Tradescantia|virginiana||species|L.|Virginia spiderwort|2015-02-28T07:30:10-06:00
-446732|17359|Plantae|Filicopsida|Polypodiales|Aspleniaceae|Asplenium|rhizophyllum||species|L.|walking fern|2015-02-28T07:30:10-06:00
 447743|18594|Plantae|Magnoliopsida|Ranunculales|Ranunculaceae|Ranunculus|bulbosus||species|L.|St. Anthony's turnip|2015-02-28T07:30:10-06:00
 476018|505220|Plantae|Magnoliopsida|Ebenales|Sapotaceae|Sideroxylon|lycioides||species|L.|buckthorn bully|2015-02-28T07:30:10-06:00
 457186|29894|Plantae|Magnoliopsida|Apiales|Apiaceae|Torilis|arvensis||species|(Huds.) Link|spreading hedgeparsley|2015-02-28T07:30:10-06:00
@@ -348,7 +347,6 @@ ubioID|dcterms_identifier|dwc_kingdom|dwc_class|dwc_order|dwc_family|dwc_genus|d
 467824|43367|Plantae|Liliopsida|Liliales|Dioscoreaceae|Dioscorea|villosa||species|L.|wild yam|2015-02-28T07:30:10-06:00
 448522|19511|Plantae|Magnoliopsida|Fagales|Betulaceae|Ostrya|virginiana||species|(Mill.) K. Koch|hophornbeam|2015-02-28T07:30:10-06:00
 459606|32796|Plantae|Magnoliopsida|Lamiales|Lamiaceae|Scutellaria|elliptica||species|Muhl. ex Spreng.|hairy skullcap|2015-02-28T07:30:10-06:00
-446728|17355|Plantae|Filicopsida|Polypodiales|Aspleniaceae|Asplenium|platyneuron||species|(L.) Britton, Sterns & Poggenb.|ebony spleenwort|2015-02-28T07:30:10-06:00
 475531|504714|Plantae|Magnoliopsida|Fagales|Fagaceae|Quercus|muehlenbergii||species|Engelm.|chinkapin oak|2015-02-28T07:30:10-06:00
 475265|504439|Plantae|Magnoliopsida|Plantaginales|Plantaginaceae|Plantago|rugelii||species|Decne.|blackseed plantain|2015-02-28T07:30:10-06:00
 447541|18353|Plantae|Magnoliopsida|Aristolochiales|Aristolochiaceae|Asarum|canadense||species|L.|Canadian wildginger|2015-02-28T07:30:10-06:00
@@ -499,10 +497,8 @@ ubioID|dcterms_identifier|dwc_kingdom|dwc_class|dwc_order|dwc_family|dwc_genus|d
 468099|43703|Plantae|Liliopsida|Orchidales|Orchidaceae|Tipularia|discolor||species|(Pursh) Nutt.|crippled cranefly|2015-02-28T07:30:10-06:00
 468882|183335|Plantae|Pinopsida|Pinales|Pinaceae|Pinus|echinata||species|Mill.|shortleaf pine|2015-02-28T07:30:10-06:00
 446475|17028|Plantae|Lycopodiopsida|Lycopodiales|Lycopodiaceae|Lycopodium|digitatum||species|Dill. ex A. Braun|fan clubmoss|2015-02-28T07:30:10-06:00
-446579|17171|Plantae|Filicopsida|Ophioglossales|Ophioglossaceae|Botrychium|dissectum||species|Spreng.|cutleaf grapefern|2015-02-28T07:30:10-06:00
 452943|24765|Plantae|Magnoliopsida|Rosales|Rosaceae|Prunus|persica||species|(L.) Batsch|peach|2015-02-28T07:30:10-06:00
 474459|503603|Plantae|Lycopodiopsida|Lycopodiales|Lycopodiaceae|Lycopodiella|alopecuroides||species|(L.) Cranfill|foxtail clubmoss|2015-02-28T07:30:10-06:00
-446593|17192|Plantae|Filicopsida|Ophioglossales|Ophioglossaceae|Botrychium|jenmanii||species|Underw.|Dixie grapefern|2015-02-28T07:30:10-06:00
 459747|32973|Plantae|Magnoliopsida|Scrophulariales|Oleaceae|Ligustrum|||genus||privet|2015-02-28T07:30:10-06:00
 476640|505864|Plantae|Pinopsida|Pinales|Cupressaceae|Metasequoia|glyptostroboides||species|Hu & W.C. Cheng|dawn redwood|2015-02-28T07:30:10-06:00
 448117|19032|Plantae|Magnoliopsida|Hamamelidales|Hamamelidaceae|Hamamelis|vernalis||species|Sarg.|Ozark witchhazel|2015-02-28T07:30:10-06:00
@@ -731,12 +727,7 @@ ubioID|dcterms_identifier|dwc_kingdom|dwc_class|dwc_order|dwc_family|dwc_genus|d
 473596|502717|Plantae|Magnoliopsida|Rubiales|Rubiaceae|Cruciata|pedemontana||species|(Bellardi) Ehrend.|piedmont bedstraw|2015-02-28T07:30:10-06:00
 243434|39204|Plantae|Liliopsida|Eriocaulales|Eriocaulaceae|Lachnocaulon|||genus||bogbutton|2015-02-28T07:30:10-06:00
 460886|34443|Plantae|Magnoliopsida|Scrophulariales|Lentibulariaceae|Utricularia|||genus||bladderwort|2015-02-28T07:30:10-06:00
-446580|17173|Plantae|Filicopsida|Ophioglossales|Ophioglossaceae|Botrychium|virginianum||species|(L.) Sw.|rattlesnake fern|2015-02-28T07:30:10-06:00
 484177|530638|Plantae|Magnoliopsida|Apiales|Apiaceae|Thaspium|trifoliatum|trifoliatum|variety|(L.) A. Gray|purple meadowparsnip|2015-02-28T07:30:10-06:00
-446686|17311|Plantae|Filicopsida|Polypodiales|Pteridaceae|Adiantum|pedatum||species|L.|northern maidenhair|2015-02-28T07:30:10-06:00
-484195|530656|Plantae|Filicopsida|Polypodiales|Thelypteridaceae|Thelypteris|palustris|pubescens|variety|Schott|eastern marsh fern|2015-02-28T07:30:10-06:00
-1742885|532448|Plantae|Filicopsida|Polypodiales|Dryopteridaceae|Athyrium|filix-femina|asplenioides|variety|(Michx.) Farw.|asplenium ladyfern|2015-02-28T07:30:10-06:00
-475125|504296|Plantae|Filicopsida|Polypodiales|Thelypteridaceae|Phegopteris|hexagonoptera||species|(Michx.) Fee|broad beechfern|2015-02-28T07:30:10-06:00
 465984|41088|Plantae|Liliopsida|Cyperales|Poaceae|Poa|pratensis||species|L.|Kentucky bluegrass|2015-02-28T07:30:10-06:00
 459680|32895|Plantae|Magnoliopsida|Plantaginales|Plantaginaceae|Plantago|virginica||species|L.|Virginia plantain|2015-02-28T07:30:10-06:00
 452118|23726|Plantae|Magnoliopsida|Ericales|Ericaceae|Rhododendron|periclymenoides||species|(Michx.) Shinners|pink azalea|2015-02-28T07:30:10-06:00
@@ -755,12 +746,9 @@ ubioID|dcterms_identifier|dwc_kingdom|dwc_class|dwc_order|dwc_family|dwc_genus|d
 466602|41858|Plantae|Liliopsida|Cyperales|Poaceae|Melica|mutica||species|Walter|twoflower melicgrass|2015-02-28T07:30:10-06:00
 465995|41107|Plantae|Liliopsida|Cyperales|Poaceae|Poa|annua||species|L.|annual bluegrass|2015-02-28T07:30:10-06:00
 464697|39423|Plantae|Liliopsida|Cyperales|Cyperaceae|Carex|muehlenbergii||species|Schkuhr ex Willd.|Muhlenberg's sedge|2015-02-28T07:30:10-06:00
-446833|17485|Plantae|Filicopsida|Polypodiales|Dryopteridaceae|Cystopteris|protrusa||species|(Weath.) Blasdell|lowland bladderfern|2015-02-28T07:30:10-06:00
-447032|17744|Plantae|Filicopsida|Polypodiales|Dryopteridaceae|Woodsia|obtusa||species|(Spreng.) Torr.|bluntlobe cliff fern|2015-02-28T07:30:10-06:00
 447908|18781|Plantae|Magnoliopsida|Ranunculales|Ranunculaceae|Hydrastis|canadensis||species|L.|goldenseal|2015-02-28T07:30:10-06:00
 467124|42529|Plantae|Liliopsida|Arales|Araceae|Arisaema|dracontium||species|(L.) Schott|green dragon|2015-02-28T07:30:10-06:00
 446565|17152|Plantae|Equisetopsida|Equisetales|Equisetaceae|Equisetum|arvense||species|L.|field horsetail|2015-02-28T07:30:10-06:00
-473029|502095|Plantae|Filicopsida|Polypodiales|Dryopteridaceae|Diplazium|pycnocarpon||species|(Spreng.) Broun|glade fern|2015-02-28T07:30:10-06:00
 449699|20934|Plantae|Magnoliopsida|Polygonales|Polygonaceae|Rumex|acetosella||species|L.|common sheep sorrel|2015-02-28T07:30:10-06:00
 466436|41661|Plantae|Liliopsida|Cyperales|Poaceae|Dichanthelium|laxiflorum||species|(Lam.) Gould|openflower rosette grass|2015-02-28T07:30:10-06:00
 447439|18221|Plantae|Magnoliopsida|Piperales|Saururaceae|Saururus|cernuus||species|L.|lizard's tail|2015-02-28T07:30:10-06:00
@@ -771,7 +759,6 @@ ubioID|dcterms_identifier|dwc_kingdom|dwc_class|dwc_order|dwc_family|dwc_genus|d
 461167|34800|Plantae|Magnoliopsida|Rubiales|Rubiaceae|Galium|circaezans||species|Michx.|licorice bedstraw|2015-02-28T07:30:10-06:00
 452329|23997|Plantae|Magnoliopsida|Primulales|Primulaceae|Lysimachia|quadrifolia||species|L.|whorled yellow loosestrife|2015-02-28T07:30:10-06:00
 466809|42111|Plantae|Liliopsida|Cyperales|Poaceae|Sorghum|halepense||species|(L.) Pers.|Johnsongrass|2015-02-28T07:30:10-06:00
-475277|504451|Plantae|Filicopsida|Polypodiales|Polypodiaceae|Pleopeltis|polypodioides||species|(L.) Andrews & Windham|resurrection fern|2015-02-28T07:30:10-06:00
 465966|41062|Plantae|Liliopsida|Cyperales|Poaceae|Phleum|pratense||species|L.|timothy|2015-02-28T07:30:10-06:00
 465557|40502|Plantae|Liliopsida|Cyperales|Poaceae|Bromus|inermis||species|Leyss.|smooth brome|2015-02-28T07:30:10-06:00
 447612|18436|Plantae|Magnoliopsida|Ranunculales|Ranunculaceae|Anemone|canadensis||species|L.|Canadian anemone|2015-02-28T07:30:10-06:00
@@ -928,7 +915,6 @@ ubioID|dcterms_identifier|dwc_kingdom|dwc_class|dwc_order|dwc_family|dwc_genus|d
 453912|25895|Plantae|Magnoliopsida|Fabales|Fabaceae|Lespedeza|bicolor||species|Turcz.|shrub lespedeza|2015-02-28T07:30:10-06:00
 453842|25812|Plantae|Magnoliopsida|Fabales|Fabaceae|Desmodium|nudiflorum||species|(L.) DC.|nakedflower ticktrefoil|2015-02-28T07:30:10-06:00
 453846|25816|Plantae|Magnoliopsida|Fabales|Fabaceae|Desmodium|pauciflorum||species|(Nutt.) DC.|fewflower ticktrefoil|2015-02-28T07:30:10-06:00
-446800|17448|Plantae|Filicopsida|Polypodiales|Pteridaceae|Cheilanthes|lanosa||species|(Michx.) D.C. Eaton|hairy lipfern|2015-02-28T07:30:10-06:00
 460739|34276|Plantae|Magnoliopsida|Scrophulariales|Orobanchaceae|Epifagus|virginiana||species|(L.) W. Bartram|beechdrops|2015-02-28T07:30:10-06:00
 468225|181834|Plantae|Pinopsida|Pinales|Pinaceae|Abies|magnifica||species|A. Murray|California red fir|2015-02-28T07:30:10-06:00
 468430|182135|Plantae|Magnoliopsida|Sapindales|Aceraceae|Acer|nigrum||species|Michx. f.|black maple|2015-02-28T07:30:10-06:00
@@ -970,7 +956,6 @@ ubioID|dcterms_identifier|dwc_kingdom|dwc_class|dwc_order|dwc_family|dwc_genus|d
 468867|183307|Plantae|Pinopsida|Pinales|Pinaceae|Picea|pungens||species|Engelm.|blue spruce|2015-02-28T07:30:10-06:00
 452491|24202|Plantae|Magnoliopsida|Rosales|Grossulariaceae|Itea|virginica||species|L.|Virginia sweetspire|2015-02-28T07:30:10-06:00
 448488|19468|Plantae|Magnoliopsida|Fagales|Betulaceae|Alnus|serrulata||species|(Aiton) Willd.|hazel alder|2015-02-28T07:30:10-06:00
-447231|17985|Plantae|Filicopsida|Polypodiales|Lygodiaceae|Lygodium|palmatum||species|(Bernh.) Sw.|American climbing fern|2015-02-28T07:30:10-06:00
 460152|33524|Plantae|Magnoliopsida|Scrophulariales|Scrophulariaceae|Collinsia|verna||species|Nutt.|spring blue eyed Mary|2015-02-28T07:30:10-06:00
 451245|22721|Plantae|Magnoliopsida|Capparales|Brassicaceae|Arabis|perstellata||species|E.L. Braun|Nevada rockcress|2015-02-28T07:30:10-06:00
 461638|35364|Plantae|Magnoliopsida|Dipsacales|Valerianaceae|Valeriana|pauciflora||species|Michx.|largeflower valerian|2015-02-28T07:30:10-06:00
@@ -1174,11 +1159,28 @@ ubioID|dcterms_identifier|dwc_kingdom|dwc_class|dwc_order|dwc_family|dwc_genus|d
 8834190|36588|Plantae|Magnoliopsida|Asterales|Asteraceae|Arnoglossum|reniforme||species|(Hook.) H. Rob.|great Indian plantain|2015-02-28T07:30:10-06:00
 453845|25815|Plantae|Magnoliopsida|Fabales|Fabaceae|Desmodium|paniculatum||species|(L.) DC.|panicledleaf ticktrefoil|2015-02-28T07:30:10-06:00
 447749|18602|Plantae|Magnoliopsida|Ranunculales|Ranunculaceae|Ranunculus|fascicularis||species|Muhl. ex Bigelow|early buttercup|2015-02-28T07:30:10-06:00
-448124|19039|Plantae|Magnoliopsida|Urticales|Ulmaceae|Celtis|||genus||hackberry|2015-02-28T07:30:10-06:00
 450249|21536|Plantae|Magnoliopsida|Malvales|Tiliaceae|Tilia|americana||species|L.|American basswood|2015-02-28T07:30:10-06:00
 448140|19057|Plantae|Magnoliopsida|Urticales|Ulmaceae|Ulmus|pumila||species|L.|Siberian elm|2015-02-28T07:30:10-06:00
 477061|506288|Plantae|Magnoliopsida|Fabales|Fabaceae|Sophora|japonica||species|L.|Chinese scholar tree|2015-02-28T07:30:10-06:00
 602241|21539|Plantae|Magnoliopsida|Malvales|Tiliaceae|Tilia|heterophylla||species|Vent.|white basswood|2015-02-28T07:30:10-06:00
-474573|503721|Plantae|Magnoliopsida|Fabales|Fabaceae|Medicago|lupulina||species|L.|black medick|2015-02-28T07:30:10-06:00
-459913|33202|Plantae|Magnoliopsida|Scrophulariales|Scrophulariaceae|Lagotis|glauca||species|Gaertn.|weaselsnout|2015-02-28T07:30:10-06:00
-470311|195108|Plantae|Magnoliopsida|Fagales|Fagaceae|Quercus|hemisphaerica||species|Bartram ex Willd.|Darlington oak|2015-08-06T05:15:10-05:00
+446579|17171|Plantae|Filicopsida|Ophioglossales|Ophioglossaceae|Botrychium|dissectum||species|Spreng.|cutleaf grapefern|2015-02-28T07:30:10-06:00
+446580|17173|Plantae|Filicopsida|Ophioglossales|Ophioglossaceae|Botrychium|virginianum||species|(L.) Sw.|rattlesnake fern|2015-02-28T07:30:10-06:00
+446586|17182|Plantae|Filicopsida|Ophioglossales|Ophioglossaceae|Botrychium|lunarioides||species|(Michx.) Sw.|winter grapefern|2015-02-28T07:30:10-06:00
+446593|17192|Plantae|Filicopsida|Ophioglossales|Ophioglossaceae|Botrychium|jenmanii||species|Underw.|Dixie grapefern|2015-02-28T07:30:10-06:00
+277125|17224|Plantae|Filicopsida|Polypodiales|Dennstaedtiaceae|Pteridium|aquilinum||species|(L.) Kuhn|western brackenfern|2015-02-28T07:30:10-06:00
+446686|17311|Plantae|Filicopsida|Polypodiales|Pteridaceae|Adiantum|pedatum||species|L.|northern maidenhair|2015-02-28T07:30:10-06:00
+446728|17355|Plantae|Filicopsida|Polypodiales|Aspleniaceae|Asplenium|platyneuron||species|(L.) Britton, Sterns & Poggenb.|ebony spleenwort|2015-02-28T07:30:10-06:00
+446732|17359|Plantae|Filicopsida|Polypodiales|Aspleniaceae|Asplenium|rhizophyllum||species|L.|walking fern|2015-02-28T07:30:10-06:00
+446800|17448|Plantae|Filicopsida|Polypodiales|Pteridaceae|Cheilanthes|lanosa||species|(Michx.) D.C. Eaton|hairy lipfern|2015-02-28T07:30:10-06:00
+446833|17485|Plantae|Filicopsida|Polypodiales|Dryopteridaceae|Cystopteris|protrusa||species|(Weath.) Blasdell|lowland bladderfern|2015-02-28T07:30:10-06:00
+446973|17675|Plantae|Filicopsida|Polypodiales|Dryopteridaceae|Polystichum|acrostichoides||species|(Michx.) Schott|Christmas fern|2015-02-28T07:30:10-06:00
+447032|17744|Plantae|Filicopsida|Polypodiales|Dryopteridaceae|Woodsia|obtusa||species|(Spreng.) Torr.|bluntlobe cliff fern|2015-02-28T07:30:10-06:00
+447206|17957|Plantae|Filicopsida|Polypodiales|Parkeriaceae|Ceratopteris|richardii||species|Brongn.|triangle waterfern|2015-02-28T07:30:10-06:00
+447231|17985|Plantae|Filicopsida|Polypodiales|Lygodiaceae|Lygodium|palmatum||species|(Bernh.) Sw.|American climbing fern|2015-02-28T07:30:10-06:00
+473029|502095|Plantae|Filicopsida|Polypodiales|Dryopteridaceae|Diplazium|pycnocarpon||species|(Spreng.) Broun|glade fern|2015-02-28T07:30:10-06:00
+474870|504032|Plantae|Filicopsida|Ophioglossales|Ophioglossaceae|Ophioglossum|engelmannii||species|Prantl|limestone adderstongue|2015-02-28T07:30:10-06:00
+475125|504296|Plantae|Filicopsida|Polypodiales|Thelypteridaceae|Phegopteris|hexagonoptera||species|(Michx.) Fee|broad beechfern|2015-02-28T07:30:10-06:00
+475277|504451|Plantae|Filicopsida|Polypodiales|Polypodiaceae|Pleopeltis|polypodioides||species|(L.) Andrews & Windham|resurrection fern|2015-02-28T07:30:10-06:00
+484195|530656|Plantae|Filicopsida|Polypodiales|Thelypteridaceae|Thelypteris|palustris|pubescens|variety|Schott|eastern marsh fern|2015-02-28T07:30:10-06:00
+1742885|532448|Plantae|Filicopsida|Polypodiales|Dryopteridaceae|Athyrium|filix-femina|asplenioides|variety|(Michx.) Farw.|asplenium ladyfern|2015-02-28T07:30:10-06:00
+x520974|520974|Plantae|Magnoliopsida|Rosales|Rosaceae|Sanguisorba|stipulata||species|Raf.|Sitka burnet|2015-09-16T22:09:56-05:00
