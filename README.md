@@ -5,7 +5,7 @@ This repository contains the underlying metadata upon which the Bioimages image 
 
 These metadata are viewable by humans at [http://bioimages.vanderbilt.edu/](http://bioimages.vanderbilt.edu/) 
 
-Machines can start at [http://bioimages.vanderbilt.edu/index.rdf](http://bioimages.vanderbilt.edu/index.rdf) and follow their noses to scrape the site as RDF/XML.  The raw triples can be obtained from the files [in this zip archive](bioimages-rdf.zip).
+Machines can start at [http://bioimages.vanderbilt.edu/index.rdf](http://bioimages.vanderbilt.edu/index.rdf) and follow their noses to scrape the site as RDF/XML.  The raw triples can be obtained from the files [in this zip archive](bioimages-rdf.zip).  The triples can be queried at the endpoint [http://rdf.library.vanderbilt.edu/sparql](http://rdf.library.vanderbilt.edu/sparql).
 
 All metadata are freely available under Creative Commons CC0, so go for it.  Since I don't believe that such data can be copyrighted anyway, this designation is probably superfluous, but I'm stating it anyway for clarity.  The images in the Bioimages collection are copyrighted by their owners.  See the metadata for the images for license information.
 
