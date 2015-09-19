@@ -150,7 +150,7 @@ xmlns:blocal="http://bioimages.vanderbilt.edu/rdf/local#"
                                  <dwc:decimalLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">{$orgRecord/dwc_decimalLatitude/text()}</dwc:decimalLatitude>,
                                  <geo:long>{$orgRecord/dwc_decimalLongitude/text()}</geo:long>,
                                  <dwc:decimalLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">{$orgRecord/dwc_decimalLongitude/text()}</dwc:decimalLongitude>,
-                                 <dwc:coordinateUncertaintyInMeters rdf:datatype="http://www.w3.org/2001/XMLSchema#int">{fn:round($depiction[1]/dwc_coordinateUncertaintyInMeters/text())}</dwc:coordinateUncertaintyInMeters>,
+                                 <dwc:coordinateUncertaintyInMeters rdf:datatype="http://www.w3.org/2001/XMLSchema#int">{$depiction[1]/dwc_coordinateUncertaintyInMeters/text()}</dwc:coordinateUncertaintyInMeters>,
                                  <dwc:geodeticDatum>{$depiction[1]/dwc_geodeticDatum/text()}</dwc:geodeticDatum>
                                   )
                              else (),
