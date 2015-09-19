@@ -156,7 +156,7 @@ xmlns:blocal="http://bioimages.vanderbilt.edu/rdf/local#"
                              else (),
                              if ($orgRecord/geo_alt/text() != "")
                              then (
-                               <geo:alt>{$orgRecord/geo_alt/text()}</geo:alt>,
+                               <geo:alt>{fn:round($orgRecord/geo_alt/text())}</geo:alt>,
                                <dwc:minimumElevationInMeters rdf:datatype="http://www.w3.org/2001/XMLSchema#int">{fn:round($orgRecord/geo_alt/text())}</dwc:minimumElevationInMeters>,
                                <dwc:maximumElevationInMeters rdf:datatype="http://www.w3.org/2001/XMLSchema#int">{fn:round($orgRecord/geo_alt/text())}</dwc:maximumElevationInMeters>
                                   )
