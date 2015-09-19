@@ -150,15 +150,15 @@ xmlns:blocal="http://bioimages.vanderbilt.edu/rdf/local#"
                                  <dwc:decimalLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">{$orgRecord/dwc_decimalLatitude/text()}</dwc:decimalLatitude>,
                                  <geo:long>{$orgRecord/dwc_decimalLongitude/text()}</geo:long>,
                                  <dwc:decimalLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">{$orgRecord/dwc_decimalLongitude/text()}</dwc:decimalLongitude>,
-                                 <dwc:coordinateUncertaintyInMeters rdf:datatype="http://www.w3.org/2001/XMLSchema#int">{$depiction[1]/dwc_coordinateUncertaintyInMeters/text()}</dwc:coordinateUncertaintyInMeters>,
+                                 <dwc:coordinateUncertaintyInMeters rdf:datatype="http://www.w3.org/2001/XMLSchema#int">{fn:round($depiction[1]/dwc_coordinateUncertaintyInMeters/text())}</dwc:coordinateUncertaintyInMeters>,
                                  <dwc:geodeticDatum>{$depiction[1]/dwc_geodeticDatum/text()}</dwc:geodeticDatum>
                                   )
                              else (),
                              if ($orgRecord/geo_alt/text() != "")
                              then (
                                <geo:alt>{$orgRecord/geo_alt/text()}</geo:alt>,
-                               <dwc:minimumElevationInMeters rdf:datatype="http://www.w3.org/2001/XMLSchema#int">{$orgRecord/geo_alt/text()}</dwc:minimumElevationInMeters>,
-                               <dwc:maximumElevationInMeters rdf:datatype="http://www.w3.org/2001/XMLSchema#int">{$orgRecord/geo_alt/text()}</dwc:maximumElevationInMeters>
+                               <dwc:minimumElevationInMeters rdf:datatype="http://www.w3.org/2001/XMLSchema#int">{fn:round($orgRecord/geo_alt/text())}</dwc:minimumElevationInMeters>,
+                               <dwc:maximumElevationInMeters rdf:datatype="http://www.w3.org/2001/XMLSchema#int">{fn:round($orgRecord/geo_alt/text())}</dwc:maximumElevationInMeters>
                                   )
                              else (),
                              <dwc:locality>{$depiction[1]/dwc_locality/text()}</dwc:locality>,
