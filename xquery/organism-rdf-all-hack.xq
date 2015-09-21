@@ -49,9 +49,6 @@ let $xmlAgents := csv:parse($textAgents, map { 'header' : true(),'separator' : "
 let $textLinks := http:send-request(<http:request method='get' href='https://raw.githubusercontent.com/baskaufs/Bioimages/master/links.csv'/>)[2]
 let $xmlLinks := csv:parse($textLinks, map { 'header' : true(),'separator' : "|" })
 
-let $lastPublishedDoc := fn:doc(concat('file:///',$localFilesFolderUnix,'/last-published.xml'))
-let $lastPublished := $lastPublishedDoc/body/dcterms:modified/text()
-
 let $filePath := "c:\test\organisms.rdf"
 return (file:write($filePath,
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
