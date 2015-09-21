@@ -131,6 +131,9 @@ let $xmlTourButtons := csv:parse($textTourButtons, map { 'header' : true(),'sepa
 let $textLinks := http:send-request(<http:request method='get' href='https://raw.githubusercontent.com/baskaufs/Bioimages/master/links.csv'/>)[2]
 let $xmlLinks := csv:parse($textLinks, map { 'header' : true(),'separator' : "|" })
 
+let $lastPublishedDoc := fn:doc(concat('file:///',$localFilesFolderUnix,'/last-published.xml'))
+let $lastPublished := $lastPublishedDoc/body/dcterms:modified/text()
+
 let $organismsToWriteDoc := file:read-text(concat('file:///',$localFilesFolderUnix,'/organisms-to-write.txt'))
 let $xmlOrganismsToWrite := csv:parse($organismsToWriteDoc, map { 'header' : false() })
 
