@@ -108,7 +108,7 @@ return (
     <dc:source>{$imgRecord/dcterms_identifier/text()}</dc:source>,
     
     <mediaURL>{$domain}/gq/{$namespace}/g{$imgRecord/fileName/text()}</mediaURL>,
-    <location xml:lang="en">{$imgRecord/dwc_locality/text()||", "||$imgRecord/dwc_county/text()||local:county-units($imgRecord/dwc_stateProvince/text(), $imgRecord/dwc_countryCode/text() )||", "||$imgRecord/dwc_stateProvince/text()||", "||$imgRecord/dwc_countryCode/text()}</location>,
+    <location xml:lang="en">{$imgRecord/dwc_locality/text()||", "||$imgRecord/dwc_county/text()||", "||$imgRecord/dwc_stateProvince/text()||", "||$imgRecord/dwc_countryCode/text()}</location>,
     <geo:Point>{
     <geo:lat>{$imgRecord/dwc_decimalLatitude/text()}</geo:lat>,
     <geo:long>{$imgRecord/dwc_decimalLongitude/text()}</geo:long>

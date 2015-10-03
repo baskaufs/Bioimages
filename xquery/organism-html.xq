@@ -369,7 +369,7 @@ return (file:create-dir(concat($rootPath,"\",$namespace)), file:write($filePath,
       let $organismID := $orgRecord/dcterms_identifier
       group by $organismID
       return (            
-        <span>{$depiction[1]/dwc_locality/text()}, {$depiction[1]/dwc_county/text()}{local:county-units($depiction[1]/dwc_stateProvince/text(), $depiction[1]/dwc_countryCode/text() )}, {$depiction[1]/dwc_stateProvince/text()}, {$depiction[1]/dwc_countryCode/text()}</span>,
+        <span>{$depiction[1]/dwc_locality/text()}, {$depiction[1]/dwc_county/text()}, {$depiction[1]/dwc_stateProvince/text()}, {$depiction[1]/dwc_countryCode/text()}</span>,
         <br/>,
         <span>Click on these geocoordinates to load a map showing the location: </span>,
         <a target="top" href="http://maps.google.com/maps?output=classic&amp;q=loc:{$orgRecord/dwc_decimalLatitude/text()},{$orgRecord/dwc_decimalLongitude/text()}&amp;t=h&amp;z=16">{$orgRecord/dwc_decimalLatitude/text()}&#176;, {$orgRecord/dwc_decimalLongitude/text()}&#176;</a>,
