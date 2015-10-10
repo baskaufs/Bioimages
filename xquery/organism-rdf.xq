@@ -253,7 +253,7 @@ xmlns:blocal="http://bioimages.vanderbilt.edu/rdf/local#"
                   <dwc:scientificNameAuthorship>{$nameRecord/dwc_scientificNameAuthorship/text()}</dwc:scientificNameAuthorship>,
                   <dwc:scientificName>{$nameRecord/dwc_genus/text()||" "||$nameRecord/dwc_specificEpithet/text()}</dwc:scientificName>,
                   if ($sensuRecord/dcterms_identifier/text() != "nominal")
-                  then <dwc:nameAccordingTo>{$sensuRecord/dc_creator/text()||", "||$sensuRecord/dcterms_created/text()||". "||$sensuRecord/dc_publisher/text()||"."}</dwc:nameAccordingTo>
+                  then <dwc:nameAccordingTo>{$sensuRecord/dc_creator/text()||", "||$sensuRecord/dcterms_created/text()||". "||$sensuRecord/dcterms_title/text()||". "||$sensuRecord/dc_publisher/text()||"."}</dwc:nameAccordingTo>
                   else (),
                   <blocal:secundumSignature>{$sensuRecord/tcsSignature/text()}</blocal:secundumSignature>,
                   <dwciri:toTaxon><dwc:Taxon>{
