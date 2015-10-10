@@ -168,7 +168,7 @@ return (file:create-dir(concat($rootPath,"\",$namespace)), file:write($filePath,
     <style type="text/css">
     {'@import "../composite-adj.css";'}
     </style>
-    <title>An individual of {$taxonNameClean}</title>
+    <title>An individual instance of {$taxonNameClean}</title>
     <link rel="meta" type="application/rdf+xml" title="RDF" href="http://bioimages.vanderbilt.edu/kaufmannm/ke129.rdf" />
     <script type="text/javascript">{"
       // Determine if the device is an iPhone, iPad, or a regular browser
@@ -236,7 +236,7 @@ return (file:create-dir(concat($rootPath,"\",$namespace)), file:write($filePath,
         )
       else (),
       
-      <span>An individual of {$taxonNameMarkup}</span>,
+      <span>An individual instance of {$taxonNameMarkup}</span>,
       <br/>,
 
       if ($cameoFileName != "")
@@ -246,7 +246,7 @@ return (file:create-dir(concat($rootPath,"\",$namespace)), file:write($filePath,
            )
       else (),
 
-      <h5>Permanent identifier for the individual:</h5>,
+      <h5>Permanent unique identifier for this particular organism:</h5>,
       <br/>,
       <h5><strong property="dcterms:identifier">{$orgRecord/dcterms_identifier/text()}</strong></h5>,
       <br/>,
@@ -275,7 +275,7 @@ return (file:create-dir(concat($rootPath,"\",$namespace)), file:write($filePath,
       <br/>,
       <br/>,
       <h5>
-        <em>Use this URL as a stable link to this page:</em>
+        <em>Use this stable URL to link to this page:</em>
         <br/>
         <a href="{$fileName||'.htm'}">http://bioimages.vanderbilt.edu/{$namespace}/{$fileName}.htm</a>
       </h5>,
@@ -285,14 +285,17 @@ return (file:create-dir(concat($rootPath,"\",$namespace)), file:write($filePath,
       then (
            for $agent in $xmlAgents/csv/record
            where $agent/dcterms_identifier=$orgRecord/dwc_collectionCode
-           return (<h5>This individual is a living specimen that is part of the&#8239;
+           return (<h5>This organism is a living specimen that is part of the&#8239;
            <a href="{$agent/contactURL/text()}">{$agent/dc_contributor/text()}</a>
            &#8239;with the local identifier {$orgRecord/dwc_catalogNumber/text()}.</h5>,<br/>,
               <br/>)
            )
       else (),
 
-      <h5><em>This particular individual is believed to have </em><strong>{$orgRecord/dwc_establishmentMeans/text()}</strong> <em>means of establishment</em>.</h5>,
+      <h5><em>This particular organism is believed to have </em><strong>{$orgRecord/dwc_establishmentMeans/text()}</strong> <em>means of establishment</em>.</h5>,
+      <br/>,
+
+      <h5><em>This organismal entity has the scope: </em><strong>{$orgRecord/dwc_organismScope/text()}</strong>.</h5>,
       <br/>,
 
       if ($orgRecord/dwc_organismName/text() != "")
@@ -389,7 +392,7 @@ return (file:create-dir(concat($rootPath,"\",$namespace)), file:write($filePath,
         <br/>
       ),
       
-      <strong>Occurrences were recorded for this individual on the following dates:</strong>,
+      <strong>Occurrences were recorded for this particular organism on the following dates:</strong>,
       <br/>,
       for $depiction in $xmlImages/csv/record
       where $depiction/foaf_depicts=$orgRecord/dcterms_identifier
@@ -408,14 +411,14 @@ return (file:create-dir(concat($rootPath,"\",$namespace)), file:write($filePath,
         ),
         <br/>,
         
-      <strong>The following images document this individual.</strong>,
+      <strong>The following images document this particular organism.</strong>,
       <br/>,
       <span> Click on a thumbnail to view the image and its metadata.</span>,
       <a href="#" onclick='window.location.replace("../metadata.htm?{$namespace}/{$fileName}/metadata/ind");'>Load database and enable navigation by taxon and organism.</a>,
       <br/>,
       <br/>,
       <table border="1" cellspacing="0">{
-        <tr><td>Image identifier</td><td>View</td></tr>,
+        <tr><td>Image</td><td>View</td></tr>,
         for $depiction in $xmlImages/csv/record, $viewCat in $viewCategory
         where $depiction/foaf_depicts=$orgRecord/dcterms_identifier and $viewCat/stdview/@id = substring($depiction/view/text(),2)
         order by substring($depiction/view/text(),2)
@@ -453,7 +456,7 @@ return (file:create-dir(concat($rootPath,"\",$namespace)), file:write($filePath,
         <em>Metadata last modified: </em>,
         <span>{fn:current-dateTime()}</span>,
         <br/>,
-        <a target="top" href="{$orgRecord/dcterms_identifier/text()||'.rdf'}">RDF formatted metadata for this individual</a>,
+        <a target="top" href="{$orgRecord/dcterms_identifier/text()||'.rdf'}">RDF formatted metadata for this organism</a>,
         <br/>
       }</h5>
     }</div>,

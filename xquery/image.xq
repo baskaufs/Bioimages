@@ -194,12 +194,12 @@ else ()
 declare function local:related-resources-info
 ($orgId as xs:string)
 {
-<h5><em>This image documents the organism which has the permanent identifier:</em></h5>,
+<h5><em>This image documents an organism that has the permanent identifier:</em></h5>,
 <br/>,
 <h6><strong property="about" typeof="dcterms:PhysicalResource" resource="{$orgId}">{$orgId}</strong></h6>,
 <br/>,
 <br/>,
-<h5><em>Follow this link for additional images of the organism:</em><br/>
+<h5><em>Follow this link for information about the organism and additional images:</em><br/>
 <a target="top" href="{$orgId}.htm">{$orgId}.htm</a></h5>,
 <br/>,
 <br/>
@@ -227,7 +227,7 @@ return (
 <h6>
 <div property="provider" resource="http://biocol.org/urn:lsid:biocol.org:col:35115" typeof="Organization"><span property="name" content="Bioimages"></span><span property="URL" content="http://bioimages.vanderbilt.edu/"></span></div>
 <div property="thumbnail" resource="{$dom}/{$ns}/{$img}#tn" typeof="ImageObject"><span property="contentUrl" content="{$dom}/tn/{$ns}/t{$img}.jpg"></span></div>
-<em>To cite this image, using the following credit line:</em><br/>
+<em>To cite this image, use the following credit line:</em><br/>
 "{$record/photoshop_Credit/text()}" <em>If possible, link to the stable URL for this page.</em><br/><a target="top" href="{$agent/contactURL/text()}">Click this link for contact information about using this image</a><br/><br/>
 </h6>
     )
