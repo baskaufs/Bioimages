@@ -119,6 +119,12 @@ xmlns:blocal="http://bioimages.vanderbilt.edu/rdf/local#"
         return (<dsw:hasOccurrence>
               <rdf:Description rdf:about='{$orgRecord/dcterms_identifier/text()||"#"||$occurrenceDate}'>{
                 <rdf:type rdf:resource="http://rs.tdwg.org/dwc/terms/Occurrence"/>,
+
+               if ($depiction[1]/dwc_occurrenceRemarks/text() != "")
+               then (
+                    <dwc:occurrenceRemarks>{$depiction[1]/dwc_occurrenceRemarks/text()}</dwc:occurrenceRemarks>
+                    )
+               else (),
                 
                for $agent in $xmlAgents/csv/record
                where $agent/dcterms_identifier/text()=$depiction[1]/photographerCode/text()

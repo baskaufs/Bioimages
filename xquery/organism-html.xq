@@ -397,14 +397,21 @@ return (file:create-dir(concat($rootPath,"\",$namespace)), file:write($filePath,
       group by $occurrenceDate
       return (
         <a id="{$occurrenceDate}">{$occurrenceDate}</a>,
+
+        if ($depiction[1]/dwc_occurrenceRemarks/text() != "")
+        then (
+              <h6> <em>Remarks:</em> {$depiction[1]/dwc_occurrenceRemarks/text()}</h6>
+             )
+        else (),
+        
         <br/>
         ),
         <br/>,
         
       <strong>The following images document this individual.</strong>,
       <br/>,
-      <span> Click on the link to view the image and its metadata.</span>,
-      <a href="#" onclick='window.location.replace("../metadata.htm?{$namespace}/{$fileName}/metadata/ind");'>View sorted thumbnails and enable site navigation.</a>,
+      <span> Click on a thumbnail to view the image and its metadata.</span>,
+      <a href="#" onclick='window.location.replace("../metadata.htm?{$namespace}/{$fileName}/metadata/ind");'>Load database and enable navigation by taxon and organism.</a>,
       <br/>,
       <br/>,
       <table border="1" cellspacing="0">{
@@ -412,10 +419,15 @@ return (file:create-dir(concat($rootPath,"\",$namespace)), file:write($filePath,
         for $depiction in $xmlImages/csv/record, $viewCat in $viewCategory
         where $depiction/foaf_depicts=$orgRecord/dcterms_identifier and $viewCat/stdview/@id = substring($depiction/view/text(),2)
         order by substring($depiction/view/text(),2)
+        
+        let $imgID := $depiction/dcterms_identifier/text()
+        let $thumbNamespace := local:substring-after-last(substring-before($imgID,concat("/",local:substring-after-last($imgID,"/"))),"/")
+        let $thumbFilePath := concat("../tn/", $thumbNamespace,"/t", $depiction/fileName/text())
+        
         return (
                 <tr>{
                   <td>{
-                    <a href="{$depiction/dcterms_identifier/text()}.htm">{$depiction/dcterms_identifier/text()}</a>
+                    <a href="{$imgID}.htm"><img src="{$thumbFilePath}" /></a>
                   }</td>,
                   <td>{data($viewCat/@name)||" - "||data($viewCat/stdview[@id=substring($depiction/view/text(),2)]/@name)}</td>
                 }</tr>

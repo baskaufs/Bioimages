@@ -180,6 +180,17 @@ declare function local:location-info
 <br/>
 };
 
+declare function local:occurrence-remarks
+($imageRecord)
+{
+if ($imageRecord/dwc_occurrenceRemarks/text() != "")
+then (
+    <h5><em>Remarks about this occurrence:</em></h5>,<br/>,
+    <span>{$imageRecord/dwc_occurrenceRemarks/text()}</span>,<br/>,<br/>
+    )
+else ()
+};
+
 declare function local:related-resources-info
 ($orgId as xs:string)
 {
@@ -536,6 +547,7 @@ return
             }
             {local:identifier-info($domain, $namespace, $image)}
             {local:location-info($imageRecord)}
+            {local:occurrence-remarks($imageRecord)}
             {local:related-resources-info($imageRecord/foaf_depicts/text())}
             {local:intellectual-property-info($domain, $namespace, $image, $imageRecord, $xmlAgents, $licenseCategory)}
             {local:reference-info($imageRecord, $xmlDeterminations, $xmlSensu)}
