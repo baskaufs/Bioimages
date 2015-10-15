@@ -254,17 +254,25 @@ return (
                   else (),
                   <blocal:secundumSignature>{$sensuRecord/tcsSignature/text()}</blocal:secundumSignature>,
                   
-                  if ($sensuRecord/dcterms_identifier/text() = "nominal" and $nameRecord/ubioID/text() = "")
-                  then ()
+                  if ($sensuRecord/dcterms_identifier/text() = "nominal")
+                  then
+                        if (string-length($nameRecord/ubioID/text()) = 0)
+                        then ()
+                        else
+                          <dwciri:toTaxon><dwc:Taxon>{
+                              <tc:hasName rdf:resource="urn:lsid:ubio.org:namebank:{$nameRecord/ubioID/text()}"/>
+                          }</dwc:Taxon></dwciri:toTaxon>
                   else
-                  <dwciri:toTaxon><dwc:Taxon>{
-                        if ($sensuRecord/dcterms_identifier/text() != "nominal")
-                        then <tc:accordingTo rdf:resource="{$sensuRecord/iri/text()}" />
-                        else (),
-                        if ($nameRecord/ubioID/text() != "")
-                        then <tc:hasName rdf:resource="urn:lsid:ubio.org:namebank:{$nameRecord/ubioID/text()}"/>
-                        else ()
-                  }</dwc:Taxon></dwciri:toTaxon>,
+                        if (string-length($nameRecord/ubioID/text()) = 0)
+                        then
+                          <dwciri:toTaxon><dwc:Taxon>{
+                               <tc:accordingTo rdf:resource="{$sensuRecord/iri/text()}" />
+                          }</dwc:Taxon></dwciri:toTaxon>
+                        else 
+                          <dwciri:toTaxon><dwc:Taxon>{
+                              <tc:hasName rdf:resource="urn:lsid:ubio.org:namebank:{$nameRecord/ubioID/text()}"/>,
+                              <tc:accordingTo rdf:resource="{$sensuRecord/iri/text()}" />
+                          }</dwc:Taxon></dwciri:toTaxon>,                  
                   
                   if (string-length($detRecord/dwc_dateIdentified/text()) = 10)
                   then (<dwc:dateIdentified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">{$detRecord/dwc_dateIdentified/text()}</dwc:dateIdentified>)
