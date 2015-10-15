@@ -254,7 +254,7 @@ return (
                   else (),
                   <blocal:secundumSignature>{$sensuRecord/tcsSignature/text()}</blocal:secundumSignature>,
                   
-                  if ($sensuRecord/dcterms_identifier/text() != "nominal" and $nameRecord/ubioID/text() != "")
+                  if ($sensuRecord/dcterms_identifier/text() = "nominal" and $nameRecord/ubioID/text() = "")
                   then ()
                   else
                   <dwciri:toTaxon><dwc:Taxon>{
