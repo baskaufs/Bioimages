@@ -253,12 +253,19 @@ return (
                   then <dwc:nameAccordingTo>{$sensuRecord/dc_creator/text()||", "||$sensuRecord/dcterms_created/text()||". "||$sensuRecord/dcterms_title/text()||". "||$sensuRecord/dc_publisher/text()||"."}</dwc:nameAccordingTo>
                   else (),
                   <blocal:secundumSignature>{$sensuRecord/tcsSignature/text()}</blocal:secundumSignature>,
+                  
+                  if ($sensuRecord/dcterms_identifier/text() != "nominal" and $nameRecord/ubioID/text() != "")
+                  then ()
+                  else
                   <dwciri:toTaxon><dwc:Taxon>{
                         if ($sensuRecord/dcterms_identifier/text() != "nominal")
                         then <tc:accordingTo rdf:resource="{$sensuRecord/iri/text()}" />
                         else (),
-                       <tc:hasName rdf:resource="urn:lsid:ubio.org:namebank:{$nameRecord/ubioID/text()}"/>
+                        if ($nameRecord/ubioID/text() != "")
+                        then <tc:hasName rdf:resource="urn:lsid:ubio.org:namebank:{$nameRecord/ubioID/text()}"/>
+                        else ()
                   }</dwc:Taxon></dwciri:toTaxon>,
+                  
                   if (string-length($detRecord/dwc_dateIdentified/text()) = 10)
                   then (<dwc:dateIdentified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">{$detRecord/dwc_dateIdentified/text()}</dwc:dateIdentified>)
                   else (

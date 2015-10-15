@@ -1183,4 +1183,8 @@ ubioID|dcterms_identifier|dwc_kingdom|dwc_class|dwc_order|dwc_family|dwc_genus|d
 9287852|43053|Plantae|Liliopsida|Liliales|Liliaceae|Tofieldia|racemosa||species|(Walter) Britton, Sterns & Poggenb.|coastal false asphodel|2015-02-28T07:30:10-06:00
 9429470|780332|Plantae|Magnoliopsida|Asterales|Asteraceae|Eutrochium|fistulosum||species|(Barratt) E.E. Lamont|trumpetweed|2015-02-28T07:30:10-06:00
 9438589|847595|Plantae|Magnoliopsida|Caryophyllales|Montiaceae|Phemeranthus|calcaricus||species|(S. Ware) Kiger|limestone fameflower|2015-02-28T07:30:10-06:00
-x520974|520974|Plantae|Magnoliopsida|Rosales|Rosaceae|Sanguisorba|stipulata||species|Raf.|Sitka burnet|2015-09-16T22:09:56-05:00
+|520974|Plantae|Magnoliopsida|Rosales|Rosaceae|Sanguisorba|stipulata||species|Raf.|Sitka burnet|2015-10-15T11:04:06-05:00
+|179921|Animalia|Mammalia|Didelphimorphia|Didelphidae|Didelphis|virginiana||species|Kerr 1792|Virginia Opossum|2015-10-15T11:02:04-05:00
+|180575|Animalia|Mammalia|Carnivora|Procyonidae|Procyon|lotor||species|(Linnaeus 1758)|common raccoon|2015-10-15T11:02:04-05:00
+|180170|Animalia|Mammalia|Rodentia|Sciuridae|Glaucomys|volans||species|(Linnaeus 1758)|Southern Flying Squirrel|2015-10-15T11:02:04-05:00
+|180175|Animalia|Mammalia|Rodentia|Sciuridae|Sciurus|carolinensis||species|Linnaeus 1758|Eastern Gray Squirrel|2015-10-15T11:02:04-05:00
