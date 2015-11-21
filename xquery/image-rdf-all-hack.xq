@@ -287,12 +287,20 @@ for $agent in $xmlAge//record
 where $agent/dcterms_identifier=$record/owner
 return (
 <dc:rights xml:lang="en">{$record/dc_rights/text()}</dc:rights>,
-<xmpRights:owner>{$agent/dc_contributor/text()}</xmpRights:owner>,
+
+if ($record/owner/text() != 'none')
+then <xmpRights:owner>{$agent/dc_contributor/text()}</xmpRights:owner>
+else (),
+
 <photoshop:Credit xml:lang="en">{$record/photoshop_Credit/text()}</photoshop:Credit>,
 <cc:license rdf:resource="{$license[@id=$record/usageTermsIndex/text()]/IRI/text()}"/>,
 <xhv:license rdf:resource="{$license[@id=$record/usageTermsIndex/text()]/IRI/text()}"/>,
 <dcterms:license rdf:resource="{$license[@id=$record/usageTermsIndex/text()]/IRI/text()}"/>,
-<dcterms:dateCopyrighted rdf:datatype="http://www.w3.org/2001/XMLSchema#gyear">{$record/dcterms_dateCopyrighted/text()}</dcterms:dateCopyrighted>,
+
+if ($record/owner/text() != 'none')
+then <dcterms:dateCopyrighted rdf:datatype="http://www.w3.org/2001/XMLSchema#gyear">{$record/dcterms_dateCopyrighted/text()}</dcterms:dateCopyrighted>
+else(),
+
 <xmpRights:UsageTerms xml:lang="en">{$license[@id=$record/usageTermsIndex/text()]/string/text()}</xmpRights:UsageTerms>,
 <xmpRights:WebStatement>{$license[@id=$record/usageTermsIndex/text()]/IRI/text()}</xmpRights:WebStatement>,
 <ac:licenseLogoURL>{$license[@id=$record/usageTermsIndex/text()]/thumb/text()}</ac:licenseLogoURL>,
@@ -306,7 +314,11 @@ then <ac:caption>{$record/ac_caption/text()}</ac:caption>
 else (),
 
 <ac:attributionLinkURL>{$id}.htm</ac:attributionLinkURL>,
-<blocal:contactURL>{$agent/contactURL/text()}</blocal:contactURL>,
+
+if ($record/owner/text() != 'none')
+then <blocal:contactURL>{$agent/contactURL/text()}</blocal:contactURL>
+else(),
+
 <xmp:Rating>{$record/xmp_Rating/text()}</xmp:Rating>
       )
 };

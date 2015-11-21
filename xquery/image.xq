@@ -224,18 +224,21 @@ return (
 for $agent in $xmlAge//record
 where $agent/dcterms_identifier=$record/owner
 return (
-<h6>
-<div property="provider" resource="http://biocol.org/urn:lsid:biocol.org:col:35115" typeof="Organization"><span property="name" content="Bioimages"></span><span property="URL" content="http://bioimages.vanderbilt.edu/"></span></div>
-<div property="thumbnail" resource="{$dom}/{$ns}/{$img}#tn" typeof="ImageObject"><span property="contentUrl" content="{$dom}/tn/{$ns}/t{$img}.jpg"></span></div>
-<em>To cite this image, use the following credit line:</em><br/>
-"{$record/photoshop_Credit/text()}" <em>If possible, link to the stable URL for this page.</em><br/>
+<h6>{
+<div property="provider" resource="http://biocol.org/urn:lsid:biocol.org:col:35115" typeof="Organization"><span property="name" content="Bioimages"></span><span property="URL" content="http://bioimages.vanderbilt.edu/"></span></div>,
+<div property="thumbnail" resource="{$dom}/{$ns}/{$img}#tn" typeof="ImageObject"><span property="contentUrl" content="{$dom}/tn/{$ns}/t{$img}.jpg"></span></div>,
+<em>To cite this image, use the following credit line:</em>,
+<br/>,
+<span>"{$record/photoshop_Credit/text()}"</span>,
+<em>If possible, link to the stable URL for this page.</em>,
+<br/>,
 
 if ($record/owner/text() != 'none')
-then <a target="top" href="{$agent/contactURL/text()}">Click this link for contact information about using this image</a><br/>
-else ()
-
+then <a target="top" href="{$agent/contactURL/text()}">Click this link for contact information about using this image</a>
+else (),
+<br/>,
 <br/>
-</h6>
+}</h6>
     )
 };
 
