@@ -1,9 +1,12 @@
 xquery version "3.0";
 
-let $localFilesFolderUnix := "c:/test"
+(: let $localFilesFolderUnix := "c:/test" :)
 let $localFilesFolderPC := "c:\test"
 
-let $responseDoc := fn:doc(concat('file:///',$localFilesFolderUnix,'/morphbank-image-response-2015-11-29.xml'))
+let $uri := "http://services.morphbank.net/mbsvc3/request?method=changes&amp;objecttype=Image&amp;keywords=&amp;geolocated=true&amp;firstResult=0&amp;user=&amp;group=Bioimages&amp;change=&amp;lastDateChanged=&amp;numChangeDays=30&amp;id=&amp;taxonName=&amp;format=svc"
+let $responseDoc :=  fn:doc($uri)
+
+(:let $responseDoc := fn:doc(concat('file:///',$localFilesFolderUnix,'/morphbank-image-response-2015-11-29.xml')) :)
 let $nl := "&#10;"  (: newline character :)
 
 (:
