@@ -76,10 +76,10 @@ let $xmlLinks := csv:parse($textLinks, map { 'header' : true(),'separator' : "|"
 let $lastPublishedDoc := fn:doc(concat('file:///',$localFilesFolderUnix,'/last-published.xml'))
 let $lastPublished := $lastPublishedDoc/body/dcterms:modified/text()
 
-let $organismsToWriteDoc := file:read-text(concat('file:///',$localFilesFolderUnix,'/organisms-to-write.txt'))
+let $organismsToWriteDoc := file:read-text(concat('file:///',$localFilesFolderUnix,'/organisms-to-upload.txt'))
 let $xmlOrganismsToWrite := csv:parse($organismsToWriteDoc, map { 'header' : false() })
 
-let $imagesToWriteDoc := file:read-text(concat('file:///',$localFilesFolderUnix,'/images-to-write.txt'))
+let $imagesToWriteDoc := file:read-text(concat('file:///',$localFilesFolderUnix,'/images-to-upload.txt'))
 let $xmlImagesToWrite := csv:parse($imagesToWriteDoc, map { 'header' : false() })
 
 let $licenseDoc := fn:doc('https://raw.githubusercontent.com/baskaufs/Bioimages/master/license.xml')
