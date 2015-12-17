@@ -1,5 +1,4 @@
 ubioID|dcterms_identifier|dwc_kingdom|dwc_class|dwc_order|dwc_family|dwc_genus|dwc_specificEpithet|dwc_infraspecificEpithet|dwc_taxonRank|dwc_scientificNameAuthorship|dwc_vernacularName|dcterms_modified
-456131|28631|Plantae|Magnoliopsida|Rhamnales|Vitaceae|Ampelopsis|arborea||species||peppervine|2015-12-05T08:28:52-06:00
 9479554|18063|Plantae|Magnoliopsida||||||class||dicotyledon|2015-09-21T18:09:43-05:00
 468218|181826|Plantae|Pinopsida|Pinales|Pinaceae|Abies|concolor||species|(Gord. & Glend.) Lindl. ex Hildebr.|white fir|2015-09-21T18:09:43-05:00
 468221|181829|Plantae|Pinopsida|Pinales|Pinaceae|Abies|fraseri||species|(Pursh) Poir.|Fraser fir|2015-09-21T18:09:43-05:00
@@ -792,7 +791,7 @@ ubioID|dcterms_identifier|dwc_kingdom|dwc_class|dwc_order|dwc_family|dwc_genus|d
 448439|19408|Plantae|Magnoliopsida|Fagales|Fagaceae|Quercus|rubra||species|L.|northern red oak|2015-09-21T18:09:43-05:00
 448448|19417|Plantae|Magnoliopsida|Fagales|Fagaceae|Quercus|shumardii||species|Buckley|Shumard's oak|2015-09-21T18:09:43-05:00
 448452|19422|Plantae|Magnoliopsida|Fagales|Fagaceae|Quercus|stellata||species|Wangenh.|post oak|2015-09-21T18:09:43-05:00
-470344|195188|Plantae|Magnoliopsida|Fagales|Fagaceae|Quercus|texana||species|Buckley|Nuttall oak|2015-12-05T22:08:03-06:00
+470344|195188|Plantae|Magnoliopsida|Fagales|Fagaceae|Quercus|texana||species|Buckley|Nuttall oak|2015-09-21T18:09:43-05:00
 448472|19447|Plantae|Magnoliopsida|Fagales|Fagaceae|Quercus|velutina||species|Lam.|black oak|2015-09-21T18:09:43-05:00
 448323|19283|Plantae|Magnoliopsida|Fagales|Fagaceae|Quercus|virginiana||species|Mill.|live oak|2015-09-21T18:09:43-05:00
 447714|18559|Plantae|Magnoliopsida|Ranunculales|Ranunculaceae|Ranunculus|abortivus||species|L.|littleleaf buttercup|2015-09-21T18:09:43-05:00
@@ -1185,8 +1184,9 @@ ubioID|dcterms_identifier|dwc_kingdom|dwc_class|dwc_order|dwc_family|dwc_genus|d
 9287852|43053|Plantae|Liliopsida|Liliales|Liliaceae|Tofieldia|racemosa||species|(Walter) Britton, Sterns & Poggenb.|coastal false asphodel|2015-02-28T07:30:10-06:00
 9429470|780332|Plantae|Magnoliopsida|Asterales|Asteraceae|Eutrochium|fistulosum||species|(Barratt) E.E. Lamont|trumpetweed|2015-02-28T07:30:10-06:00
 9438589|847595|Plantae|Magnoliopsida|Caryophyllales|Montiaceae|Phemeranthus|calcaricus||species|(S. Ware) Kiger|limestone fameflower|2015-02-28T07:30:10-06:00
-105757|180575|Animalia|Mammalia|Carnivora|Procyonidae|Procyon|lotor||species|(Linnaeus 1758)|common raccoon|2015-10-15T11:02:04-05:00
 107317|179921|Animalia|Mammalia|Didelphimorphia|Didelphidae|Didelphis|virginiana||species|Kerr 1792|Virginia Opossum|2015-10-15T11:02:04-05:00
 109491|180170|Animalia|Mammalia|Rodentia|Sciuridae|Glaucomys|volans||species|(Linnaeus 1758)|Southern Flying Squirrel|2015-10-15T11:02:04-05:00
 2482001|180175|Animalia|Mammalia|Rodentia|Sciuridae|Sciurus|carolinensis||species|Linnaeus 1758|Eastern Gray Squirrel|2015-10-15T11:02:04-05:00
+105757|180575|Animalia|Mammalia|Carnivora|Procyonidae|Procyon|lotor||species|(Linnaeus 1758)|common raccoon|2015-10-15T11:02:04-05:00
+456131|28631|Plantae|Magnoliopsida|Rhamnales|Vitaceae|Ampelopsis|arborea||species||peppervine|2015-12-05T08:28:52-06:00
 621763|520974|Plantae|Magnoliopsida|Rosales|Rosaceae|Sanguisorba|stipulata||species|Raf.|Sitka burnet|2015-10-15T11:04:06-05:00
