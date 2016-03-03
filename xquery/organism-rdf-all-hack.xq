@@ -117,6 +117,7 @@ return (
         return (<dsw:hasOccurrence>
               <rdf:Description rdf:about='{$orgRecord/dcterms_identifier/text()||"#"||$occurrenceDate}'>{
                 <rdf:type rdf:resource="http://rs.tdwg.org/dwc/terms/Occurrence"/>,
+                <dsw:occurrenceOf rdf:resource='{$orgRecord/dcterms_identifier/text()}'/>,
                 
                if ($depiction[1]/dwc_occurrenceRemarks/text() != "")
                then (
@@ -218,6 +219,7 @@ return (
                         else ()
                   ,
                   <rdf:type rdf:resource ="http://rs.tdwg.org/dwc/terms/Identification" />,
+                  <dsw:identifies rdf:resource='{$orgRecord/dcterms_identifier/text()}'/>,
                   if ($detRecord/dwc_identificationRemarks/text() != "")
                   then <dwc:identificationRemarks>{$detRecord/dwc_identificationRemarks/text()}</dwc:identificationRemarks>
                   else (),
