@@ -1,5 +1,22 @@
 dcterms_identifier|dc_contributor|iri|contactURL|morphbankUserID|dcterms_modified|type
+phoebusp|Patrick Phoebus|http://bioimages.vanderbilt.edu/contact/uri#phoebusp|http://bioimages.vanderbilt.edu/contact/uri||2016-03-27T11:39:50-05:00|Person
+0000-0001-6652-928X|Alice Irizarry|http://orcid.org/0000-0001-6652-928X|http://theschool.vanderbilt.edu/contact/||2015-04-06T15:08:16-05:00|Person
+0000-0001-8514-0325|Vamsi Subraveti|http://orcid.org/0000-0001-8514-0325|http://theschool.vanderbilt.edu/contact/||2015-04-06T15:08:16-05:00|Person
+0000-0002-0743-9409|Anna Ledeczi|http://orcid.org/0000-0002-0743-9409|http://theschool.vanderbilt.edu/contact/||2015-04-06T15:08:16-05:00|Person
+0000-0002-1682-1167|Zach Taylor|http://orcid.org/0000-0002-1682-1167|http://theschool.vanderbilt.edu/contact/||2015-04-06T15:08:16-05:00|Person
+0000-0002-1944-1004|Anna Reside|http://orcid.org/0000-0002-1944-1004|http://theschool.vanderbilt.edu/contact/||2015-04-06T15:08:16-05:00|Person
+0000-0002-2221-4638|Helena Makendengue|http://orcid.org/0000-0002-2221-4638|http://theschool.vanderbilt.edu/contact/||2015-04-06T15:08:16-05:00|Person
+0000-0002-5562-6882|Anveetha Matta|http://orcid.org/0000-0002-5562-6882|http://theschool.vanderbilt.edu/contact/||2015-04-06T15:08:16-05:00|Person
+0000-0002-6098-1926|Sophia Chen|http://orcid.org/0000-0002-6098-1926|http://theschool.vanderbilt.edu/contact/||2015-04-06T15:08:16-05:00|Person
+0000-0002-6954-4108|Safa Figal|http://orcid.org/0000-0002-6954-4108|http://theschool.vanderbilt.edu/contact/||2015-04-06T15:08:16-05:00|Person
+0000-0002-9131-7024|Aditya Srivastava|http://orcid.org/0000-0002-9131-7024|http://theschool.vanderbilt.edu/contact/||2015-04-06T15:08:16-05:00|Person
 andersonwb|Wendy B. Anderson|http://bioimages.vanderbilt.edu/contact/uri#andersonwb|http://www.drury.edu/multinl/story.cfm?nlid=131&id=12958|819852|2015-04-06T15:08:16-05:00|Person
+anonymous000|anonymous|http://bioimages.vanderbilt.edu/contact/uri#anonymous000|http://bioimages.vanderbilt.edu/contact/uri||2015-04-06T15:08:16-05:00|Person
+anonymous002|anonymous|http://bioimages.vanderbilt.edu/contact/uri#anonymous002|http://bioimages.vanderbilt.edu/contact/uri||2015-04-06T15:08:16-05:00|Person
+anonymous003|anonymous|http://bioimages.vanderbilt.edu/contact/uri#anonymous003|http://bioimages.vanderbilt.edu/contact/uri||2015-04-06T15:08:16-05:00|Person
+anonymous004|anonymous|http://bioimages.vanderbilt.edu/contact/uri#anonymous004|http://bioimages.vanderbilt.edu/contact/uri||2015-11-21T10:46:45-06:00|Person
+anonymous005|anonymous|http://bioimages.vanderbilt.edu/contact/uri#anonymous005|http://bioimages.vanderbilt.edu/contact/uri||2015-11-21T10:47:20-06:00|Person
+anonymous006|anonymous|http://bioimages.vanderbilt.edu/contact/uri#anonymous006|http://bioimages.vanderbilt.edu/contact/uri||2015-11-21T10:47:48-06:00|Person
 barberr|Randall Barber|http://bioimages.vanderbilt.edu/contact/uri#barberr|http://bioimages.vanderbilt.edu/contact/uri||2015-04-06T15:08:16-05:00|Person
 baskauf|Steven J. Baskauf|http://bioimages.vanderbilt.edu/contact/baskauf|http://bioimages.vanderbilt.edu/contact/baskauf|224687|2015-04-06T15:08:16-05:00|Person
 baskaufc|Carol J. Baskauf|http://bioimages.vanderbilt.edu/contact/baskauf#baskaufc|http://www.apsu.edu/biology/fac_staff||2015-04-06T15:08:16-05:00|Person
@@ -10,11 +27,14 @@ bishopa|Andrea Bishop|http://bioimages.vanderbilt.edu/contact/uri#bishopa|http:/
 chesterew|Edward W. Chester|http://bioimages.vanderbilt.edu/contact/uri#chesterew|http://www.apsu.edu/biology/fac_staff||2015-04-06T15:08:16-05:00|Person
 coblea|Ashley Coble|http://bioimages.vanderbilt.edu/contact/kirchoff#coblea|http://bioimages.vanderbilt.edu/contact/kirchoff||2015-04-06T15:08:16-05:00|Person
 crookd|David Crook|http://bioimages.vanderbilt.edu/contact/uri#crookd|http://www.digifeld.com/||2015-04-06T15:08:16-05:00|Person
+durandp|Daniel P. Duran|http://bioimages.vanderbilt.edu/contact/uri#durandp|http://bugguide.net/user/view/1609||2015-04-06T15:08:16-05:00|Person
 eickmeierwg|William G. Eickmeier|http://bioimages.vanderbilt.edu/contact/uri#eickmeierwg|http://bioimages.vanderbilt.edu/contact/uri|819854|2015-04-06T15:08:16-05:00|Person
 erteltj|Jonathan Ertelt|http://bioimages.vanderbilt.edu/contact/uri#erteltj|http://sitemason.vanderbilt.edu/biosci/admin_support||2015-04-06T15:08:16-05:00|Person
+eskind|Eskind Biomedical Library|http://viaf.org/viaf/126741140|http://www.mc.vanderbilt.edu/diglib/||2015-11-21T15:40:17-06:00|Organization
 estesld|L. Dwayne Estes|http://bioimages.vanderbilt.edu/contact/uri#estesld|http://www.apsu.edu/field-biology/l-dwayne-estes||2015-04-06T15:08:16-05:00|Person
 frankism|Michael P. Frankis|http://bioimages.vanderbilt.edu/contact/uri#frankism|http://calphotos.berkeley.edu/cgi/reviewers_query?one=T&name=Michael+Frankis||2015-04-06T15:08:16-05:00|Person
 hessd|Darel Hess|http://bioimages.vanderbilt.edu/contact/uri#hessd|http://bioimages.vanderbilt.edu/contact/uri|819856|2015-04-06T15:08:16-05:00|Person
+holtm|Mike Holt|http://bioimages.vanderbilt.edu/contact/uri#holtm|http://bioimages.vanderbilt.edu/contact/uri||2015-04-06T15:08:16-05:00|Person
 hubnerf|Friederike Hübner|http://bioimages.vanderbilt.edu/contact/uri#hubnerf|http://www.asclepidarium.de/||2015-04-06T15:08:16-05:00|Person
 husvethjj|Jason J. Husveth|http://bioimages.vanderbilt.edu/contact/uri#husvethjj|http://www.ccesinc.com/||2015-04-06T15:08:16-05:00|Person
 kaufmannm|Maurice J. Kaufmann|http://bioimages.vanderbilt.edu/contact/baskauf#kaufmannm|http://bioimages.vanderbilt.edu/contact/baskauf|819874|2015-04-06T15:08:16-05:00|Person
@@ -27,38 +47,19 @@ lasseignef|F. Todd Lasseigne|http://bioimages.vanderbilt.edu/contact/uri#lasseig
 masone|Emily C. Mason|http://bioimages.vanderbilt.edu/contact/kirchoff#masone|http://bioimages.vanderbilt.edu/contact/kirchoff||2015-04-06T15:08:16-05:00|Person
 mathewsk|Kathy Gould Mathews|http://bioimages.vanderbilt.edu/contact/uri#mathewsk|http://www.wcu.edu/7420.asp|819862|2015-04-06T15:08:16-05:00|Person
 mccormickc|Carol A. McCormick|http://bioimages.vanderbilt.edu/contact/uri#mccormickc|http://www.herbarium.unc.edu/collectors/mccormick_carolann.htm||2015-04-06T15:08:16-05:00|Person
+none|public domain|http://creativecommons.org/publicdomain/zero/1.0/|http://creativecommons.org/publicdomain/zero/1.0/||2015-11-21T16:41:19-06:00|Person
 raveillj|Jay A. Raveill|http://bioimages.vanderbilt.edu/contact/uri#raveillj|http://www.ucmo.edu/biology/facstaff/raveill.cfm||2015-04-06T15:08:16-05:00|Person
 scheidtn|Neil Scheidt|http://bioimages.vanderbilt.edu/contact/uri#scheidtn|http://bioimages.vanderbilt.edu/contact/uri||2015-04-06T15:08:16-05:00|Person
 segraveska|Kari A. Segraves|http://bioimages.vanderbilt.edu/contact/uri#segraveska|http://biology.syr.edu/faculty/segraves/segraves.htm|819864|2015-04-06T15:08:16-05:00|Person
 thomas|Ron Thomas|http://bioimages.vanderbilt.edu/contact/thomas|http://wildflowerlense.com/|819872|2015-04-06T15:08:16-05:00|Person
 uncg|University of North Carolina at Greensboro Arboretum|http://biocol.org/urn:lsid:biocol.org:col:35269|http://biocol.org/urn:lsid:biocol.org:col:35269||2015-04-06T15:08:16-05:00|Organization
+usn|University School of Nashville|http://viaf.org/viaf/134061844|http://www.usn.org/||2015-10-03T07:22:07-05:00|Organization
 vanderbilt|Vanderbilt University Arboretum|http://biocol.org/urn:lsid:biocol.org:col:35259|http://vanderbilt.edu/trees/||2015-04-06T15:08:16-05:00|Organization
 vannimwegenr|Ron E. VanNimwegen|http://bioimages.vanderbilt.edu/contact/uri#vannimwegenr|http://bioimages.vanderbilt.edu/contact/uri|819866|2015-04-06T15:08:16-05:00|Person
+vaughnh|Harry S. Vaughn|http://bioimages.vanderbilt.edu/contact/uri#vaughnh|http://bioimages.vanderbilt.edu/contact/uri||2015-04-06T15:08:16-05:00|Person
 vorfeldj|Judy Vorfeld|http://bioimages.vanderbilt.edu/contact/uri#vorfeldj|http://www.digifeld.com/||2015-04-06T15:08:16-05:00|Person
 weakleya|Alan S. Weakley|http://bioimages.vanderbilt.edu/contact/uri#weakleya|http://www.herbarium.unc.edu/Collectors/Weakley_Alan.htm||2015-04-06T15:08:16-05:00|Person
 welchla|LinnAnn Welch|http://bioimages.vanderbilt.edu/contact/uri#welchla|http://www.nashville.gov/parks/nature/bbnc/index.asp||2015-04-06T15:08:16-05:00|Person
 whittierd|Dean P. Whittier|http://bioimages.vanderbilt.edu/contact/uri#whittierd|https://medschool.mc.vanderbilt.edu/biosci/bio_fac.php?id3=921|819868|2015-04-06T15:08:16-05:00|Person
 wilburb|Barbara Wilbur|http://bioimages.vanderbilt.edu/contact/uri#wilburb|http://bioimages.vanderbilt.edu/contact/uri||2015-04-06T15:08:16-05:00|Person
 woodbridge|Abi Woodbridge|http://bioimages.vanderbilt.edu/contact/uri#woodbridge|http://bioimages.vanderbilt.edu/contact/uri|819870|2015-04-06T15:08:16-05:00|Person
-durandp|Daniel P. Duran|http://bioimages.vanderbilt.edu/contact/uri#durandp|http://bugguide.net/user/view/1609||2015-04-06T15:08:16-05:00|Person
-anonymous000|anonymous|http://bioimages.vanderbilt.edu/contact/uri#anonymous000|http://bioimages.vanderbilt.edu/contact/uri||2015-04-06T15:08:16-05:00|Person
-vaughnh|Harry S. Vaughn|http://bioimages.vanderbilt.edu/contact/uri#vaughnh|http://bioimages.vanderbilt.edu/contact/uri||2015-04-06T15:08:16-05:00|Person
-anonymous002|anonymous|http://bioimages.vanderbilt.edu/contact/uri#anonymous002|http://bioimages.vanderbilt.edu/contact/uri||2015-04-06T15:08:16-05:00|Person
-anonymous003|anonymous|http://bioimages.vanderbilt.edu/contact/uri#anonymous003|http://bioimages.vanderbilt.edu/contact/uri||2015-04-06T15:08:16-05:00|Person
-holtm|Mike Holt|http://bioimages.vanderbilt.edu/contact/uri#holtm|http://bioimages.vanderbilt.edu/contact/uri||2015-04-06T15:08:16-05:00|Person
-0000-0002-0743-9409|Anna Ledeczi|http://orcid.org/0000-0002-0743-9409|http://theschool.vanderbilt.edu/contact/||2015-04-06T15:08:16-05:00|Person
-0000-0001-6652-928X|Alice Irizarry|http://orcid.org/0000-0001-6652-928X|http://theschool.vanderbilt.edu/contact/||2015-04-06T15:08:16-05:00|Person
-0000-0002-1682-1167|Zach Taylor|http://orcid.org/0000-0002-1682-1167|http://theschool.vanderbilt.edu/contact/||2015-04-06T15:08:16-05:00|Person
-0000-0002-2221-4638|Helena Makendengue|http://orcid.org/0000-0002-2221-4638|http://theschool.vanderbilt.edu/contact/||2015-04-06T15:08:16-05:00|Person
-0000-0001-8514-0325|Vamsi Subraveti|http://orcid.org/0000-0001-8514-0325|http://theschool.vanderbilt.edu/contact/||2015-04-06T15:08:16-05:00|Person
-0000-0002-5562-6882|Anveetha Matta|http://orcid.org/0000-0002-5562-6882|http://theschool.vanderbilt.edu/contact/||2015-04-06T15:08:16-05:00|Person
-0000-0002-6954-4108|Safa Figal|http://orcid.org/0000-0002-6954-4108|http://theschool.vanderbilt.edu/contact/||2015-04-06T15:08:16-05:00|Person
-0000-0002-1944-1004|Anna Reside|http://orcid.org/0000-0002-1944-1004|http://theschool.vanderbilt.edu/contact/||2015-04-06T15:08:16-05:00|Person
-0000-0002-6098-1926|Sophia Chen|http://orcid.org/0000-0002-6098-1926|http://theschool.vanderbilt.edu/contact/||2015-04-06T15:08:16-05:00|Person
-0000-0002-9131-7024|Aditya Srivastava|http://orcid.org/0000-0002-9131-7024|http://theschool.vanderbilt.edu/contact/||2015-04-06T15:08:16-05:00|Person
-usn|University School of Nashville|http://viaf.org/viaf/134061844|http://www.usn.org/||2015-10-03T07:22:07-05:00|Organization
-anonymous004|anonymous|http://bioimages.vanderbilt.edu/contact/uri#anonymous004|http://bioimages.vanderbilt.edu/contact/uri||2015-11-21T10:46:45-06:00|Person
-anonymous005|anonymous|http://bioimages.vanderbilt.edu/contact/uri#anonymous005|http://bioimages.vanderbilt.edu/contact/uri||2015-11-21T10:47:20-06:00|Person
-anonymous006|anonymous|http://bioimages.vanderbilt.edu/contact/uri#anonymous006|http://bioimages.vanderbilt.edu/contact/uri||2015-11-21T10:47:48-06:00|Person
-eskind|Eskind Biomedical Library|http://viaf.org/viaf/126741140|http://www.mc.vanderbilt.edu/diglib/||2015-11-21T15:40:17-06:00|Organization
-none|public domain|http://creativecommons.org/publicdomain/zero/1.0/|http://creativecommons.org/publicdomain/zero/1.0/||2015-11-21T16:41:19-06:00|Person
