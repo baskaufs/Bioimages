@@ -304,12 +304,6 @@ return (file:create-dir(concat($rootPath,"\",$namespace)), file:write($filePath,
            )
       else (),
 
-      if ($orgRecord/dwc_organismScope/text() != "multicellular organism")
-      then (
-            <h5><em>This entity has the scope: </em><strong>{$orgRecord/dwc_organismScope/text()}</strong>.</h5>,<br/>
-           )
-      else (),
-
       if ($orgRecord/dwc_organismRemarks/text() != "")
       then (
             <h5><em>Remarks:</em><strong>{$orgRecord/dwc_organismRemarks/text()}</strong></h5>,<br/>
