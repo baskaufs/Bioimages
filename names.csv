@@ -590,7 +590,7 @@ ubioID|dcterms_identifier|dwc_kingdom|dwc_class|dwc_order|dwc_family|dwc_genus|d
 448152|19070|Plantae|Magnoliopsida|Urticales|Moraceae|Morus|rubra||species|L.|red mulberry|2015-09-21T18:09:43-05:00
 467509|42977|Plantae|Liliopsida|Liliales|Liliaceae|Muscari|botryoides||species|(L.) Mill.|common grape hyacinth|2015-09-21T18:09:43-05:00
 458713|31695|Plantae|Magnoliopsida|Lamiales|Boraginaceae|Myosotis|macrosperma||species|Engelm.|largeseed forget-me-not|2015-09-21T18:09:43-05:00
-471440|500435|Plantae|Liliopsida|Liliales|Liliaceae|Narcissus|||genus||daffodil|2017-01-14T09:35:35-06:00
+471440|500435|Plantae|Liliopsida|Liliales|Liliaceae|Narcissus|||genus||daffodil|2017-02-24T07:54:37-06:00
 474778|503930|Plantae|Liliopsida|Liliales|Liliaceae|Narcissus|pseudonarcissus||species|L.|daffodil|2015-09-21T18:09:43-05:00
 454342|18398|Plantae|Magnoliopsida|Nymphaeales|Nelumbonaceae|Nelumbo|lutea||species|Willd.|American lotus|2015-09-21T18:09:43-05:00
 458469|31422|Plantae|Magnoliopsida|Solanales|Hydrophyllaceae|Nemophila|aphylla||species|(L.) Brummitt|smallflower baby blue eyes|2015-09-21T18:09:43-05:00
@@ -1191,7 +1191,8 @@ ubioID|dcterms_identifier|dwc_kingdom|dwc_class|dwc_order|dwc_family|dwc_genus|d
 105757|180575|Animalia|Mammalia|Carnivora|Procyonidae|Procyon|lotor||species|(Linnaeus 1758)|common raccoon|2015-10-15T11:02:04-05:00
 456131|28631|Plantae|Magnoliopsida|Rhamnales|Vitaceae|Ampelopsis|arborea||species||peppervine|2015-12-05T08:28:52-06:00
 621763|520974|Plantae|Magnoliopsida|Rosales|Rosaceae|Sanguisorba|stipulata||species|Raf.|Sitka burnet|2015-10-15T11:04:06-05:00
-110078|180103|Animalia|Mammalia|Cingulata|Dasypodidae|Dasypus|novemcinctus||species|Linnaeus, 1758|Nine-banded Armadillo|2017-01-14T09:35:35-06:00
-2326959|175604|Animalia|Aves|Falconiformes|Falconidae|Falco|peregrinus||species|Tunstall, 1771|Peregrine Falcon|2017-01-14T09:35:35-06:00
-106009|552762|Animalia|Mammalia|Artiodactyla|Tayassuidae|Tayassu|pecari||species|(Link, 1795)|white-lipped peccary|2017-01-14T09:35:35-06:00
-2623577|108628|Animalia|Insecta|Hemiptera|Pentatomidae||||family|Leach, 1815|stink bugs|2017-01-11T14:03:24-06:00
+110078|180103|Animalia|Mammalia|Cingulata|Dasypodidae|Dasypus|novemcinctus||species|Linnaeus, 1758|Nine-banded Armadillo|2017-02-24T07:54:37-06:00
+2326959|175604|Animalia|Aves|Falconiformes|Falconidae|Falco|peregrinus||species|Tunstall, 1771|Peregrine Falcon|2017-02-24T07:54:37-06:00
+106009|552762|Animalia|Mammalia|Artiodactyla|Tayassuidae|Tayassu|pecari||species|(Link, 1795)|white-lipped peccary|2017-02-24T07:54:37-06:00
+2623577|108628|Animalia|Insecta|Hemiptera|Pentatomidae||||family|Leach, 1815|stink bugs|2017-02-24T07:54:37-06:00
+|100800|Animalia|Insecta|Emphemeroptera|Batidae|Baetis|||genus||mayfly|2017-02-24T07:56:58-06:00
