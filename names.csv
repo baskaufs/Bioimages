@@ -590,7 +590,7 @@ ubioID|dcterms_identifier|dwc_kingdom|dwc_class|dwc_order|dwc_family|dwc_genus|d
 448152|19070|Plantae|Magnoliopsida|Urticales|Moraceae|Morus|rubra||species|L.|red mulberry|2015-09-21T18:09:43-05:00
 467509|42977|Plantae|Liliopsida|Liliales|Liliaceae|Muscari|botryoides||species|(L.) Mill.|common grape hyacinth|2015-09-21T18:09:43-05:00
 458713|31695|Plantae|Magnoliopsida|Lamiales|Boraginaceae|Myosotis|macrosperma||species|Engelm.|largeseed forget-me-not|2015-09-21T18:09:43-05:00
-471440|500435|Plantae|Liliopsida|Liliales|Liliaceae|Narcissus|||genus||daffodil|2017-11-14T21:18:50-06:00
+471440|500435|Plantae|Liliopsida|Liliales|Liliaceae|Narcissus|||genus||daffodil|2017-11-16T05:28:17-06:00
 474778|503930|Plantae|Liliopsida|Liliales|Liliaceae|Narcissus|pseudonarcissus||species|L.|daffodil|2015-09-21T18:09:43-05:00
 454342|18398|Plantae|Magnoliopsida|Nymphaeales|Nelumbonaceae|Nelumbo|lutea||species|Willd.|American lotus|2015-09-21T18:09:43-05:00
 458469|31422|Plantae|Magnoliopsida|Solanales|Hydrophyllaceae|Nemophila|aphylla||species|(L.) Brummitt|smallflower baby blue eyes|2015-09-21T18:09:43-05:00
@@ -1191,22 +1191,22 @@ ubioID|dcterms_identifier|dwc_kingdom|dwc_class|dwc_order|dwc_family|dwc_genus|d
 105757|180575|Animalia|Mammalia|Carnivora|Procyonidae|Procyon|lotor||species|(Linnaeus 1758)|common raccoon|2015-10-15T11:02:04-05:00
 456131|28631|Plantae|Magnoliopsida|Rhamnales|Vitaceae|Ampelopsis|arborea||species||peppervine|2015-12-05T08:28:52-06:00
 621763|520974|Plantae|Magnoliopsida|Rosales|Rosaceae|Sanguisorba|stipulata||species|Raf.|Sitka burnet|2015-10-15T11:04:06-05:00
-110078|180103|Animalia|Mammalia|Cingulata|Dasypodidae|Dasypus|novemcinctus||species|Linnaeus, 1758|Nine-banded Armadillo|2017-11-14T21:18:50-06:00
-2326959|175604|Animalia|Aves|Falconiformes|Falconidae|Falco|peregrinus||species|Tunstall, 1771|Peregrine Falcon|2017-11-14T21:18:50-06:00
-106009|552762|Animalia|Mammalia|Artiodactyla|Tayassuidae|Tayassu|pecari||species|(Link, 1795)|white-lipped peccary|2017-11-14T21:18:50-06:00
-2623577|108628|Animalia|Insecta|Hemiptera|Pentatomidae||||family|Leach, 1815|stink bugs|2017-11-14T21:18:50-06:00
-|108313|Animalia|Insecta|Hemiptera|Coreidae||||Family|Leach, 1815|leaf-footed bugs|2017-11-14T21:18:50-06:00
-|173752|Animalia|Reptilia|Testudines|Chelydridae|Chelydra|serpentina||Species|(Linnaeus, 1758)|Common Snapping Turtle|2017-11-14T21:18:50-06:00
-220815|68440|Animalia|Oligochaeta|Lumbriculida|Lumbriculidae||||family|Vejdovský, 1884|aquatic oligochaete worm|2017-11-14T21:18:50-06:00
-221566|69365|Anamalia|Hirudinea|Rhynchobdellida|Glossiphoniinae|Placobdella|parasitica||species|(Say, 1824)|turtle leech|2017-11-14T21:18:50-06:00
-2304901|165878|Anamalia|Actinopterygii|Cyprinodontiformes|Poeciliidae|Gambusia|affinis||species|(non Baird & Girard, 1853)|western mosquitofish|2017-11-14T21:18:50-06:00
-25832|173684|Animalia|Amphibia|Caudata|Plethodontidae|Eurycea|||genus|Rafinesque, 1822|brook salamander|2017-11-14T21:18:50-06:00
-4376180|115095|Animalia|Insecta|Trichoptera|||||order|Meigen 1803|caddisfly|2017-11-14T21:18:50-06:00
-507322|78782|Animalia|Gastropoda|Archaeopulmonata|||||order|J.E.Morton, 1955|snail|2017-11-14T21:18:50-06:00
-522273|89787|Animalia|Malacostraca||||||class|Latreille, 1802 |sowbug|2017-11-14T21:18:50-06:00
-528655|97421|Anamalia|Malacostraca|Decapoda|Cambaridae|Orconectes|||genus|Cope, 1872 |crayfish|2017-11-14T21:18:50-06:00
-570118|115398|Animalia|Insecta|Trichoptera|Hydropsychidae||||family|Curtis, 1835|net-spinning caddisflies|2017-11-14T21:18:50-06:00
-8232797|118840|Animalia|Insecta|Diptera|Tipulidae||||family|Kirby & Spence, 1815 |crane fly|2017-11-14T21:18:50-06:00
-9715257|79118|Anamalia|Bivalvia||||||class|Linnaeus, 1758|clam|2017-11-14T21:18:50-06:00
+110078|180103|Animalia|Mammalia|Cingulata|Dasypodidae|Dasypus|novemcinctus||species|Linnaeus, 1758|Nine-banded Armadillo|2017-11-16T05:28:17-06:00
+2326959|175604|Animalia|Aves|Falconiformes|Falconidae|Falco|peregrinus||species|Tunstall, 1771|Peregrine Falcon|2017-11-16T05:28:17-06:00
+106009|552762|Animalia|Mammalia|Artiodactyla|Tayassuidae|Tayassu|pecari||species|(Link, 1795)|white-lipped peccary|2017-11-16T05:28:17-06:00
+2623577|108628|Animalia|Insecta|Hemiptera|Pentatomidae||||family|Leach, 1815|stink bugs|2017-11-16T05:28:17-06:00
+|108313|Animalia|Insecta|Hemiptera|Coreidae||||Family|Leach, 1815|leaf-footed bugs|2017-11-16T05:28:17-06:00
+|173752|Animalia|Reptilia|Testudines|Chelydridae|Chelydra|serpentina||Species|(Linnaeus, 1758)|Common Snapping Turtle|2017-11-16T05:28:17-06:00
+220815|68440|Animalia|Oligochaeta|Lumbriculida|Lumbriculidae||||family|Vejdovský, 1884|aquatic oligochaete worm|2017-11-16T05:28:17-06:00
+221566|69365|Anamalia|Hirudinea|Rhynchobdellida|Glossiphoniinae|Placobdella|parasitica||species|(Say, 1824)|turtle leech|2017-11-16T05:28:17-06:00
+2304901|165878|Anamalia|Actinopterygii|Cyprinodontiformes|Poeciliidae|Gambusia|affinis||species|(non Baird & Girard, 1853)|western mosquitofish|2017-11-16T05:28:17-06:00
+25832|173684|Animalia|Amphibia|Caudata|Plethodontidae|Eurycea|||genus|Rafinesque, 1822|brook salamander|2017-11-16T05:28:17-06:00
+4376180|115095|Animalia|Insecta|Trichoptera|||||order|Meigen 1803|caddisfly|2017-11-16T05:28:17-06:00
+507322|78782|Animalia|Gastropoda|Archaeopulmonata|||||order|J.E.Morton, 1955|snail|2017-11-16T05:28:17-06:00
+522273|89787|Animalia|Malacostraca||||||class|Latreille, 1802 |sowbug|2017-11-16T05:28:17-06:00
+528655|97421|Anamalia|Malacostraca|Decapoda|Cambaridae|Orconectes|||genus|Cope, 1872 |crayfish|2017-11-16T05:28:17-06:00
+570118|115398|Animalia|Insecta|Trichoptera|Hydropsychidae||||family|Curtis, 1835|net-spinning caddisflies|2017-11-16T05:28:17-06:00
+8232797|118840|Animalia|Insecta|Diptera|Tipulidae||||family|Kirby & Spence, 1815 |crane fly|2017-11-16T05:28:17-06:00
+9715257|79118|Anamalia|Bivalvia||||||class|Linnaeus, 1758|clam|2017-11-16T05:28:17-06:00
 391129|100800|Animalia|Insecta|Emphemeroptera|Batidae|Baetis|||genus|Leach, 1815 |mayfly|2017-03-06T12:18:39-06:00
-528706|97472|Anamalia|Malacostraca|Decapoda|Cambaridae|Orconectes|placidus||species|(Hagen, 1870)|placid crayfish|2017-11-14T21:18:50-06:00
+528706|97472|Anamalia|Malacostraca|Decapoda|Cambaridae|Orconectes|placidus||species|(Hagen, 1870)|placid crayfish|2017-11-16T05:28:17-06:00
