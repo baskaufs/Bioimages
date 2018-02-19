@@ -62,6 +62,14 @@ else
 ""
 };
 
+(: Note: this function depends on EXPath Binary Module 1.0, which might not be implemented by all processors.  It works in BaseX :)
+declare function local:flag-test($flag as xs:string, $test as xs:string) as xs:boolean
+{
+  let $binFlag := bin:from-octets(xs:int($flag)) (: This contains all of the set bits for a suppress flag :)
+  let $binTest := bin:from-octets(xs:int($test)) (: This is the flag bit or bits to be tested :)
+  return $binTest = bin:and($binFlag, $binTest)  (: perform a binary AND against the test bit mask and return TRUE if the masked flag equals the test bit or bits :)
+};
+
 declare function local:generate-taxon-elements
 ($domain, $xmlNames, $xmlDeterminations, $xmlOrganisms, $xmlImages, $xmlAgents, $licenseCategory)
 {
@@ -84,9 +92,14 @@ return (
         let $temp1 := substring-before($imgRecord/dcterms_identifier/text(),concat("/",$fileName))
         let $namespace := local:substring-after-last($temp1,"/")
         
+        let $suppressString := 
+            if (string-length($detRecord/suppress/text()) = 0 )
+            then "0"
+            else $detRecord/suppress/text()    
+        
         (: images are screened for submission by having a quality rating of greater or equal to 4 :)
-        (: incorrect determinations that have suppressed=1 do not have their associated images included under the taxon :)
-        where $detRecord/dsw_identified=$orgRecord/dcterms_identifier and $name/dcterms_identifier=$detRecord/tsnID and $imgRecord/foaf_depicts=$orgRecord/dcterms_identifier and fn:number($imgRecord/xmp_Rating/text())>=4 and fn:number($detRecord/suppress/text())!=1
+        (: incorrect determinations that have (suppressed && 1) do not have their associated images included under the taxon :)
+        where $detRecord/dsw_identified=$orgRecord/dcterms_identifier and $name/dcterms_identifier=$detRecord/tsnID and $imgRecord/foaf_depicts=$orgRecord/dcterms_identifier and fn:number($imgRecord/xmp_Rating/text())>=4 and local:flag-test($suppressString,"1")=false()
         return (
 <dataObject>{
   
