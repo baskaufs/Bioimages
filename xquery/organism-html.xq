@@ -100,6 +100,23 @@ then
 else ""
 };
 
+(: Note: this function depends on EXPath Binary Module 1.0, which might not be implemented by all processors.  It works in BaseX :)
+declare function local:flag-test($flag as xs:string, $test as xs:string) as xs:boolean
+{
+  let $binFlag := bin:from-octets(xs:int($flag)) (: This contains all of the set bits for a suppress flag :)
+  let $binTest := bin:from-octets(xs:int($test)) (: This is the flag bit or bits to be tested :)
+  return $binTest = bin:and($binFlag, $binTest)  (: perform a binary AND against the test bit mask and return TRUE if the masked flag equals the test bit or bits :)
+};
+
+declare function local:clean-suppress-flag($flag as xs:string) as xs:string
+{
+  if (string-length($flag) = 0)
+  then "0"
+  else $flag
+};
+
+(:--------------------------------------------------------:)
+
 let $localFilesFolderUnix := "c:/test"
 
 (: Create root folder if it doesn't already exist. :)
@@ -390,14 +407,28 @@ return (file:create-dir(concat($rootPath,"\",$namespace)), file:write($filePath,
       <br/>,
       for $depiction in $xmlImages/csv/record
       where $depiction/foaf_depicts=$orgRecord/dcterms_identifier
-      let $occurrenceDate := substring($depiction/dcterms_created/text(),1,10)
+      
+      (: If suppress field is empty, set the flag to "0" :)
+      let $suppressFlag := local:clean-suppress-flag($depiction/suppress/text())
+      
+      (: If the suppress flag includes the 2's place bit, then use the part of the organismRemarks before the first period as the occurrence date instead of the date from the image metadata, e.g. for specimen photos :)
+      let $occurrenceDate :=
+          if (local:flag-test($suppressFlag,"2"))
+          then substring-before($depiction/dwc_occurrenceRemarks/text(),'.')
+          else substring($depiction/dcterms_created/text(),1,10)
       group by $occurrenceDate
       return (
         <a id="{$occurrenceDate}">{$occurrenceDate}</a>,
 
         if ($depiction[1]/dwc_occurrenceRemarks/text() != "")
-        then (
-              <h6> <em>Remarks:</em> {$depiction[1]/dwc_occurrenceRemarks/text()}</h6>
+        then if (local:flag-test(local:clean-suppress-flag($depiction[1]/suppress/text()),"2"))
+              then
+             (
+               <h6> <em>Remarks:</em> {substring-after($depiction[1]/dwc_occurrenceRemarks/text(),'.')}</h6>
+             )
+             else 
+             (
+               <h6> <em>Remarks:</em> {$depiction[1]/dwc_occurrenceRemarks/text()}</h6>               
              )
         else (),
         

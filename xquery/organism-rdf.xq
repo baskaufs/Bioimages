@@ -21,6 +21,22 @@ declare function local:substring-after-last
   else $string
 };
 
+(: Note: this function depends on EXPath Binary Module 1.0, which might not be implemented by all processors.  It works in BaseX :)
+declare function local:flag-test($flag as xs:string, $test as xs:string) as xs:boolean
+{
+  let $binFlag := bin:from-octets(xs:int($flag)) (: This contains all of the set bits for a suppress flag :)
+  let $binTest := bin:from-octets(xs:int($test)) (: This is the flag bit or bits to be tested :)
+  return $binTest = bin:and($binFlag, $binTest)  (: perform a binary AND against the test bit mask and return TRUE if the masked flag equals the test bit or bits :)
+};
+
+declare function local:clean-suppress-flag($flag as xs:string) as xs:string
+{
+  if (string-length($flag) = 0)
+  then "0"
+  else $flag
+};
+
+(:------------------------------------------------:)
 let $localFilesFolderUnix := "c:/test"
 
 (: Create root folder if it doesn't already exist. :)
