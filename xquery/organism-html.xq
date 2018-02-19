@@ -108,7 +108,7 @@ declare function local:flag-test($flag as xs:string, $test as xs:string) as xs:b
   return $binTest = bin:and($binFlag, $binTest)  (: perform a binary AND against the test bit mask and return TRUE if the masked flag equals the test bit or bits :)
 };
 
-declare function local:clean-suppress-flag($flag as xs:string) as xs:string
+declare function local:clean-suppress-flag($flag as xs:string?) as xs:string
 {
   if (string-length($flag) = 0)
   then "0"
