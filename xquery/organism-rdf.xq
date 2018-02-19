@@ -13,7 +13,17 @@ declare namespace txn="http://lod.taxonconcept.org/ontology/txn.owl#";
 declare namespace geo="http://www.w3.org/2003/01/geo/wgs84_pos#";
 declare namespace blocal="http://bioimages.vanderbilt.edu/rdf/local#";
 
-declare function local:substring-after-last
+declare namespace functx = "http://www.functx.com";
+declare function functx:substring-before-if-contains
+  ( $arg as xs:string? ,
+    $delim as xs:string )  as xs:string? {
+
+   if (contains($arg,$delim))
+   then substring-before($arg,$delim)
+   else $arg
+ } ;
+ 
+ declare function local:substring-after-last
 ($string as xs:string?, $delim as xs:string) as xs:string?
 {
   if (contains($string, $delim))
@@ -130,18 +140,34 @@ xmlns:blocal="http://bioimages.vanderbilt.edu/rdf/local#"
         <!--Occurrences documented for the organism-->,
         for $depiction in $xmlImages/csv/record
         where $depiction/foaf_depicts=$orgRecord/dcterms_identifier
-        let $occurrenceDate := substring($depiction/dcterms_created/text(),1,10)
+        
+        (: If suppress field is empty, set the flag to "0" :)
+        let $suppressFlag := local:clean-suppress-flag($depiction/suppress/text())
+        
+        (: If the suppress flag includes the 2's place bit, then use the part of the organismRemarks before the first period as the occurrence date instead of the date from the image metadata, e.g. for specimen photos :)
+        let $occurrenceDate :=
+            if (local:flag-test($suppressFlag,"2"))
+            then substring-before($depiction/dwc_occurrenceRemarks/text(),'.')
+            else substring($depiction/dcterms_created/text(),1,10)
+        
         group by $occurrenceDate
+        (: If the occurrence date includes a "/" character for a date range, use only first part for hash :)
         return (<dsw:hasOccurrence>
-              <rdf:Description rdf:about='{$orgRecord/dcterms_identifier/text()||"#"||$occurrenceDate}'>{
+              <rdf:Description rdf:about='{$orgRecord/dcterms_identifier/text()||"#"||functx:substring-before-if-contains($occurrenceDate,"/")}'>{
                 <rdf:type rdf:resource="http://rs.tdwg.org/dwc/terms/Occurrence"/>,
                 <dsw:occurrenceOf rdf:resource='{$orgRecord/dcterms_identifier/text()}'/>,
 
-               if ($depiction[1]/dwc_occurrenceRemarks/text() != "")
-               then (
-                    <dwc:occurrenceRemarks>{$depiction[1]/dwc_occurrenceRemarks/text()}</dwc:occurrenceRemarks>
-                    )
-               else (),
+                if ($depiction[1]/dwc_occurrenceRemarks/text() != "")
+                then if (local:flag-test(local:clean-suppress-flag($depiction[1]/suppress/text()),"2"))
+                     then
+                     (
+                     <dwc:occurrenceRemarks>{substring-after($depiction[1]/dwc_occurrenceRemarks/text(),'.')}</dwc:occurrenceRemarks>
+                     )
+                     else 
+                     (
+                     <dwc:occurrenceRemarks>{$depiction[1]/dwc_occurrenceRemarks/text()}</dwc:occurrenceRemarks>
+                     )
+                else (),
                 
                for $agent in $xmlAgents/csv/record
                where $agent/dcterms_identifier/text()=$depiction[1]/photographerCode/text()
@@ -150,7 +176,7 @@ xmlns:blocal="http://bioimages.vanderbilt.edu/rdf/local#"
                ,
 
                 <dsw:atEvent>
-                    <rdf:Description rdf:about='{$orgRecord/dcterms_identifier/text()||"#"||$occurrenceDate||"eve"}'>{
+                    <rdf:Description rdf:about='{$orgRecord/dcterms_identifier/text()||"#"||functx:substring-before-if-contains($occurrenceDate,"/")||"eve"}'>{
                       <rdf:type rdf:resource="http://rs.tdwg.org/dwc/terms/Event"/>,
                       
                       if (string-length($occurrenceDate) = 10)
@@ -162,7 +188,7 @@ xmlns:blocal="http://bioimages.vanderbilt.edu/rdf/local#"
                            ),
                       
                         <dsw:locatedAt>
-                           <rdf:Description rdf:about='{$orgRecord/dcterms_identifier/text()||"#"||$occurrenceDate||"loc"}'>{
+                           <rdf:Description rdf:about='{$orgRecord/dcterms_identifier/text()||"#"||functx:substring-before-if-contains($occurrenceDate,"/")||"loc"}'>{
                              <rdf:type rdf:resource="http://purl.org/dc/terms/Location"/>,
                              if ($orgRecord/dwc_decimalLatitude/text() != "")
                              then (
@@ -224,16 +250,16 @@ xmlns:blocal="http://bioimages.vanderbilt.edu/rdf/local#"
         (: Note: the determinations must be saved in order of descending dateIdentified in order for them to be displayed correctly on the pages that display dynamically by Javascript :)
         order by $detRecord/dwc_dateIdentified/text() descending
         return <dsw:hasIdentification><rdf:Description rdf:about="{$orgRecord/dcterms_identifier/text()||"#"||$detRecord/dwc_dateIdentified/text()||$detRecord/identifiedBy/text()}">{
-                  if ($nameRecord/dwc_taxonRank/text() = "species")
+                  if (lower-case($nameRecord/dwc_taxonRank/text()) = "species")
                   then <dcterms:description xml:lang="en">Determination of {$nameRecord/dwc_genus/text()||" "||$nameRecord/dwc_specificEpithet/text()||" sec. "||$sensuRecord/tcsSignature/text()}</dcterms:description>
                   else 
-                    if ($nameRecord/dwc_taxonRank/text() = "genus")
+                    if (lower-case($nameRecord/dwc_taxonRank/text()) = "genus")
                     then <dcterms:description xml:lang="en">Determination of {$nameRecord/dwc_genus/text()||" sec. "||$sensuRecord/tcsSignature/text()}</dcterms:description>
                     else 
-                      if ($nameRecord/dwc_taxonRank/text() = "subspecies")
+                      if (lower-case($nameRecord/dwc_taxonRank/text()) = "subspecies")
                       then <dcterms:description xml:lang="en">Determination of {$nameRecord/dwc_genus/text()||" "||$nameRecord/dwc_specificEpithet/text()||" ssp. "||$nameRecord/dwc_infraspecificEpithet/text()||" sec. "||$sensuRecord/tcsSignature/text()}</dcterms:description>
                       else
-                        if ($nameRecord/dwc_taxonRank/text() = "variety")
+                        if (lower-case($nameRecord/dwc_taxonRank/text()) = "variety")
                         then <dcterms:description xml:lang="en">Determination of {$nameRecord/dwc_genus/text()||" "||$nameRecord/dwc_specificEpithet/text()||" var. "||$nameRecord/dwc_infraspecificEpithet/text()||" sec. "||$sensuRecord/tcsSignature/text()}</dcterms:description>
                         else ()
                   ,

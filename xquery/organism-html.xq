@@ -15,7 +15,17 @@ declare namespace blocal="http://bioimages.vanderbilt.edu/rdf/local#";
 
 (: TODO This does not do anything with links.csv :)
 
-declare function local:county-units
+declare namespace functx = "http://www.functx.com";
+declare function functx:substring-before-if-contains
+  ( $arg as xs:string? ,
+    $delim as xs:string )  as xs:string? {
+
+   if (contains($arg,$delim))
+   then substring-before($arg,$delim)
+   else $arg
+ } ;
+ 
+ declare function local:county-units
 ($state, $countryCode) as xs:string
 {
 if ($state != "")
@@ -51,16 +61,16 @@ declare function local:get-taxon-name-markup
   order by $detRecord/dwc_dateIdentified/text() descending
   let $organismScreen := $detRecord/dsw_identified/text()
   group by $organismScreen
-  return if ($nameRecord[1]/dwc_taxonRank/text() = "species")
+  return if (lower-case($nameRecord[1]/dwc_taxonRank/text()) = "species")
          then (<em>{$nameRecord[1]/dwc_genus/text()||" "||$nameRecord[1]/dwc_specificEpithet/text()}</em>," ("||$nameRecord[1]/dwc_vernacularName/text()||")")
          else 
-           if ($nameRecord[1]/dwc_taxonRank/text() = "genus")
+           if (lower-case($nameRecord[1]/dwc_taxonRank/text()) = "genus")
            then (<em>{$nameRecord[1]/dwc_genus/text()}</em>," sp. ("||$nameRecord[1]/dwc_vernacularName/text(),")")
            else 
-             if ($nameRecord[1]/dwc_taxonRank/text() = "subspecies")
+             if (lower-case($nameRecord[1]/dwc_taxonRank/text()) = "subspecies")
              then (<em>{$nameRecord[1]/dwc_genus/text()||" "||$nameRecord[1]/dwc_specificEpithet/text()}</em>," ssp. ",<em>{$nameRecord[1]/dwc_infraspecificEpithet/text()}</em>, " (", $nameRecord[1]/dwc_vernacularName/text(),")")
              else
-               if ($nameRecord[1]/dwc_taxonRank/text() = "variety")
+               if (lower-case($nameRecord[1]/dwc_taxonRank/text()) = "variety")
                then (<em>{$nameRecord[1]/dwc_genus/text()||" "||$nameRecord[1]/dwc_specificEpithet/text()}</em>," var. ",<em>{$nameRecord[1]/dwc_infraspecificEpithet/text()}</em>, " (", $nameRecord[1]/dwc_vernacularName/text(),")")
                else ()
 };
@@ -75,16 +85,16 @@ declare function local:get-taxon-name-clean
   order by $detRecord/dwc_dateIdentified/text() descending
   let $organismScreen := $detRecord/dsw_identified/text()
   group by $organismScreen
-  return if ($nameRecord[1]/dwc_taxonRank/text() = "species")
+  return if (lower-case($nameRecord[1]/dwc_taxonRank/text()) = "species")
          then ($nameRecord[1]/dwc_genus/text()||" "||$nameRecord[1]/dwc_specificEpithet/text()||" ("||$nameRecord[1]/dwc_vernacularName/text()||")")
          else 
-           if ($nameRecord[1]/dwc_taxonRank/text() = "genus")
+           if (lower-case($nameRecord[1]/dwc_taxonRank/text()) = "genus")
            then ($nameRecord[1]/dwc_genus/text()||" sp. ("||$nameRecord[1]/dwc_vernacularName/text(),")")
            else 
-             if ($nameRecord[1]/dwc_taxonRank/text() = "subspecies")
+             if (lower-case($nameRecord[1]/dwc_taxonRank/text()) = "subspecies")
              then ($nameRecord[1]/dwc_genus/text()||" "||$nameRecord[1]/dwc_specificEpithet/text()||" ssp. "||$nameRecord/dwc_infraspecificEpithet/text()||" (", $nameRecord[1]/dwc_vernacularName/text(),")")
              else
-               if ($nameRecord[1]/dwc_taxonRank/text() = "variety")
+               if (lower-case($nameRecord[1]/dwc_taxonRank/text()) = "variety")
                then ($nameRecord[1]/dwc_genus/text()||" "||$nameRecord[1]/dwc_specificEpithet/text()||" var. "||$nameRecord[1]/dwc_infraspecificEpithet/text()||" (", $nameRecord[1]/dwc_vernacularName/text(),")")
                else ()
 };
@@ -337,16 +347,16 @@ return (file:create-dir(concat($rootPath,"\",$namespace)), file:write($filePath,
       order by $detRecord/dwc_dateIdentified/text() descending
       return (
       <h2>{
-      if ($nameRecord/dwc_taxonRank/text() = "species")
+      if (lower-case($nameRecord/dwc_taxonRank/text()) = "species")
              then (<em>{$nameRecord/dwc_genus/text()||" "||$nameRecord/dwc_specificEpithet/text()}</em>)
              else 
-               if ($nameRecord/dwc_taxonRank/text() = "genus")
+               if (lower-case($nameRecord/dwc_taxonRank/text()) = "genus")
                then (<em>{$nameRecord/dwc_genus/text()}</em>," sp.")
                else 
-                 if ($nameRecord/dwc_taxonRank/text() = "subspecies")
+                 if (lower-case($nameRecord/dwc_taxonRank/text()) = "subspecies")
                  then (<em>{$nameRecord/dwc_genus/text()||" "||$nameRecord/dwc_specificEpithet/text()}</em>," ssp. ",<em>{$nameRecord/dwc_infraspecificEpithet/text()}</em>)
                  else
-                   if ($nameRecord/dwc_taxonRank/text() = "variety")
+                   if (lower-case($nameRecord/dwc_taxonRank/text()) = "variety")
                    then (<em>{$nameRecord/dwc_genus/text()||" "||$nameRecord/dwc_specificEpithet/text()}</em>," var. ",<em>{$nameRecord/dwc_infraspecificEpithet/text()}</em>)
                    else ()
         }</h2>,
@@ -416,9 +426,11 @@ return (file:create-dir(concat($rootPath,"\",$namespace)), file:write($filePath,
           if (local:flag-test($suppressFlag,"2"))
           then substring-before($depiction/dwc_occurrenceRemarks/text(),'.')
           else substring($depiction/dcterms_created/text(),1,10)
+
       group by $occurrenceDate
       return (
-        <a id="{$occurrenceDate}">{$occurrenceDate}</a>,
+        (: If the occurrence date includes a "/" character for a date range, use only first part for id :)
+        <a id="{functx:substring-before-if-contains($occurrenceDate,"/")}">{$occurrenceDate}</a>,
 
         if ($depiction[1]/dwc_occurrenceRemarks/text() != "")
         then if (local:flag-test(local:clean-suppress-flag($depiction[1]/suppress/text()),"2"))

@@ -71,7 +71,7 @@ return (
                                   <family>{$name/dwc_family/text()}</family>
                                   <genus>{$name/dwc_genus/text()}</genus>
                                   <species>{$name/dwc_specificEpithet/text()}</species>
-                                  <rank>{$name/dwc_taxonRank/text()}</rank>
+                                  <rank>{lower-case($name/dwc_taxonRank/text())}</rank>
                                   <ife>{$name/dwc_infraspecificEpithet/text()}</ife>
                                   <author>{$name/dwc_scientificNameAuthorship/text()}</author>
                                   <vernac>{$name/dwc_vernacularName/text()}</vernac>
