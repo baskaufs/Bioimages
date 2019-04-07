@@ -326,7 +326,7 @@ return (
 <dc:rights xml:lang="en">{$record/dc_rights/text()}</dc:rights>,
 
 if ($record/owner/text() != 'none')
-then <xmpRights:owner>{$agent/dc_contributor/text()}</xmpRights:owner>
+then <xmpRights:Owner>{$agent/dc_contributor/text()}</xmpRights:Owner>
 else (),
 
 <photoshop:Credit xml:lang="en">{$record/photoshop_Credit/text()}</photoshop:Credit>,
