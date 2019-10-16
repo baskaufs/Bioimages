@@ -482,7 +482,7 @@ Delete this section if serving file directly
 let $localFilesFolderUnix := "c:/test"
 
 (: Create root folder if it doesn't already exist. :)
-let $rootPath := "c:\bioimages"
+let $rootPath := "j:\bioimages"
 (: "file:create-dir($dir as xs:string) as empty-sequence()" will create a directory or do nothing if it already exists :)
 let $nothing := file:create-dir($rootPath)
 

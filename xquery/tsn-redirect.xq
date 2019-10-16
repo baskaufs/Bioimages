@@ -42,7 +42,7 @@ declare function local:get-taxon-name-clean
 let $localFilesFolderUnix := "c:/github/bioimages"
 
 (: Create root folder if it doesn't already exist. :)
-let $rootPath := "c:\bioimages"
+let $rootPath := "j:\bioimages"
 (: "file:create-dir($dir as xs:string) as empty-sequence()" will create a directory or do nothing if it already exists :)
 let $nothing := file:create-dir($rootPath)
 
