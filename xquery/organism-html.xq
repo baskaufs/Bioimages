@@ -182,7 +182,7 @@ let $cameoFileName := local:get-cameo-filename($orgRecord/cameo/text(),$xmlImage
 let $cameoLocalID := local:substring-after-last($orgRecord/cameo/text(),"/")
 let $temp2 := substring-before($orgRecord/cameo/text(),concat("/",$cameoLocalID))
 let $cameoNamespace := local:substring-after-last($temp2,"/")
-let $googleMapString := "http://maps.google.com/maps?output=classic&amp;q=loc:"||$orgRecord/dwc_decimalLatitude/text()||","||$orgRecord/dwc_decimalLongitude/text()||"&amp;t=h&amp;z=16"
+let $googleMapString := "https://www.google.com/maps/search/?api=1&amp;query="||$orgRecord/dwc_decimalLatitude/text()||","||$orgRecord/dwc_decimalLongitude/text()||"&amp;map_action=map&amp;zoom=16&amp;basemap=satellite"
 let $qrCodeString := "http://chart.apis.google.com/chart?chs=100x100&amp;cht=qr&amp;chld=|1&amp;chl=http%3A%2F%2Fbioimages.vanderbilt.edu%2F"||$namespace||"%2F"||$fileName||".htm"
 let $loadDatabaseString := 'window.location.replace("../metadata.htm?'||$namespace||'/'||$fileName||'/metadata/ind");'
 return (file:create-dir(concat($rootPath,"\",$namespace)), file:write($filePath,
