@@ -21,7 +21,7 @@ declare function local:substring-after-last
   else $string
 };
 
-let $localFilesFolderUnix := "c:/github/bioimages"
+let $localFilesFolderUnix := "c:/Users/steve-bootcamp/github/Bioimages"
 let $localFilesFolderPC := "c:\test"
 
 (: Create local files folder if it doesn't already exist. :)

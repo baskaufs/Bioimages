@@ -39,7 +39,7 @@ declare function local:get-taxon-name-clean
                else ()
 };
 
-let $localFilesFolderUnix := "c:/github/bioimages"
+let $localFilesFolderUnix := "c:/Users/steve-bootcamp/github/Bioimages"
 
 (: Create root folder if it doesn't already exist. :)
 let $rootPath := "j:\bioimages"
