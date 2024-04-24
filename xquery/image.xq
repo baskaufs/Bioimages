@@ -153,11 +153,14 @@ family: {$name/dwc_family/text()}<br/>
 };
 
 declare function local:identifier-info
-($dom as xs:string, $ns as xs:string, $img as xs:string)
+($dom as xs:string, $ns as xs:string, $img as xs:string, $doi as xs:string)
 {
 <h5><em>Refer to this permanent identifier for the image:</em><br/>
 <strong property="dcterms:identifier">{$dom}/{$ns}/{$img}</strong><br/><br/>
 <em>Use this URL as a stable link to this image page:</em><br/><a href="{$img}.htm">{$dom}/{$ns}/{$img}.htm</a></h5>,
+<br/>,
+<br/>,
+<h5><em>DataCite DOI for the image:</em> <a href="https://doi.org/{$doi}">{$doi}</a></h5>,
 <br/>,
 <br/>
 };
@@ -482,7 +485,7 @@ Delete this section if serving file directly
 let $localFilesFolderUnix := "c:/test"
 
 (: Create root folder if it doesn't already exist. :)
-let $rootPath := "j:\bioimages"
+let $rootPath := "d:\bioimages"
 (: "file:create-dir($dir as xs:string) as empty-sequence()" will create a directory or do nothing if it already exists :)
 let $nothing := file:create-dir($rootPath)
 
@@ -566,7 +569,7 @@ return
             where $orgRecord/dcterms_identifier/text() = $imageRecord/foaf_depicts/text()
             return local:determination-info($imageRecord/foaf_depicts/text(), $xmlDeterminations, $xmlNames, $xmlSensu, $xmlAgents)
             }
-            {local:identifier-info($domain, $namespace, $image)}
+            {local:identifier-info($domain, $namespace, $image, $imageRecord/doi/text())}
             {local:location-info($imageRecord)}
             {local:occurrence-remarks($imageRecord)}
             {local:related-resources-info($imageRecord/foaf_depicts/text())}
