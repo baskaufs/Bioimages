@@ -6,7 +6,7 @@ declare default element namespace "http://www.sitemaps.org/schemas/sitemap/0.9";
 :)
 
 (: Create root folder if it doesn't already exist. :)
-let $rootPath := "j:\bioimages"
+let $rootPath := "d:\bioimages"
 (: "file:create-dir($dir as xs:string) as empty-sequence()" will create a directory or do nothing if it already exists :)
 let $nothing := file:create-dir($rootPath)
 
