@@ -50,7 +50,7 @@ declare function local:clean-suppress-flag($flag as xs:string?) as xs:string
 let $localFilesFolderUnix := "c:/test"
 
 (: Create root folder if it doesn't already exist. :)
-let $rootPath := "d:\bioimages"
+let $rootPath := "e:\bioimages"
 (: "file:create-dir($dir as xs:string) as empty-sequence()" will create a directory or do nothing if it already exists :)
 let $nothing := file:create-dir($rootPath)
 
